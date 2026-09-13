@@ -1,0 +1,7 @@
+dimension,n_pares,prueba,normal_shapiro_diffs,estadistico,valor_p_crudo,media_diferencia_humano_menos_llm,ic95_diferencia_lo,ic95_diferencia_hi,valor_p_holm,significativo_holm_0.05
+completitud,11,t apareada,True,0.7138,0.4917,0.0909,-0.1364,0.3409,1.0,False
+ausencia_ambiguedad,11,t apareada,True,-0.4675,0.6501,-0.0909,-0.4773,0.25,1.0,False
+verificabilidad,11,t apareada,True,1.0,0.3409,0.1364,-0.1364,0.3864,1.0,False
+correccion_fuente,11,t apareada,True,1.5498,0.1522,0.1591,-0.0455,0.3409,0.761133933824737,False
+consistencia_interna,11,t apareada,True,0.9376,0.3705,0.0909,-0.0909,0.2727,1.0,False
+puntaje_global,11,t apareada,True,1.1926,0.2606,0.0773,-0.0455,0.1955,,
