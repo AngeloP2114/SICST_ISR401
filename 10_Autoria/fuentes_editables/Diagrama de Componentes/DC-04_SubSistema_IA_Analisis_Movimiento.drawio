@@ -1,0 +1,69 @@
+<mxfile host="Electron" agent="ChatGPT">
+  <diagram id="sicst-componentes" name="DC-04_SubSistema_IA_Analisis_Movimiento">
+    <mxGraphModel dx="1229" dy="824" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="1300" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=20;fontStyle=1;fontColor=#000000;" value="DC-04 — Componentes del subsistema de IA y análisis de movimiento" vertex="1">
+          <mxGeometry height="40" width="1300" x="250" y="15" as="geometry" />
+        </mxCell>
+        <mxCell id="pkg_ai" parent="1" style="swimlane;html=1;startSize=28;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=13;fontStyle=1;" value="Subsistema inteligente" vertex="1">
+          <mxGeometry height="980" width="1520" x="140" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="capture" parent="1" style="shape=component;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Adaptador de captura / frames" vertex="1">
+          <mxGeometry height="90" width="300" x="220" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="pre" parent="1" style="shape=component;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Preprocesamiento de imagen/movimiento" vertex="1">
+          <mxGeometry height="90" width="350" x="650" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="pose" parent="1" style="shape=component;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Estimación de postura / pose" vertex="1">
+          <mxGeometry height="90" width="320" x="1110" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="metrics" parent="1" style="shape=component;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Cálculo de métricas de ejecución" vertex="1">
+          <mxGeometry height="90" width="330" x="220" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="rules" parent="1" style="shape=component;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Motor de reglas terapéuticas" vertex="1">
+          <mxGeometry height="90" width="330" x="650" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="feedback" parent="1" style="shape=component;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Generador de retroalimentación" vertex="1">
+          <mxGeometry height="90" width="340" x="1110" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="explain" parent="1" style="shape=component;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Explicabilidad / motivo de recomendación" vertex="1">
+          <mxGeometry height="90" width="360" x="410" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="audit" parent="1" style="shape=component;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Registro de inferencias y auditoría" vertex="1">
+          <mxGeometry height="90" width="340" x="930" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="capture" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeColor=#000000;" target="pre" value="normaliza">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="pre" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeColor=#000000;" target="pose" value="extrae landmarks">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="pose" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeColor=#000000;" target="metrics" value="calcula ángulos / repeticiones">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1270" y="350" />
+              <mxPoint x="385" y="350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="metrics" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeColor=#000000;" target="rules" value="compara contra criterios">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="rules" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeColor=#000000;" target="feedback" value="genera resultado">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="rules" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeColor=#000000;" target="explain" value="explica regla activada">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="feedback" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeColor=#000000;" target="audit" value="registra salida">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="explain" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeColor=#000000;" target="audit" value="registra explicación">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
