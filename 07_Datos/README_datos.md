@@ -12,8 +12,8 @@ Esta carpeta contiene el paquete de datos reproducible del proyecto
 
 - `datos_crudos/`
 - `datos_procesados/`
-- `scripts/`
-- `resultados/`
+- `scripts/` (7 pasos numerados + orquestador)
+- `resultados/` (13 archivos generados)
 - `diccionario_datos.csv`
 - `README_datos.md`
 - `LICENSE-DATA.txt`
@@ -39,13 +39,25 @@ No se crean participantes, respuestas ni resultados ficticios.
 
 Desde la raíz del repositorio ejecutar:
 
-`python 07_Datos/scripts/orquestar.py`
+```bash
+python 07_Datos/scripts/orquestar.py
+```
 
-El script genera:
+El orquestador corre, en orden, 7 pasos:
 
-- `07_Datos/datos_procesados/respuestas_cuestionario_procesadas.csv`
-- `07_Datos/resultados/resumen_perfiles.csv`
-- `07_Datos/checksums_datos.sha256`
+1. `01_extraer_crudos.py` — valida el archivo de datos crudos.
+2. `02_limpiar_datos.py` — genera `datos_procesados/respuestas_cuestionario_procesadas.csv`.
+3. `03_generar_diccionario.py` — genera `diccionario_datos.csv`.
+4. `04_analisis_por_perfil.py` — genera `resultados/resumen_perfiles.csv` y
+   `resultados/estadisticos_likert_por_perfil.csv`.
+5. `05_analisis_por_pregunta.py` — genera 9 tablas de frecuencia en
+   `resultados/` (una por cada pregunta categórica o de opción múltiple).
+6. `07_analisis_cruzado.py` — genera 2 tablas cruzadas perfil × variable
+   clave (aceptación de cámara, deseo de ver el avance).
+7. `06_generar_checksums.py` — genera `checksums_datos.sha256` sobre todos
+   los archivos anteriores.
+
+En total, el paso 4-7 produce **13 archivos en `resultados/`**.
 
 ## Integridad
 
