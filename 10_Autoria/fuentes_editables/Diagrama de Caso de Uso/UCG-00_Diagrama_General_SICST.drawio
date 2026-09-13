@@ -1,0 +1,83 @@
+<mxfile host="app.diagrams.net" modified="2026-09-13T17:00:00.000Z" agent="ChatGPT" version="24.7.17">
+  <diagram id="sicst-UCG-00_Diagrama_General_SICST" name="UCG-00_Diagrama_General_SICST">
+    <mxGraphModel dx="1800" dy="1400" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="1400" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="Diagrama general de casos de uso — SICST" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=20;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="300" y="18" width="1200" height="38" as="geometry"/>
+    </mxCell><mxCell id="sys" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="240" y="80" width="1260" height="1050" as="geometry"/>
+    </mxCell><mxCell id="sys_label" value="Sistema Inteligente de Control y Seguimiento de Terapia Física (SICST)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="250" y="88" width="1240" height="24" as="geometry"/>
+    </mxCell><mxCell id="a1_shape" value="" style="shape=umlActor;html=1;verticalLabelPosition=bottom;verticalAlign=top;strokeColor=#000000;fillColor=#ffffff;" vertex="1" parent="1">
+      <mxGeometry x="70" y="220" width="40" height="80" as="geometry"/>
+    </mxCell><mxCell id="a1_label" value="Fisioterapeuta" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+      <mxGeometry x="30" y="298" width="120" height="28" as="geometry"/>
+    </mxCell><mxCell id="a2_shape" value="" style="shape=umlActor;html=1;verticalLabelPosition=bottom;verticalAlign=top;strokeColor=#000000;fillColor=#ffffff;" vertex="1" parent="1">
+      <mxGeometry x="70" y="520" width="40" height="80" as="geometry"/>
+    </mxCell><mxCell id="a2_label" value="Paciente" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+      <mxGeometry x="30" y="598" width="120" height="28" as="geometry"/>
+    </mxCell><mxCell id="a3_shape" value="" style="shape=umlActor;html=1;verticalLabelPosition=bottom;verticalAlign=top;strokeColor=#000000;fillColor=#ffffff;" vertex="1" parent="1">
+      <mxGeometry x="1520" y="520" width="40" height="80" as="geometry"/>
+    </mxCell><mxCell id="a3_label" value="Familiar/Cuidador" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+      <mxGeometry x="1480" y="598" width="120" height="28" as="geometry"/>
+    </mxCell><mxCell id="a4_shape" value="" style="shape=umlActor;html=1;verticalLabelPosition=bottom;verticalAlign=top;strokeColor=#000000;fillColor=#ffffff;" vertex="1" parent="1">
+      <mxGeometry x="1520" y="180" width="40" height="80" as="geometry"/>
+    </mxCell><mxCell id="a4_label" value="Administrador" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+      <mxGeometry x="1480" y="258" width="120" height="28" as="geometry"/>
+    </mxCell><mxCell id="a5_shape" value="" style="shape=umlActor;html=1;verticalLabelPosition=bottom;verticalAlign=top;strokeColor=#000000;fillColor=#ffffff;" vertex="1" parent="1">
+      <mxGeometry x="1520" y="830" width="40" height="80" as="geometry"/>
+    </mxCell><mxCell id="a5_label" value="Motor IA / Analítica" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+      <mxGeometry x="1480" y="908" width="120" height="28" as="geometry"/>
+    </mxCell><mxCell id="uc1" value="Registrar paciente" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;" vertex="1" parent="1">
+      <mxGeometry x="360" y="160" width="240" height="76" as="geometry"/>
+    </mxCell><mxCell id="uc2" value="Realizar evaluación inicial" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;" vertex="1" parent="1">
+      <mxGeometry x="690" y="160" width="240" height="76" as="geometry"/>
+    </mxCell><mxCell id="uc3" value="Asignar rutina terapéutica" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;" vertex="1" parent="1">
+      <mxGeometry x="1040" y="160" width="240" height="76" as="geometry"/>
+    </mxCell><mxCell id="uc4" value="Ejecutar rutina remota con cámara" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;" vertex="1" parent="1">
+      <mxGeometry x="360" y="400" width="240" height="76" as="geometry"/>
+    </mxCell><mxCell id="uc5" value="Consultar seguimiento y progreso" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;" vertex="1" parent="1">
+      <mxGeometry x="690" y="400" width="240" height="76" as="geometry"/>
+    </mxCell><mxCell id="uc6" value="Generar alertas y recomendaciones" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;" vertex="1" parent="1">
+      <mxGeometry x="1040" y="400" width="240" height="76" as="geometry"/>
+    </mxCell><mxCell id="uc7" value="Gestionar usuarios y catálogos" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;" vertex="1" parent="1">
+      <mxGeometry x="360" y="700" width="240" height="76" as="geometry"/>
+    </mxCell><mxCell id="uc8" value="Consultar avances del paciente" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;" vertex="1" parent="1">
+      <mxGeometry x="690" y="700" width="240" height="76" as="geometry"/>
+    </mxCell><mxCell id="uc9" value="Administrar configuración del sistema" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;" vertex="1" parent="1">
+      <mxGeometry x="1040" y="700" width="240" height="76" as="geometry"/>
+    </mxCell><mxCell id="uc10" value="Analizar postura y cumplimiento" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;" vertex="1" parent="1">
+      <mxGeometry x="1040" y="880" width="240" height="76" as="geometry"/>
+    </mxCell><mxCell id="e1" value="" style="endArrow=none;startArrow=none;html=1;rounded=0;strokeColor=#000000;" edge="1" parent="1" source="a1_shape" target="uc1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell><mxCell id="e2" value="" style="endArrow=none;startArrow=none;html=1;rounded=0;strokeColor=#000000;" edge="1" parent="1" source="a1_shape" target="uc2">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell><mxCell id="e3" value="" style="endArrow=none;startArrow=none;html=1;rounded=0;strokeColor=#000000;" edge="1" parent="1" source="a1_shape" target="uc3">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell><mxCell id="e4" value="" style="endArrow=none;startArrow=none;html=1;rounded=0;strokeColor=#000000;" edge="1" parent="1" source="a1_shape" target="uc5">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell><mxCell id="e5" value="" style="endArrow=none;startArrow=none;html=1;rounded=0;strokeColor=#000000;" edge="1" parent="1" source="a1_shape" target="uc6">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell><mxCell id="e6" value="" style="endArrow=none;startArrow=none;html=1;rounded=0;strokeColor=#000000;" edge="1" parent="1" source="a2_shape" target="uc4">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell><mxCell id="e7" value="" style="endArrow=none;startArrow=none;html=1;rounded=0;strokeColor=#000000;" edge="1" parent="1" source="a2_shape" target="uc8">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell><mxCell id="e8" value="" style="endArrow=none;startArrow=none;html=1;rounded=0;strokeColor=#000000;" edge="1" parent="1" source="a3_shape" target="uc8">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell><mxCell id="e9" value="" style="endArrow=none;startArrow=none;html=1;rounded=0;strokeColor=#000000;" edge="1" parent="1" source="a4_shape" target="uc7">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell><mxCell id="e10" value="" style="endArrow=none;startArrow=none;html=1;rounded=0;strokeColor=#000000;" edge="1" parent="1" source="a4_shape" target="uc9">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell><mxCell id="e11" value="" style="endArrow=none;startArrow=none;html=1;rounded=0;strokeColor=#000000;" edge="1" parent="1" source="a5_shape" target="uc10">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell><mxCell id="e12" value="&lt;&lt;include&gt;&gt;" style="endArrow=block;endFill=0;startArrow=none;html=1;rounded=0;dashed=1;strokeColor=#000000;" edge="1" parent="1" source="uc4" target="uc10">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell><mxCell id="e13" value="&lt;&lt;extend&gt;&gt;" style="endArrow=block;endFill=0;startArrow=none;html=1;rounded=0;dashed=1;strokeColor=#000000;" edge="1" parent="1" source="uc5" target="uc6">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
