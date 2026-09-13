@@ -3,7 +3,7 @@ message: "Si utiliza este repositorio académico, cite este trabajo."
 title: "Sistema Inteligente de Control y Seguimiento de Terapia Física"
 type: software
 version: "2.0"
-date-released: "2026-09-05"
+date-released: "2026-09-13"
 
 authors:
   - family-names: "Contreras Chávez"
@@ -15,9 +15,9 @@ authors:
     affiliation: "Universidad Técnica Estatal de Quevedo"
     orcid: "https://orcid.org/0009-0006-0056-8482"
 
-repository-code: "https://github.com/AngeloP2114/Sistema_Terapia_Fisica_ISR401_2A"
+repository-code: "https://github.com/AngeloP2114/Sistema_Terapia_Fisica_ISR401_2B"
 
-url: "https://github.com/AngeloP2114/Sistema_Terapia_Fisica_ISR401_2A"
+url: "https://github.com/AngeloP2114/Sistema_Terapia_Fisica_ISR401_2B"
 
 license: "MIT"
 
@@ -25,10 +25,11 @@ abstract: >-
   Sistema Inteligente de Control y Seguimiento de Terapia Física (SICST),
   desarrollado como proyecto académico de Ingeniería de Requerimientos.
   El repositorio integra la especificación ERS/SRS, evidencias de trabajo
-  de campo, modelado, trazabilidad, producto mínimo viable, protocolo
-  experimental, datos reproducibles, documentación ética y materiales
-  de defensa. El sistema se plantea como herramienta de apoyo al
-  seguimiento terapéutico y no sustituye la valoración, diagnóstico
+  de campo, modelado, trazabilidad, producto mínimo viable, un experimento
+  comparativo preregistrado (calidad de requisitos funcionales elicitados
+  por humanos vs. generados por un LLM), datos reproducibles, documentación
+  ética y materiales de defensa. El sistema se plantea como herramienta de
+  apoyo al seguimiento terapéutico y no sustituye la valoración, diagnóstico
   ni decisión del profesional de salud.
 
 keywords:
@@ -41,9 +42,15 @@ keywords:
   - "MVP"
   - "Inteligencia Artificial"
   - "Elicitación de Requisitos"
+  - "Large Language Models"
   - "Validación de Requisitos"
   - "Reproducibilidad"
   - "Ingeniería de Software"
+
+identifiers:
+  - type: doi
+    value: "10.17605/OSF.IO/82Q76"
+    description: "OSF preregistration of the human vs. LLM requirements comparison experiment"
 
 references:
   - type: dataset
