@@ -1,24 +1,31 @@
-# Manuscrito final SICST — C7
+# Manuscrito final SICST — Enfoque 1 (LLM vs. humano)
 
 ## Objetivo
 
-Este paquete reemplaza el borrador antiguo de tres páginas y contiene un manuscrito científico completo centrado en la ingeniería y validación de requisitos del proyecto SICST.
+Este manuscrito reporta el componente empírico terminal del proyecto
+SICST: una comparación preregistrada, ciega y pareada entre la calidad de
+los Requisitos Funcionales (RF) elicitados por el equipo humano y los
+generados por un LLM (GPT-5.5-mini), a partir de las mismas 18
+transcripciones de entrevista anonimizadas.
 
 **Revista objetivo:** Requirements Engineering — Springer Nature.
 
 ## Autores actuales
 
 - Contreras Chávez Kevin Germán
-- Zambrano Moya Angelo Paul
+- Zambrano Moya Angelo Paul (ORCID: 0009-0006-0056-8482)
 
 ## Archivos
 
 - `manuscrito_final.tex`: fuente LaTeX completa.
-- `manuscrito_final.pdf`: PDF compilado desde la fuente.
-- `references.bib`: bibliografía propia del manuscrito.
-- `figuras/figura_perfiles.png`: distribución de las 79 respuestas por perfil.
-- `figuras/figura_saturacion.png`: curva de saturación de las 11 entrevistas.
-- `figuras/figura_subtemas.png`: frecuencia de los 12 subtemas.
+- `manuscrito_final.pdf`: PDF compilado desde la fuente (8 páginas).
+- `manuscrito_final.bbl`: bibliografía compilada con BibTeX.
+- `references.bib`: bibliografía propia del manuscrito (33 entradas).
+- `figuras/figura_comparacion_pareada.png`: resultado principal (Figura 1
+  del manuscrito).
+- `figuras/figura_perfiles.png`, `figura_saturacion.png`,
+  `figura_subtemas.png`: evidencia descriptiva del corpus cualitativo de
+  origen (contexto, no resultado principal).
 
 ## Compilación
 
@@ -33,41 +40,39 @@ pdflatex manuscrito_final.tex
 
 El PDF resultante es `manuscrito_final.pdf`.
 
-## Plantilla Springer Nature
+## Resumen de la evidencia utilizada
 
-Springer Nature recomienda su plantilla LaTeX para artículos de revista y señala que puede utilizarse para sus revistas, incluida la familia Springer. Para un envío editorial real, el contenido de `manuscrito_final.tex` debe transferirse al paquete oficial `sn-jnl` descargado desde el sitio de Springer Nature.
+El manuscrito utiliza únicamente resultados respaldados por scripts
+reproducibles del repositorio (`06_Experimento/`):
 
-Este paquete no redistribuye archivos de plantilla de terceros. El manuscrito se entrega en LaTeX estándar para que compile de forma reproducible sin depender de archivos externos.
+- Diseño preregistrado en OSF (DOI 10.17605/OSF.IO/82Q76), anterior a la
+  generación de los datos comparados.
+- 33 RF elicitados por el equipo humano + 33 RF generados por GPT-5.5-mini
+  a partir de las mismas 18 transcripciones anonimizadas (prompt completo
+  documentado en `06_Experimento/prompts_llm/`).
+- 66 ítems evaluados de forma ciega por 4 jueces independientes, en 5
+  dimensiones de calidad (escala Likert 1-5).
+- Acuerdo entre evaluadores: κ de Fleiss entre -0.011 y 0.167 según la
+  dimensión (bajo a nulo).
+- Análisis confirmatorio pareado (n=11 pares con correspondencia temática
+  estricta): prueba t apareada, corrección de Holm-Bonferroni. Ninguna
+  dimensión significativa (todos los p ajustados > 0.05).
+- No se pudo rechazar H0: sin diferencia de calidad detectable entre RF
+  humanos y RF del LLM, en esta muestra pequeña.
 
-## Evidencia utilizada
+## Nota sobre un manuscrito anterior descartado
 
-El manuscrito utiliza únicamente resultados respaldados por el repositorio actual:
+Una versión anterior de este manuscrito reportaba un estudio distinto
+(consolidación de necesidades de campo mediante codificación temática y
+trazabilidad, sin componente comparativo LLM vs. humano). Ese estudio no
+correspondía a la pregunta de investigación asignada al proyecto SICST
+(Enfoque 1, según la Sección 6 de la guía de la asignatura) ni al
+protocolo efectivamente registrado en OSF. El corpus cualitativo de esa
+versión (18 entrevistas, codificación temática, curva de saturación) se
+conserva como evidencia del corpus de origen que alimentó la generación
+de RF por ambas vías (humana y LLM), pero ya no es el resultado principal
+reportado.
 
-- 79 respuestas del cuestionario: 62 pacientes o expacientes, 14 familiares/cuidadores y 3 fisioterapeutas.
-- 11 entrevistas principales para codificación temática.
-- 12 subtemas del libro de códigos.
-- Saturación observada: 12 subtemas acumulados al llegar a la entrevista 8 y 0 temas nuevos en las entrevistas 9–11.
-- Doble codificación: 3/11 entrevistas (27,27 %), 36 decisiones, 33 acuerdos, 3 desacuerdos, 91,67 % de acuerdo, Cohen κ = 0,7187 e IC 95 % bootstrap [0,3077; 1,0000].
-- 58 trazas documentales: 33 RF, 15 RNF generales y 10 RNF específicos de IA.
-- Dos aplicaciones web del MVP: fisioterapeuta y paciente.
-- Dataset Zenodo v1.0: DOI `10.5281/zenodo.22315298`.
-
-Los datos sintéticos ubicados en `06_Experimento/resultados/` se mencionan únicamente como simulación metodológica y **no** se presentan como resultados de participantes reales.
-
-## Ubicación sugerida en GitHub
-
-Subir estos archivos a:
+## Ubicación en GitHub
 
 `07_Publicacion/`
-
-Después de verificar el nuevo manuscrito, el archivo histórico `manuscrito_borrador.pdf` puede eliminarse para evitar que el evaluador tome por error el borrador antiguo como documento vigente.
-
-## Fuente preparada para la plantilla oficial Springer Nature
-
-También se incluye `manuscrito_final_springer.tex`. Ese archivo usa:
-
-```latex
-\documentclass[pdflatex,sn-basic]{sn-jnl}
-```
-
-y está preparado para colocarse dentro del paquete oficial de Springer Nature. Para compilarlo se necesitan los archivos oficiales `sn-jnl.cls` y `sn-basic.bst`, que deben descargarse directamente desde Springer Nature. No se redistribuyen dentro de este paquete.
