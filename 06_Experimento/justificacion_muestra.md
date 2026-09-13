@@ -1,35 +1,45 @@
-# Justificación de la muestra del experimento
+# Justificación de la muestra del experimento — Enfoque 1
 
 ## Unidad de análisis
 
-La unidad de análisis del experimento corresponde a los requisitos funcionales definidos en el documento ERS/SRS del Sistema Inteligente de Control y Seguimiento de Terapia Física (SICST).
+La unidad de análisis corresponde a los Requisitos Funcionales (RF) del
+Sistema Inteligente de Control y Seguimiento de Terapia Física (SICST),
+comparando dos fuentes de generación:
 
-La muestra está conformada por 33 requisitos funcionales identificados desde RF-01 hasta RF-33.
+- **33 RF elicitados por el equipo humano**, a partir de 18 entrevistas con
+  fisioterapeutas, familiares/cuidadores y pacientes.
+- **33 RF generados por el modelo GPT-5.5-mini**, a partir de las mismas 18
+  transcripciones anonimizadas.
 
----
+Total: 66 ítems evaluados.
 
-## Justificación
+## Justificación del tamaño de muestra
 
-El objetivo del experimento no es evaluar la percepción de usuarios finales, sino analizar la calidad de la especificación de requisitos del sistema.
+El objetivo del experimento es comparar la calidad percibida de ambos
+conjuntos de RF, no evaluar la percepción de usuarios finales del sistema.
+Por eso la muestra corresponde directamente a los RF generados por cada
+fuente, en igual cantidad (33 y 33), para que la comparación entre grupos
+sea equilibrada.
 
-Por esta razón, los elementos evaluados corresponden directamente a los requisitos documentados del sistema.
+## Evaluadores
 
----
-
-## Criterios evaluados
-
-Cada requisito fue analizado considerando:
-
-- Claridad.
-- Completitud.
-- Verificabilidad.
-- Trazabilidad.
-- Consistencia.
-
----
+4 evaluadores independientes (Mishell, Angel, Dayana, Sebas) evaluaron los
+66 ítems de forma ciega, sin conocer el origen (humano o LLM) de cada uno,
+puntuando en escala Likert 1-5 sobre 5 dimensiones de calidad (ver
+`instrumentos/rubrica_evaluacion_requisitos.md`).
 
 ## Método de evaluación
 
-La evaluación fue realizada mediante revisión experta utilizando una rúbrica definida previamente.
+La evaluación fue ciega e independiente por evaluador. Los resultados
+individuales se promediaron por ítem y se compararon por grupo (humano vs.
+LLM) mediante pruebas estadísticas apropiadas según normalidad (t de
+Student o U de Mann-Whitney), documentado en
+`scripts_analisis/analisis_experimento_llm_humano.py` y reportado en
+`resultados/`.
 
-Los resultados fueron almacenados en formato CSV y procesados mediante scripts reproducibles.
+## Nota sobre una justificación anterior descartada
+
+Esta justificación reemplaza una versión anterior basada en revisión
+experta individual con rúbrica binaria, descartada en favor de este diseño
+comparativo ciego, formalmente pre-registrado en OSF
+(https://doi.org/10.17605/OSF.IO/82Q76).
