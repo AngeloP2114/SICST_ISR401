@@ -1,0 +1,13 @@
+pregunta,perfil,n,media,mediana,de,min,max
+dificultad_recordar_ejercicios,Paciente o ex paciente de terapia fisica,62,4.145,4.0,0.839,2,5
+dificultad_recordar_ejercicios,Familiar o cuidador,14,4,4.0,1.069,2,5
+importancia_instrucciones_claras,Paciente o ex paciente de terapia fisica,62,4.371,5.0,0.788,2,5
+importancia_instrucciones_claras,Familiar o cuidador,14,4.214,4.0,0.86,2,5
+importancia_recordatorios,Paciente o ex paciente de terapia fisica,62,4.194,4.0,0.913,2,5
+importancia_recordatorios,Familiar o cuidador,14,3.857,4.0,0.915,2,5
+importancia_registro_dolor,Paciente o ex paciente de terapia fisica,62,4.419,5.0,0.752,2,5
+importancia_registro_dolor,Familiar o cuidador,14,4,4.0,0.655,3,5
+importancia_registro_fatiga,Paciente o ex paciente de terapia fisica,62,4.452,5.0,0.711,3,5
+importancia_registro_fatiga,Familiar o cuidador,14,4.143,4.0,0.639,3,5
+importancia_historial_organizado,Fisioterapeuta,3,5,5,0.0,5,5
+importancia_autorizacion_uso_datos,Fisioterapeuta,3,4.667,5,0.471,4,5
