@@ -1,0 +1,34 @@
+﻿id_requisito,descripcion
+RF-01,El sistema deberá registrar el diagnóstico del paciente antes de iniciar una terapia física.
+RF-02,El sistema deberá registrar los antecedentes clínicos del paciente durante el seguimiento terapéutico.
+RF-03,El sistema deberá registrar la edad del paciente para considerar la planificación del tratamiento.
+RF-04,El sistema deberá registrar la actividad física del paciente durante la evaluación inicial.
+RF-05,El sistema deberá registrar las limitaciones funcionales del paciente antes de la terapia.
+RF-06,El sistema deberá registrar el nivel de dolor del paciente mediante una escala de valoración.
+RF-07,El sistema deberá registrar la evaluación del paciente durante el tratamiento terapéutico.
+RF-08,El sistema deberá registrar el plan terapéutico asignado al paciente.
+RF-09,El sistema deberá registrar los ejercicios indicados para realizar durante la terapia física.
+RF-10,El sistema deberá mostrar la rutina activa de ejercicios asignada al paciente.
+RF-11,El sistema deberá mostrar las repeticiones indicadas para cada ejercicio de la rutina.
+RF-12,El sistema deberá mostrar el tiempo de descanso indicado entre ejercicios.
+RF-13,El sistema deberá mostrar indicaciones sobre la ejecución correcta de los ejercicios.
+RF-14,El sistema deberá mostrar videos explicativos de los ejercicios asignados al paciente.
+RF-15,El sistema deberá registrar los ejercicios completados por el paciente durante una rutina.
+RF-16,El sistema deberá registrar las repeticiones realizadas por el paciente durante una rutina.
+RF-17,El sistema deberá registrar el tiempo empleado por el paciente al realizar una rutina.
+RF-18,El sistema deberá registrar el nivel de dolor del paciente después de realizar una rutina.
+RF-19,El sistema deberá registrar el nivel de fatiga o esfuerzo percibido por el paciente después de una rutina.
+RF-20,El sistema deberá registrar dificultades u observaciones reportadas por el paciente durante los ejercicios.
+RF-21,El sistema deberá permitir consultar la evolución del paciente mediante registros históricos.
+RF-22,"El sistema deberá permitir comparar registros de dolor, movilidad o progreso del paciente durante diferentes periodos."
+RF-23,El sistema deberá registrar mediciones de progreso del paciente como rango de movimiento.
+RF-24,"El sistema deberá registrar evidencia de progreso del paciente mediante fotos, videos o reportes."
+RF-25,El sistema deberá registrar los resultados de evaluaciones realizadas durante el seguimiento.
+RF-26,El sistema deberá generar informes fisioterapéuticos con información del tratamiento realizado.
+RF-27,El sistema deberá permitir registrar observaciones del fisioterapeuta sobre las sesiones del paciente.
+RF-28,El sistema deberá permitir consultar las observaciones de sesiones anteriores del paciente.
+RF-29,El sistema deberá enviar recordatorios al paciente sobre ejercicios pendientes.
+RF-30,El sistema deberá enviar avisos a familiares autorizados cuando el paciente requiera apoyo.
+RF-31,El sistema deberá permitir al familiar autorizado consultar el cumplimiento de la rutina del paciente.
+RF-32,El sistema deberá permitir consultar información compartida del progreso del paciente según autorización.
+RF-33,"El sistema deberá registrar alertas relacionadas con dolor, fatiga o dificultades durante la realización de ejercicios."
