@@ -1,0 +1,93 @@
+<mxfile host="Electron" agent="ChatGPT">
+  <diagram id="diag1" name="DA-CU06 — Alertas y recomendaciones inteligentes">
+    <mxGraphModel dx="1012" dy="679" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=18;fontStyle=1" value="DA-CU06 — Alertas y recomendaciones inteligentes" vertex="1">
+          <mxGeometry height="30" width="760" x="380" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lane0" parent="1" style="swimlane;html=1;startSize=28;fillColor=#ffffff;strokeColor=#000000;" value="Sistema" vertex="1">
+          <mxGeometry height="980" width="260" x="60" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="a01" parent="lane0" style="ellipse;html=1;fillColor=#000000;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="20" width="20" x="110" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="a02" parent="lane0" style="rounded=1;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;" value="Monitorear indicadores del paciente" vertex="1">
+          <mxGeometry height="50" width="200" x="35" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="a06" parent="lane0" style="rounded=1;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;" value="Mostrar alerta priorizada" vertex="1">
+          <mxGeometry height="50" width="160" x="50" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="a08" parent="lane0" style="rounded=1;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;" value="Registrar evento sin alerta" vertex="1">
+          <mxGeometry height="50" width="160" x="60" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="a09" parent="lane0" style="shape=doubleEllipse;html=1;fillColor=#ffffff;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="24" width="24" x="110" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="lane1" parent="1" style="swimlane;html=1;startSize=28;fillColor=#ffffff;strokeColor=#000000;" value="Servicio analítico" vertex="1">
+          <mxGeometry height="980" width="260" x="320" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="a03" parent="lane1" style="rounded=1;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;" value="Evaluar reglas y umbrales" vertex="1">
+          <mxGeometry height="50" width="160" x="50" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="a04" parent="lane1" style="rhombus;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;" value="¿Existe desviación o riesgo?" vertex="1">
+          <mxGeometry height="80" width="80" x="90" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="a05" parent="lane1" style="rounded=1;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;" value="Generar alerta y recomendación" vertex="1">
+          <mxGeometry height="50" width="210" x="35" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="lane2" parent="1" style="swimlane;html=1;startSize=28;fillColor=#ffffff;strokeColor=#000000;" value="Fisioterapeuta" vertex="1">
+          <mxGeometry height="980" width="260" x="580" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="a07" parent="lane2" style="rounded=1;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;" value="Revisar alerta y decidir acción" vertex="1">
+          <mxGeometry height="50" width="210" x="35" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="edge0" edge="1" parent="1" source="a01" style="endArrow=block;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" target="a02" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge1" edge="1" parent="1" source="a02" style="endArrow=block;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" target="a03" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge2" edge="1" parent="1" source="a03" style="endArrow=block;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" target="a04" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge3" edge="1" parent="1" source="a04" style="endArrow=block;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" target="a05" value="Sí">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge4" edge="1" parent="1" source="a05" style="endArrow=block;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" target="a06" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge5" edge="1" parent="1" source="a06" style="endArrow=block;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" target="a07" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="190" y="500" />
+              <mxPoint x="442.5" y="500" />
+              <mxPoint x="442.5" y="490" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge6" edge="1" parent="1" source="a07" style="endArrow=block;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" target="a09" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="720" y="520" />
+              <mxPoint x="300" y="520" />
+              <mxPoint x="300" y="692" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge7" edge="1" parent="1" source="a04" style="endArrow=block;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" target="a08" value="No">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="100" y="340" />
+              <mxPoint x="100" y="585" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge8" edge="1" parent="1" source="a08" style="endArrow=block;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" target="a09" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
