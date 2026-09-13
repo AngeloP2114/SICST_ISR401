@@ -1,0 +1,95 @@
+<mxfile host="Electron" agent="ChatGPT">
+  <diagram id="sicst-contexto" name="DCX-06_Contexto_Seguridad_Acceso">
+    <mxGraphModel dx="1229" dy="824" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="1300" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=20;fontStyle=1;fontColor=#000000;" value="DCX-06 — Contexto de seguridad y control de acceso" vertex="1">
+          <mxGeometry height="40" width="1300" x="250" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="sicst" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;fontColor=#000000;fontSize=14;fontStyle=1;" value="SICST" vertex="1">
+          <mxGeometry height="130" width="360" x="700" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="pac" parent="1" style="shape=umlActor;html=1;verticalLabelPosition=bottom;verticalAlign=top;strokeColor=#000000;fillColor=#ffffff;" value="" vertex="1">
+          <mxGeometry height="80" width="50" x="90" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="pac_label" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;" value="Paciente" vertex="1">
+          <mxGeometry height="30" width="140" x="45" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="fis" parent="1" style="shape=umlActor;html=1;verticalLabelPosition=bottom;verticalAlign=top;strokeColor=#000000;fillColor=#ffffff;" value="" vertex="1">
+          <mxGeometry height="80" width="50" x="90" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="fis_label" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;" value="Fisioterapeuta" vertex="1">
+          <mxGeometry height="30" width="140" x="45" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="fam" parent="1" style="shape=umlActor;html=1;verticalLabelPosition=bottom;verticalAlign=top;strokeColor=#000000;fillColor=#ffffff;" value="" vertex="1">
+          <mxGeometry height="80" width="50" x="1510" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="fam_label" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;" value="Familiar/Cuidador" vertex="1">
+          <mxGeometry height="30" width="140" x="1465" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="adm" parent="1" style="shape=umlActor;html=1;verticalLabelPosition=bottom;verticalAlign=top;strokeColor=#000000;fillColor=#ffffff;" value="" vertex="1">
+          <mxGeometry height="80" width="50" x="1510" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="adm_label" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;" value="Administrador" vertex="1">
+          <mxGeometry height="30" width="140" x="1465" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="auth" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Autenticación / roles / permisos" vertex="1">
+          <mxGeometry height="100" width="400" x="680" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="audit" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Auditoría y trazabilidad" vertex="1">
+          <mxGeometry height="100" width="400" x="680" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="pac" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="auth" value="credenciales / sesión">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="500" y="220" />
+              <mxPoint x="500" y="220" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="fis" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="auth" value="credenciales / rol profesional">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="570" y="760" />
+              <mxPoint x="570" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="fam" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="auth" value="acceso autorizado">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1535" y="710" />
+              <mxPoint x="1150" y="710" />
+              <mxPoint x="1150" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="adm" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="auth" value="administración privilegiada">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1190" y="220" />
+              <mxPoint x="1190" y="220" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="auth" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="sicst" value="autoriza funciones">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="870" y="320" />
+              <mxPoint x="870" y="320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="sicst" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="audit" value="registra accesos y cambios">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="890" y="720" />
+              <mxPoint x="890" y="720" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

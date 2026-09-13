@@ -1,0 +1,92 @@
+<mxfile host="Electron" agent="ChatGPT">
+  <diagram id="sicst-contexto" name="DCX-01_Contexto_Clinico_Stakeholders">
+    <mxGraphModel dx="1012" dy="679" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="1300" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=20;fontStyle=1;fontColor=#000000;" value="DCX-01 — Contexto clínico y de stakeholders" vertex="1">
+          <mxGeometry height="40" width="1300" x="250" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="sicst" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;fontColor=#000000;fontSize=14;fontStyle=1;" value="SICST" vertex="1">
+          <mxGeometry height="130" width="360" x="700" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="fis" parent="1" style="shape=umlActor;html=1;verticalLabelPosition=bottom;verticalAlign=top;strokeColor=#000000;fillColor=#ffffff;" value="" vertex="1">
+          <mxGeometry height="80" width="50" x="90" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="fis_label" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;" value="Fisioterapeuta" vertex="1">
+          <mxGeometry height="30" width="140" x="45" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="pac" parent="1" style="shape=umlActor;html=1;verticalLabelPosition=bottom;verticalAlign=top;strokeColor=#000000;fillColor=#ffffff;" value="" vertex="1">
+          <mxGeometry height="80" width="50" x="90" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="pac_label" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;" value="Paciente" vertex="1">
+          <mxGeometry height="30" width="140" x="45" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="fam" parent="1" style="shape=umlActor;html=1;verticalLabelPosition=bottom;verticalAlign=top;strokeColor=#000000;fillColor=#ffffff;" value="" vertex="1">
+          <mxGeometry height="80" width="50" x="1510" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="fam_label" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;" value="Familiar/Cuidador" vertex="1">
+          <mxGeometry height="30" width="140" x="1465" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="adm" parent="1" style="shape=umlActor;html=1;verticalLabelPosition=bottom;verticalAlign=top;strokeColor=#000000;fillColor=#ffffff;" value="" vertex="1">
+          <mxGeometry height="80" width="50" x="1510" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="adm_label" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;" value="Administrador" vertex="1">
+          <mxGeometry height="30" width="140" x="1465" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="clinic" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Centro de rehabilitación / consulta clínica" vertex="1">
+          <mxGeometry height="100" width="460" x="650" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="home" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Entorno domiciliario del paciente" vertex="1">
+          <mxGeometry height="100" width="460" x="650" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="fis" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="sicst" value="planifica, evalúa, supervisa">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="115.06" y="300.06" />
+              <mxPoint x="730" y="300.06" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="pac" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="sicst" value="cumple rutina, informa dolor/fatiga">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="740" y="799.94" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="fam" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="sicst" value="apoya y consulta progreso autorizado">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1180" y="799.94" />
+              <mxPoint x="1180" y="505" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="adm" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="sicst" value="gestiona acceso y configuración">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="940" y="260.06" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="clinic" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="sicst" value="contexto de atención y seguimiento">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="880" y="390" />
+              <mxPoint x="880" y="390" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="home" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="sicst" value="contexto de ejecución remota">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="880" y="760" />
+              <mxPoint x="880" y="760" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
