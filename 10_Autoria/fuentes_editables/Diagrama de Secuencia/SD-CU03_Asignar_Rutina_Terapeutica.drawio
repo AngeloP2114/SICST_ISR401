@@ -1,0 +1,174 @@
+<mxfile host="app.diagrams.net" modified="2026-09-13T16:45:00.000Z" agent="ChatGPT" version="24.7.17">
+  <diagram id="sicst-SD-CU03 — Asignar rutina terapéutica" name="SD-CU03 — Asignar rutina terapéutica">
+    <mxGraphModel dx="1800" dy="1400" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="1400" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="SD-CU03 — Asignar rutina terapéutica" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=20;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="120" y="20" width="1500" height="40" as="geometry"/>
+    </mxCell><mxCell id="p1_actor" value="" style="shape=umlActor;html=1;verticalLabelPosition=bottom;verticalAlign=top;strokeColor=#000000;fillColor=#ffffff;" vertex="1" parent="1">
+      <mxGeometry x="85.0" y="85" width="50" height="70" as="geometry"/>
+    </mxCell><mxCell id="p1_label" value="Fisioterapeuta" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+      <mxGeometry x="30.0" y="155" width="160" height="28" as="geometry"/>
+    </mxCell><mxCell id="p1_life" value="" style="endArrow=none;startArrow=none;html=1;strokeColor=#000000;dashed=1;dashPattern=6 6;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="110.0" y="155" as="sourcePoint"/>
+        <mxPoint x="110.0" y="1210" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell><mxCell id="p2_head" value="Interfaz Asignar Rutina" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;" vertex="1" parent="1">
+      <mxGeometry x="395.0" y="90" width="170" height="54" as="geometry"/>
+    </mxCell><mxCell id="p2_life" value="" style="endArrow=none;startArrow=none;html=1;strokeColor=#000000;dashed=1;dashPattern=6 6;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="480.0" y="155" as="sourcePoint"/>
+        <mxPoint x="480.0" y="1210" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell><mxCell id="p3_head" value="Controlador Rutina" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;" vertex="1" parent="1">
+      <mxGeometry x="765.0" y="90" width="170" height="54" as="geometry"/>
+    </mxCell><mxCell id="p3_life" value="" style="endArrow=none;startArrow=none;html=1;strokeColor=#000000;dashed=1;dashPattern=6 6;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="850.0" y="155" as="sourcePoint"/>
+        <mxPoint x="850.0" y="1210" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell><mxCell id="p4_head" value="Servicio Rutina" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;" vertex="1" parent="1">
+      <mxGeometry x="1135.0" y="90" width="170" height="54" as="geometry"/>
+    </mxCell><mxCell id="p4_life" value="" style="endArrow=none;startArrow=none;html=1;strokeColor=#000000;dashed=1;dashPattern=6 6;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="1220.0" y="155" as="sourcePoint"/>
+        <mxPoint x="1220.0" y="1210" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell><mxCell id="p5_head" value="Base de datos" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;" vertex="1" parent="1">
+      <mxGeometry x="1505.0" y="90" width="170" height="54" as="geometry"/>
+    </mxCell><mxCell id="p5_life" value="" style="endArrow=none;startArrow=none;html=1;strokeColor=#000000;dashed=1;dashPattern=6 6;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="1590.0" y="155" as="sourcePoint"/>
+        <mxPoint x="1590.0" y="1210" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell><mxCell id="c1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="473.0" y="198" width="14" height="105" as="geometry"/>
+    </mxCell><mxCell id="c2" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="843.0" y="253" width="14" height="220" as="geometry"/>
+    </mxCell><mxCell id="c3" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="473.0" y="478" width="14" height="100" as="geometry"/>
+    </mxCell><mxCell id="c4" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="843.0" y="588" width="14" height="370" as="geometry"/>
+    </mxCell><mxCell id="c5" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="1213.0" y="643" width="14" height="315" as="geometry"/>
+    </mxCell><mxCell id="c6" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="1583.0" y="813" width="14" height="90" as="geometry"/>
+    </mxCell><mxCell id="msg_1" value="" style="endArrow=block;endFill=1;startArrow=none;html=1;strokeColor=#000000;rounded=0;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="110.0" y="205" as="sourcePoint"/>
+        <mxPoint x="480.0" y="205" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell><mxCell id="msg_1_label" value="1. seleccionar paciente" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="120.0" y="179" width="350.0" height="24" as="geometry"/>
+    </mxCell><mxCell id="msg_2" value="" style="endArrow=block;endFill=1;startArrow=none;html=1;strokeColor=#000000;rounded=0;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="480.0" y="260" as="sourcePoint"/>
+        <mxPoint x="850.0" y="260" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell><mxCell id="msg_2_label" value="2. obtenerDatosPaciente(idPaciente)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="490.0" y="234" width="350.0" height="24" as="geometry"/>
+    </mxCell><mxCell id="msg_3" value="" style="endArrow=block;endFill=1;startArrow=none;html=1;strokeColor=#000000;rounded=0;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="850.0" y="315" as="sourcePoint"/>
+        <mxPoint x="1590.0" y="315" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell><mxCell id="msg_3_label" value="3. consultar evaluación y antecedentes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="860.0" y="289" width="720.0" height="24" as="geometry"/>
+    </mxCell><mxCell id="msg_4" value="" style="endArrow=block;endFill=1;startArrow=none;html=1;strokeColor=#000000;rounded=0;dashed=1;dashPattern=6 6;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="1590.0" y="370" as="sourcePoint"/>
+        <mxPoint x="850.0" y="370" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell><mxCell id="msg_4_label" value="4. datos clínicos" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="860.0" y="344" width="720.0" height="24" as="geometry"/>
+    </mxCell><mxCell id="msg_5" value="" style="endArrow=block;endFill=1;startArrow=none;html=1;strokeColor=#000000;rounded=0;dashed=1;dashPattern=6 6;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="850.0" y="425" as="sourcePoint"/>
+        <mxPoint x="480.0" y="425" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell><mxCell id="msg_5_label" value="5. mostrar datos y catálogo de ejercicios" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="490.0" y="399" width="350.0" height="24" as="geometry"/>
+    </mxCell><mxCell id="msg_6" value="" style="endArrow=block;endFill=1;startArrow=none;html=1;strokeColor=#000000;rounded=0;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="110.0" y="485" as="sourcePoint"/>
+        <mxPoint x="480.0" y="485" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell><mxCell id="msg_6_label" value="6. seleccionar ejercicios" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="120.0" y="459" width="350.0" height="24" as="geometry"/>
+    </mxCell><mxCell id="msg_7" value="" style="endArrow=block;endFill=1;startArrow=none;html=1;strokeColor=#000000;rounded=0;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="110.0" y="540" as="sourcePoint"/>
+        <mxPoint x="480.0" y="540" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell><mxCell id="msg_7_label" value="7. configurar frecuencia, series y repeticiones" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="120.0" y="514" width="350.0" height="24" as="geometry"/>
+    </mxCell><mxCell id="msg_8" value="" style="endArrow=block;endFill=1;startArrow=none;html=1;strokeColor=#000000;rounded=0;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="480.0" y="595" as="sourcePoint"/>
+        <mxPoint x="850.0" y="595" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell><mxCell id="msg_8_label" value="8. enviarRutina(datosRutina)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="490.0" y="569" width="350.0" height="24" as="geometry"/>
+    </mxCell><mxCell id="msg_9" value="" style="endArrow=block;endFill=1;startArrow=none;html=1;strokeColor=#000000;rounded=0;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="850.0" y="650" as="sourcePoint"/>
+        <mxPoint x="1220.0" y="650" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell><mxCell id="msg_9_label" value="9. validarRutina(datosRutina)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="860.0" y="624" width="350.0" height="24" as="geometry"/>
+    </mxCell><mxCell id="msg_10" value="" style="endArrow=block;endFill=1;startArrow=none;html=1;strokeColor=#000000;rounded=0;dashed=1;dashPattern=6 6;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="1220.0" y="705" as="sourcePoint"/>
+        <mxPoint x="850.0" y="705" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell><mxCell id="msg_10_label" value="10. rutina válida" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="860.0" y="679" width="350.0" height="24" as="geometry"/>
+    </mxCell><mxCell id="msg_11" value="" style="endArrow=block;endFill=1;startArrow=none;html=1;strokeColor=#000000;rounded=0;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="850.0" y="765" as="sourcePoint"/>
+        <mxPoint x="1220.0" y="765" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell><mxCell id="msg_11_label" value="11. crearRutina(datosRutina)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="860.0" y="739" width="350.0" height="24" as="geometry"/>
+    </mxCell><mxCell id="msg_12" value="" style="endArrow=block;endFill=1;startArrow=none;html=1;strokeColor=#000000;rounded=0;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="1220.0" y="820" as="sourcePoint"/>
+        <mxPoint x="1590.0" y="820" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell><mxCell id="msg_12_label" value="12. guardar rutina" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="1230.0" y="794" width="350.0" height="24" as="geometry"/>
+    </mxCell><mxCell id="msg_13" value="" style="endArrow=block;endFill=1;startArrow=none;html=1;strokeColor=#000000;rounded=0;dashed=1;dashPattern=6 6;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="1590.0" y="875" as="sourcePoint"/>
+        <mxPoint x="1220.0" y="875" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell><mxCell id="msg_13_label" value="13. confirmación" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="1230.0" y="849" width="350.0" height="24" as="geometry"/>
+    </mxCell><mxCell id="msg_14" value="" style="endArrow=block;endFill=1;startArrow=none;html=1;strokeColor=#000000;rounded=0;dashed=1;dashPattern=6 6;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="1220.0" y="930" as="sourcePoint"/>
+        <mxPoint x="850.0" y="930" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell><mxCell id="msg_14_label" value="14. rutina creada" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="860.0" y="904" width="350.0" height="24" as="geometry"/>
+    </mxCell><mxCell id="msg_15" value="" style="endArrow=block;endFill=1;startArrow=none;html=1;strokeColor=#000000;rounded=0;dashed=1;dashPattern=6 6;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="850.0" y="985" as="sourcePoint"/>
+        <mxPoint x="480.0" y="985" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell><mxCell id="msg_15_label" value="15. mostrar rutina asignada" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="490.0" y="959" width="350.0" height="24" as="geometry"/>
+    </mxCell><mxCell id="msg_16" value="" style="endArrow=block;endFill=1;startArrow=none;html=1;strokeColor=#000000;rounded=0;dashed=1;dashPattern=6 6;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="480.0" y="1040" as="sourcePoint"/>
+        <mxPoint x="110.0" y="1040" as="targetPoint"/>
+      </mxGeometry>
+    </mxCell><mxCell id="msg_16_label" value="16. asignación confirmada" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="120.0" y="1014" width="350.0" height="24" as="geometry"/>
+    </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
