@@ -1,0 +1,69 @@
+CÓDIGO: FAM-04
+PERFIL: Familiar o cuidador de paciente
+TIPO: Entrevista
+
+Buenas tardes. Antes de comenzar con las preguntas le voy a presentar el consentimiento informado. El objetivo de este documento es dar la información necesaria para que usted decida si acepta participar en la investigación para el desarrollo de un sistema de gestión de terapia física, a cargo del docente de la materia de Ingeniería de Requerimientos. La entrevista es con fines puramente académicos y educativos para levantar requerimientos. 
+
+¿Me otorgaría su consentimiento para realizar la grabación de la llamada y el audio?
+
+Ah, sí, sí, claro. No hay problema, estoy de acuerdo.
+
+Listo, muchas gracias. Vamos con la primera pregunta: ¿Ha ayudado o acompañado a algún familiar durante un proceso de terapia física o rehabilitación?
+
+Sí, a ver... o sea, estuve apoyando a mi mamá hace como dos años, creo. Ella tuvo una lesión media fea en la rodilla. Y bueno, la acompañaba a las citas del centro y más que nada en la casa, ¿no? Porque le mandaron bastantes ejercicios y al principio como que se le traspapelaba todo, no se acordaba bien.
+
+Segunda pregunta: ¿Qué tipo de ayuda suele necesitar esa persona para cumplir los ejercicios indicados en casa?
+
+Mmm... más que nada que uno le esté acordando la hora, porque se le pasaba el día en otras cosas y se olvidaba. También ayudarle a mover las cosas, la silla, ponerle la colchoneta en el piso... Y leerle la hoja del doctor, porque la verdad la letra estaba súper chiquita y ella no entendía si eran tres series o cuántas veces tenía que doblar la pierna, entonces yo le leía.
+
+Pregunta tres: ¿Qué dificultades ha observado para recordar los ejercicios, repeticiones, horarios o indicaciones?
+
+Lo que más pasaba era que confundía las repeticiones. Decía "oye, ¿este era de diez o de catorce?". O a veces no sabía si el movimiento era rápido o despacio. También la hoja donde anotaban todo a veces se le perdía o no nos acordábamos si x ejercicio le tocaba todos los días o día por medio.
+
+Cuarta pregunta: ¿Ha observado alguna vez que la persona no recuerde correctamente cómo realizar un ejercicio?
+
+Sí, varias veces. Una vez me acuerdo que estaba haciendo un estiramiento de pierna pero estaba girando la cadera así como de lado, medio raro, y yo le dije "oye, me parece que así no era". Pero como yo tampoco soy fisioterapeuta nos quedamos en la duda de si lo estaba haciendo bien o si se podía lastimar. Al final prefirió no hacerlo y esperar a la siguiente consulta.
+
+Siguiente pregunta: ¿Qué información considera que ayudaría al familiar o cuidador a apoyar mejor al paciente?
+
+A mí me serviría que la app muestre solo lo del día, bien directo. O sea, el nombre del ejercicio, las repeticiones y capaz un video súper cortito de cómo se hace. Y no sé, una nota pequeña que diga "cuidado con doblar mucho la espalda", cositas así básicas para que si yo la veo haciendo mal, la pueda corregir.
+
+Sexta pregunta: ¿Considera útil recibir recordatorios cuando el paciente tiene ejercicios pendientes y por qué?
+
+Sí, pero o sea, no a cada rato. Que primero le llegue la notificación a ella a su celular. Si ya pasan, no sé, un par de horas y ella no ha hecho nada o no ha marcado que ya cumplió, ahí recién que me mande un aviso a mí. Así yo le digo "oye, acuérdate de la rutina". Porque si me llegan notificaciones a mí a cada rato, la verdad uno se cansa y termina ignorando el teléfono.
+
+Pregunta siete: ¿Qué información sobre el progreso del paciente considera que debería poder ver un familiar autorizado?
+
+Algo sencillo, un resumen básico. Como un calendario con días en verde si cumplió o en rojo si no lo hizo, y si tuvo algún problema. Tampoco necesito saber los detalles médicos ni qué músculo le dolía exactamente, solo ver si está siendo constante o si necesita que la motive un poco.
+
+Octava pregunta: ¿Qué preocupación tendría respecto al uso de cámara, imágenes o videos durante los ejercicios?
+
+A ver, ahí sí me daría un poco de recelo si la cámara se queda prendida todo el tiempo o si graba partes de la casa que nada que ver. Debería activarse únicamente cuando ella le dé clic a empezar el ejercicio y que salga un ícono rojo bien claro avisando que está grabando. Y que esos videos no se queden guardados en cualquier lado, obviamente.
+
+Pregunta nueve: ¿Cómo debería solicitarse el permiso del paciente antes de compartir información con un familiar?
+
+Que el sistema le pregunte directamente a ella en la pantalla. Tipo un mensaje que diga "¿Quieres darle acceso a fulanito?" y que le deje marcar casillas. Por ejemplo: "Ver si hizo los ejercicios: Sí/No", "Recibir alertas: Sí/No". Que ella controle qué comparte y qué no.
+
+Décima pregunta: Si el paciente revoca ese permiso, ¿considera que el familiar debería perder inmediatamente el acceso?
+
+Sí, de una. Si ella quita el permiso, a mí se me debería cerrar esa pantalla al instante y no dejarme ver nada más. La privacidad de ella está primero, así yo sea su familiar.
+
+Pregunta once: ¿Qué tan sencilla tendría que ser una aplicación para que la pueda utilizar una persona con poca experiencia tecnológica?
+
+Súper intuitiva, la verdad. Letras grandes, botones claros y que al entrar no haya mil opciones, sino lo principal: "Hacer ejercicios de hoy" y "Ver avance". Si le ponen menús raros o botones chiquitos, la gente mayor se traba y ya no la quiere usar.
+
+Pregunta doce: Si la información sobre el paciente debe mostrarse clara, ¿qué datos necesitaría ver y cómo deberían presentarse?
+
+Cosas puntuales: la fecha, el estado de la rutina —si está hecha, pendiente o no la hizo— y si saltó alguna alerta. Todo con palabras normales, sin esos términos médicos raros que usan los doctores.
+
+Pregunta trece: Si una alerta debe enviarse ante una situación importante, ¿qué situaciones concretas deberían activarla?
+
+Bueno, si ella aplasta un botón de "necesito ayuda", si marca que sintió un dolor muy fuerte haciendo un ejercicio, o si lleva dos días seguidos sin entrar a la aplicación. Cuestiones así de peso. Si solo le dolió un poquito o estaba cansada, eso que quede anotado en el sistema pero no para mandarme una alerta urgente.
+
+Última pregunta: Para cerrar, ¿qué función no debería faltar para ayudar al paciente sin invadir su privacidad?
+
+Un botón directo para pedir ayuda a la familia y la lista de ejercicios del día. Con eso uno como familiar apoya bastante sin andar revisando las conversaciones privadas con el fisioterapeuta ni su historia médica.
+
+Listo, eso sería todo por la entrevista. Le agradezco mucho por su tiempo y por sus respuestas, nos van a servir bastante para el proyecto.
+
+No, de nada, un gusto. Ojalá les vaya bien con el proyecto.

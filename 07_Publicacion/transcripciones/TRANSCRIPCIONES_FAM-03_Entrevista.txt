@@ -1,0 +1,45 @@
+CÓDIGO: FAM-03
+PERFIL: Familiar o cuidador de paciente
+TIPO: Entrevista
+
+Hoy voy a hacer unas preguntas sobre nuestro proyecto de sistema de gestión de terapia física. Bueno, lo que le voy a presentar ahorita es el consentimiento informado, el cual tiene el objetivo de documentar y proporcionar la información necesaria para que usted decida si desea participar o no en la investigación relacionada con el desarrollo de un sistema de control de terapia física, realizado bajo la dirección del ingeniero Gleison Cicerón Guerrero Ulloa de la materia de ingeniería de requerimiento. Bueno, usted me da permiso para poder grabar lo que es la pantalla de la conversación en el instante. 
+
+Hola, buenas tardes. Debido a varias cosas no puedo prender lo que es la cámara, pero sí le puedo responder a sus preguntas. Bueno, vamos a iniciar con la primera pregunta. 
+
+Ha ayudado o acompañado a algún familiar durante un proceso de terapia física o rehabilitación? Sí, he acompañado a un familiar durante la rehabilitación y varias veces estuve muy pendiente a él, de que hiciera los ejercicios que le mandaron dentro de casa. También ayudaba a organizar los espacios y a recordar algunas indicaciones cuando tenía dudas. Segunda pregunta, ¿qué tipo de ayuda suele necesitar esa persona para cumplir los ejercicios indicados en casa? Principalmente lo que necesita es que le recuerden la hora, que prepare un lugar cómodo y que alguien le confirme cuál es el ejercicio que sigue. 
+
+En algunos movimientos también necesitamos lo que es el apoyo para acomodarse o sentirse más seguro. Pero trato de no hacer ejercicio por él. Pregunta número 3, ¿qué dificultades ha observado para recordar los ejercicios, repeticiones, horarios o indicaciones? Lo que más he visto es que se confunden las series y repeticiones o no recuerdan un ejercicio.
+
+Eran todos los días o solo ciertos días. También pasa cuando le dan una indicación, se explicó en consulta y llega a casa y ya no se recuerda exactamente lo que hace. Pregunta 4, ¿ha observado alguna vez que la persona no recuerde correctamente cómo realizar un ejercicio? Sí, en una ocasión recordaba el ejercicio, pero no la posición correcta de la pierna y lo estaba haciendo diferente. 
+
+O como se había enseñado, tuvimos que detenernos y revisar una foto y las indicaciones antes de continuar. Pregunta 5, ¿qué información considera que ayudaría al familiar o cuidador a apoyar mejor la información del paciente? Me ayudaría a poder ver la rutina del día, el orden de los ejercicios y las repeticiones, los descansos de alguna manera o video en corto que muestre cómo se hacen. También sería importante saber en qué situaciones debo ayudar y cuando es mejor el paciente se detenga.
+
+Pregunta 6, ¿considera útil recibir recordatorios cuando el paciente tiene ejercicios pendientes y por qué? Sí, porque a veces uno también está ocupado y puede olvidar preguntar al paciente si ya hizo la rutina. Un recordatorio serviría para apoyar si está preguntando todo el tiempo, especialmente si el ejercicio ya está atrasado. Pregunta 7, ¿qué información sobre el progreso del paciente considera que debería poder verse? ¿Podría haber un familiar autorizado? Debería poder ver si la rutina del día está pendiente, iniciada o complementada. 
+
+Y un resumen sencillo del cumplimiento de los últimos días. Si el paciente lo autoriza, también podría haber un registro, una molestia que se requiera apoyo. Pero no creo que necesite ver toda la información clínica. 
+
+Pregunta 8, ¿qué información considera que debería permanecer únicamente entre el paciente y el fisicoterapeuta? El diagnóstico detallado, notas personales del fisicoterapeuta, medicamentos, imágenes clínicas y comentarios que el paciente quiera mantener privado. Debería quedar entre ellos. El familiar no solo debería ver lo necesario para ayudar con la rutina y las seguridad. 
+
+Pregunta 9, ¿qué debería ocurrir si el paciente registra mucho dolor, fatiga o alguna dificultad durante una rutina? Si registra un dolor fuerte, mucha fatiga o mareo con una dificultad no permite continuar la aplicación. Debería indicarle que se tenga y registrar lo ocurrido. Dependiendo de la gravedad, también debería avisar al fisicoterapeuta o al contacto autorizado. 
+
+Pregunta número 10, ¿considera útil que el familiar autorizado reciba una alerta en algunas situaciones? ¿En cuáles? Si me pareciera útil que recibiera una alerta si el paciente reporta dolor muy alto, una caída de mareo, dificultad para respirar o necesita ayuda durante la rutina. No quisiera recibir alerta por cosas pequeñas para que las importantes no se pierdan. ¿Qué preocupación tendría respecto al uso de cámara, imágenes o videos durante los ejercicios? Me preocuparía que la cámara se active sin que el paciente se dé cuenta o que se guarden imágenes de casa o de su cuerpo sin necesidad. 
+
+Debería estar apagada por defecto y explicar claramente cuándo se usa para que si el video se guardara. Pregunta número 12, ¿cómo debería solicitar el permiso del paciente antes de compartir información con un familiar? El paciente debería recibir una solicitud clara donde se indique que el familiar tendrá acceso y exactamente qué información podrá ver. Tendría que aceptar de forma voluntaria y poder revisar ese permiso después sin que se active automáticamente. 
+
+Si el paciente revoca ese permiso, ¿considera que el familiar debería perder inmediatamente el acceso? Si el paciente se retira el permiso y el familiar debería dejar de ver la información de ese momento. También sería bueno que el paciente vea quién tiene el acceso actualmente y pueda volver a actualizarlo más adelante si lo necesita. Pregunta 14, ¿qué tan sencilla tendría que ser una aplicación para que pueda utilizar una persona con poca experiencia tecnológica? Debería ser bastante sencilla. 
+
+Al entrar tendría que mostrar sólo las opciones principales con las letras grandes y botones claros. Para revisar si la rutina está pendiente o ver una alerta, no debería tener y entrar en muchos menús ni realizar más de dos o tres pasos. Pregunta número 15, ¿qué función considera más importante para ayudar al paciente a seguir correctamente su tratamiento en casa? Para mí lo más importante sería una combinación entre la rutina clara y los recordatorios porque eso nos ayuda a que el paciente sepa qué hacer y qué no se le pase. 
+
+Como el familiar, también considero que es importante recibir una alerta solamente cuando realmente necesita apoyo. Pregunta 16, usted mencionó que la aplicación debería ser sencilla de usar, ¿qué tareas debería poder completar sin ayuda y en cuántos pasos como máximo? Yo debería poder abrir la aplicación, ver si la rutina está pendiente, revisar una alerta y confirmar que la visen ayuda. Para esas tareas principalmente dos o tres pasos como máximo serían suficientes. 
+
+Pregunta 17, cuando habla de recibir recordatorio a tiempo, ¿con cuánta anticipación o retraso le servirían y por qué medio preferiría recibirlo? Me serviría que el paciente reciba primero su recordatorio y su después. De unos 30 minutos la rutina sigue pendiente que llegue un aviso al familiar autorizado. Preferiría una notificación del teléfono con un mensaje corto y fácil de entender. 
+
+Pregunta 18, si la información sobre el paciente debería mostrar clara, ¿qué datos necesitaría ver y cómo deberían presentarse? Necesitaría ver la fecha del estado de la rutina, si fue completada y si existe alguna alerta que requiera ayuda. Lo mostraría con texto sencillo, letras grandes y datos fáciles de reconocer, sin términos médicos que puedan confundirme. Pregunta 19, cuando habla de un acceso seguro, ¿cómo debería autorizar el paciente y qué debería ocurrir cuando rebusca el permiso? El paciente debería seleccionar al familiar y aceptar qué datos pueden ver y confirmar el permiso. 
+
+Si luego se rebusca el acceso, debería cerrarse inmediatamente y queda registrado. El cambio para que no exista duda de cuándo se retiró. Pregunta 20, si una alerta debe enviarse ante una situación importante, ¿qué situaciones concretas deberían activarla? Debería activarla un dolor muy fuerte, una caída, mareo intenso, dificultad para respirar, la incapacidad para continuar o una solicitud directa de ayuda del paciente. 
+
+Una molestia leve podría registrarse sin generar una alerta urgente. Pregunta 21, si el apoyo del familiar debe ser completo, ¿qué funciones no deberían faltar para ayudar al paciente sin invadir su privacidad? No debería faltar la posibilidad de ver la rutina pendiente, recibir recordatorios cuando corresponda, consultar instrucciones básicas de apoyo, recibir alertas importantes y saber a quién contactar. Todo lo demás debería depender del permiso que haya dado el paciente.
+
+Le quiero agradecer mucho por la entrevista que me acabas de dar, como la que haría anteriormente, o le vengo a decir ahorita, que la entrevista y la grabación va a ser técnicamente utilizada solo con fines educativos para realizar el programa. No se va a utilizar imagen o grabación para algún otro tema para la carrera. Y le quería agradecer y muchas gracias por su entrevista.
+
+Gracias a ti igualmente.

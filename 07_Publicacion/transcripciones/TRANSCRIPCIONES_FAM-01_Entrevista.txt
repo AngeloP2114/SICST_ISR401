@@ -1,0 +1,49 @@
+CÓDIGO: FAM-01
+PERFIL: Familiar o cuidador de paciente
+TIPO: Entrevista
+
+Listo, el día de hoy vamos a hacer lo que es la entrevista a la siguiente familiar que ha tenido de un paciente que ha estado en fisioterapia. Primero comenzamos explicando lo que es nuestro proyecto, el cual es un sistema de gestión de terapia física en el cual va a hacer seguimientos con la cámara y mediante la inteligencia artificial se va a ver que se cumplan estos movimientos. Primero que nada quería pedirle lo que es el consentimiento para la grabación del vídeo, audio y todo esto con fin educativo para poder obtener requerimientos y poder ver las necesidades para nuestro proyecto. 
+
+¿Me daría el consentimiento? Sí, estoy de acuerdo. Listo, ahora vamos a lo que son las preguntas. Vamos primero a la primera pregunta que es ¿qué dificultades usted observó durante la recuperación de su familiar? Sí, una dificultad que recuerdo bastante era que mi familiar sabía que tenía que hacer los ejercicios pero siempre recordaba los detalles, no siempre los recordaba. 
+
+A veces preguntaba cuántas repeticiones eran o qué movimiento debían hacer más lento. También había días que quería ayudar pero no siempre se sabe lo que está diciendo es correcto. Y otra dificultad era que al notar el avance, porque en caso no teníamos una forma clara de comparar cómo estaba una semana con otra. 
+
+Listo, seguimos con la siguiente pregunta que es ¿era sencillo comprender las indicaciones del fisioterapeuta? Bueno, en el momento de la consulta parecía sencillo porque el fisioterapeuta mostraba los ejercicios y explicaba qué hacer. El problema aparecía después cuando ya estábamos en la casa y había que recordar varias indicaciones. Algunas cosas sí quedaban como claras pero otras como que se confundían, sobre todo especialmente las repeticiones, los descansos o la posición exacta. 
+
+Y si había varios ejercicios que era más fácil olvidar alguno, creo que las instrucciones disponibles después de la consulta había evitado muchas dudas y también habría hecho de que mi familia se sintiera más seguro al realizar su rutina sola. Listo, seguimos con la tercera pregunta que es ¿qué era lo más difícil al continuar los ejercicios en casa? Lo más difícil era si estaba haciendo correctamente. Yo podía estar al lado y recordarle que hice la rutina, solo no tengo conocimientos como para corregir una postura, decir si el movimiento está adecuado o no. 
+
+Y también costaba mantener el horario porque si tenía otras cosas que hacer y iba dejando los ejercicios para más tarde. Y en algunas ocasiones sentía molesto y no sabíamos si era algo esperado o si tenía que detenerse. Y también esa incertidumbre hacía que a veces prefiriera no hacer ejercicio hasta la siguiente consulta.
+
+Listo, seguimos con la siguiente pregunta que es ¿serían útiles los videos explicativos para esto? Sí, serían muy útiles. Creo que ver nuevamente cómo la persona realiza el ejercicio ayudaría más que tener solamente el nombre escrito. El video podría mostrar la posición correcta, la cantidad de repeticiones y algún error que tal vez se debe evitar. 
+
+Y también sería bueno podermos que el video muestra la posición correcta, como la actividad con pausarlo y repetirlo. Para un familiar también sería una ayuda porque así podríamos acompañar al paciente mirando la misma referencia en lugar de tratar de recordar lo que vimos durante la sesión. Mientras más corto y claro sea el video, sería más fácil utilizarlo todos los días.
+
+Listo, seguimos con la siguiente pregunta que es ¿serían útiles los recordatorios? Sí, principalmente porque con el tiempo es fácil que la rutina deje de ser una prioridad. Un recordatorio podría ayudar a mantener el hábito, especialmente si la persona tiene muchos compromisos. Y también me gustaría que fueran demasiados avisos, pero uno en la hora que el paciente haya elegido. 
+
+También podría funcionar para los familiares autorizados cuando la persona necesita ayuda para organizarse. Creo que el objetivo no sería controlar al paciente, sino evitar que simplemente se olvide y después llegue a la siguiente consulta sin haber cumplido la mayor parte del repariento en caso. Listo, seguimos con lo siguiente que es ¿qué debería mostrar un recordatorio? Bueno, yo pondría el nombre de la rutina o el ejercicio, la hora, las repeticiones que corresponden y cuánto tiempo aproximadamente va a tomar. 
+
+También un botón para abrir directamente la explicación del video y si necesita algún material como una banda, una pelota o bueno, también sería bueno indicar eso. Y podría tener opciones como realizar ahora, recordar más tarde o la de no puedo utilizarlo. Si marca que no puede, la aplicación podría preguntar el motivo para que el buceo terapeuta tenga esa información y no parece que simplemente el paciente decidió usar la rutina.
+
+Listo, seguimos con lo siguiente que es ¿qué debería ocurrir si se registra un dolor elevado? Bueno, si el dolor es elevado, yo considero que la aplicación debería pedir que detenga el ejercicio y mostrar una advertencia clara para que después podría notificar al fisioterapeuta o indicar que se comunique con él. No creo que la aplicación deba decir que continúe como si nada, cuando el propio paciente está indicando que siente mucho dolor. También sería útil registrar en qué ejercicio ocurrió, para que así el profesional pueda entender mejor la situación. 
+
+Si el dolor es muy diferente de lo habitual, debería tratarse como algo que requiere revisión y no solo como un dato más. Listo, seguimos con la siguiente pregunta que es ¿debería recibir alertas familiares? Sí, pero siempre dependiendo de lo que el paciente haya autorizado. Si estoy ayudando a una persona mayor, me parecería útil recibir una alerta si registra mucho dolor, si necesita ayuda o si ocurre algo más importante de nuestra rutina.
+
+No necesitaría recibir cada detalle del tratamiento. Las alertas deberían centrarse en situaciones donde realmente pueda ayudar. También creo que el paciente debería poder recibir cuáles avisos llegan al familiar, porque hay personas que prefieren manejar su tratamiento de forma más privada, aunque tengan familiares cercanos.
+
+Listo, seguimos con la siguiente que es ¿qué información del progreso le gustaría poder consultar? Bueno, a mí me gustaría consultar un resumen sencillo. Si está cumpliendo las rutinas, qué días realizó y si existe alguna dificultad importante. También podría ver una gráfica, una gráfica siempre del progreso, siempre que el paciente lo permita, claro.
+
+Bueno, tampoco necesito conocer todos los detalles médicos ni las notas del fisioterapeuta. Como familiar, me interesaría saber si está siguiendo el plan y si hay algo en que yo lo pueda ayudar. Una información demasiado técnica tampoco sería útil para alguien que no tiene mucha información en la salud.
+
+Listo, seguimos con la siguiente pregunta que es ¿qué debería permanecer privado? Creo que debería permanecer privado la información médica un poco más detallada, como diagnósticos o notas personales del fisioterapeuta y las conversaciones que el paciente quiera mantener solo con el profesional. También los videos, imágenes deberán tener una protección especial. Y porque ser familiar no significa automáticamente tener derecho a revisar todo. 
+
+La aplicación debería separar la información necesaria para apoyar al paciente de la clínica completa. Eso permitiría acompañarlo sin quitar la privacidad. Si el paciente quiere compartir más información, debería poder hacerlo de forma voluntaria y saber exactamente qué está autorizando.
+
+Listo, seguimos con lo siguiente que es ¿quién debería decidir qué familiar puede acceder? Pues el propio paciente debería decidirlo. Aunque una persona sea hijo, pareja o hermano, pienso que el paciente debe autorizar el acceso. La aplicación podría permitir, como leccionaron familiar, decidir qué puede ver y retirar el permiso cuando quiera.
+
+Si el paciente tiene dificultades para manejar la tecnología, podría recibir ayuda para configurar el acceso. Pero la decisión debería seguir siendo suya, siempre que pueda tomarla. También sería bueno que el sistema muestre claramente quién tiene acceso en ese momento para evitar que los permisos queden activos sin que la persona lo recuerde.
+
+Listo, seguimos con lo siguiente que es ¿qué opina del uso de la cámara? No me parece malo si realmente ayuda a revisar la forma de hacer el ejercicio. Pero me preocuparía que la cámara permanezca grabando o que los videos se guarden sin necesidad. Preferiría que se active solamente cuando la persona vaya a realizar un ejercicio en concreto y que exista un indicador visible.
+
+También debería explicarse qué información se analiza. Si no es necesario guardar el video completo, mejor para mí, pero la confianza dependería mucho de que el paciente tenga el control.
+
+Listo, seguimos con lo siguiente que es ¿cómo debería ser una aplicación para personas mayores? Debería ser sencilla, clara, con letras grandes, botones visibles y pocas opciones en cada pantalla. Gracias.
