@@ -1,0 +1,87 @@
+<mxfile host="Electron" agent="ChatGPT">
+  <diagram id="deployment" name="DD-02_Despliegue_Aplicacion_Fisioterapeuta">
+    <mxGraphModel dx="1206" dy="801" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1900" pageHeight="1400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=20;fontStyle=1;fontColor=#000000;" value="DD-02 — Despliegue de la aplicación del fisioterapeuta" vertex="1">
+          <mxGeometry height="40" width="1400" x="250" y="15" as="geometry" />
+        </mxCell>
+        <mxCell id="pc" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="«device» PC / Laptop del Fisioterapeuta" vertex="1">
+          <mxGeometry height="280" width="390" x="110" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="browser" parent="1" style="shape=document;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=11;" value="Navegador web" vertex="1">
+          <mxGeometry height="70" width="220" x="190" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="fis_client" parent="1" style="shape=document;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=11;" value="Cliente SICST Fisioterapeuta" vertex="1">
+          <mxGeometry height="70" width="250" x="175" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="server" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=13;fontStyle=1;" value="«node» Servidor SICST" vertex="1">
+          <mxGeometry height="430" width="420" x="790" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="api" parent="1" style="shape=component;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=11;" value="API Backend" vertex="1">
+          <mxGeometry height="75" width="220" x="890" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="clinical" parent="1" style="shape=component;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=11;" value="Servicios clínicos" vertex="1">
+          <mxGeometry height="75" width="220" x="890" y="355" as="geometry" />
+        </mxCell>
+        <mxCell id="alerts" parent="1" style="shape=component;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=11;" value="Alertas / recomendaciones" vertex="1">
+          <mxGeometry height="75" width="280" x="860" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="data" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=13;fontStyle=1;" value="«node» Servidor de datos" vertex="1">
+          <mxGeometry height="300" width="330" x="1330" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="db" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=11;" value="BD SICST" vertex="1">
+          <mxGeometry height="100" width="220" x="1400" y="255" as="geometry" />
+        </mxCell>
+        <mxCell id="report" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=13;fontStyle=1;" value="«node» Servicio de reportes" vertex="1">
+          <mxGeometry height="240" width="330" x="1330" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="pdf" parent="1" style="shape=document;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=11;" value="Reportes / exportaciones" vertex="1">
+          <mxGeometry height="80" width="220" x="1385" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="browser" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="fis_client" value="ejecuta">
+          <mxGeometry relative="1" x="-0.7778" y="10" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="fis_client" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="api" value="HTTPS">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="440" y="465" />
+              <mxPoint x="440" y="300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="api" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="clinical" value="invoca">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="clinical" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="db" value="CRUD clínico">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1255" y="392.5" />
+              <mxPoint x="1255" y="320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="alerts" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="db" value="consulta indicadores">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1310" y="567.5" />
+              <mxPoint x="1310" y="340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="api" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="pdf" value="genera / descarga">
+          <mxGeometry relative="1" x="0.4766" y="10" as="geometry">
+            <mxPoint y="1" as="offset" />
+            <Array as="points">
+              <mxPoint x="1190" y="297.5" />
+              <mxPoint x="1190" y="760" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,72 @@
+<mxfile host="Electron" agent="ChatGPT">
+  <diagram id="deployment" name="DD-06_Despliegue_Red_Seguridad">
+    <mxGraphModel dx="993" dy="660" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1900" pageHeight="1400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=20;fontStyle=1;fontColor=#000000;" value="DD-06 — Despliegue de red y seguridad" vertex="1">
+          <mxGeometry height="40" width="1400" x="250" y="15" as="geometry" />
+        </mxCell>
+        <mxCell id="client_p" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="«device» Cliente Paciente" vertex="1">
+          <mxGeometry height="210" width="300" x="90" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="client_f" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="«device» Cliente Fisioterapeuta" vertex="1">
+          <mxGeometry height="210" width="300" x="90" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="edge" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=13;fontStyle=1;" value="«node» Punto de entrada seguro" vertex="1">
+          <mxGeometry height="320" width="360" x="600" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="https" parent="1" style="shape=component;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=11;" value="HTTPS / TLS" vertex="1">
+          <mxGeometry height="70" width="220" x="670" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="auth" parent="1" style="shape=component;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=11;" value="Autenticación / Token" vertex="1">
+          <mxGeometry height="70" width="220" x="670" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="app" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=13;fontStyle=1;" value="«node» Servidor SICST" vertex="1">
+          <mxGeometry height="260" width="380" x="1160" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="api" parent="1" style="shape=component;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=11;" value="API Backend" vertex="1">
+          <mxGeometry height="80" width="220" x="1240" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="dbn" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=13;fontStyle=1;" value="«node» Zona de datos" vertex="1">
+          <mxGeometry height="250" width="380" x="1160" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="db" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=11;" value="Base de datos" vertex="1">
+          <mxGeometry height="100" width="220" x="1240" y="755" as="geometry" />
+        </mxCell>
+        <mxCell id="n1" parent="1" style="shape=note;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=10;" value="Principio: los clientes no acceden directamente a la base de datos." vertex="1">
+          <mxGeometry height="110" width="360" x="600" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="client_p" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="https" value="HTTPS">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="530.06" y="335.06" />
+              <mxPoint x="530.06" y="390" />
+              <mxPoint x="780.06" y="390" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="client_f" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="https" value="HTTPS">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="520.06" y="765.06" />
+              <mxPoint x="520.06" y="490" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="https" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="auth" value="valida sesión">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="auth" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="api" value="solicitud autorizada">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;" value="conexión interna">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1450" y="390" as="sourcePoint" />
+            <mxPoint x="1450" y="755" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,104 @@
+<mxfile host="Electron" agent="ChatGPT">
+  <diagram id="deployment" name="DD-00_Despliegue_General_SICST">
+    <mxGraphModel dx="1688" dy="1122" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1900" pageHeight="1400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=20;fontStyle=1;fontColor=#000000;" value="DD-00 — Despliegue general del SICST" vertex="1">
+          <mxGeometry height="40" width="1400" x="250" y="15" as="geometry" />
+        </mxCell>
+        <mxCell id="dev_pac" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="«device» Dispositivo del Paciente Móvil / PC" vertex="1">
+          <mxGeometry height="220" width="330" x="90" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="art_pac" parent="1" style="shape=document;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=11;" value="Aplicación Paciente HTML/CSS/JS o cliente web" vertex="1">
+          <mxGeometry height="80" width="220" x="145" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="dev_fis" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="«device» Equipo del Fisioterapeuta PC / Laptop" vertex="1">
+          <mxGeometry height="220" width="330" x="90" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="art_fis" parent="1" style="shape=document;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=11;" value="Aplicación Fisioterapeuta HTML/CSS/JS" vertex="1">
+          <mxGeometry height="80" width="220" x="145" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="server" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=13;fontStyle=1;" value="«node» Servidor de Aplicación SICST" vertex="1">
+          <mxGeometry height="400" width="420" x="700" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="api" parent="1" style="shape=component;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=11;" value="API / Backend" vertex="1">
+          <mxGeometry height="80" width="220" x="790" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="auth" parent="1" style="shape=component;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=11;" value="Autenticación / Roles" vertex="1">
+          <mxGeometry height="80" width="220" x="800" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="follow" parent="1" style="shape=component;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=11;" value="Seguimiento / Alertas / Reportes" vertex="1">
+          <mxGeometry height="80" width="280" x="760" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="ai_node" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=13;fontStyle=1;" value="«node» Nodo de IA / Procesamiento" vertex="1">
+          <mxGeometry height="250" width="360" x="1280" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="ai_comp" parent="1" style="shape=component;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=11;" value="Motor IA Análisis de postura" vertex="1">
+          <mxGeometry height="90" width="220" x="1360" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="data_node" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=13;fontStyle=1;" value="«node» Servidor de Datos" vertex="1">
+          <mxGeometry height="280" width="360" x="1280" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="db" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=11;" value="Base de datos SICST" vertex="1">
+          <mxGeometry height="100" width="220" x="1360" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="files" parent="1" style="shape=document;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=11;" value="Evidencia cifrada / backups" vertex="1">
+          <mxGeometry height="70" width="220" x="1350" y="835" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="art_pac" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="api" value="HTTPS / REST">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="art_fis" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="api" value="HTTPS / REST">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="660" y="780" />
+              <mxPoint x="660" y="460" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="api" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="ai_comp" value="solicitudes de análisis">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1130" y="410" />
+              <mxPoint x="1130" y="410" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="ai_comp" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="api" value="resultados">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1469.94" y="320" />
+              <mxPoint x="900.06" y="320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="api" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="db" value="SQL / persistencia">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1230" y="430" />
+              <mxPoint x="1230" y="770" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="follow" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="db" value="lectura / escritura">
+          <mxGeometry relative="1" x="0.3333" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="1460" y="690" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="api" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="files" value="metadatos / evidencia">
+          <mxGeometry relative="1" x="0.3247" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="1170" y="460" />
+              <mxPoint x="1170" y="870" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

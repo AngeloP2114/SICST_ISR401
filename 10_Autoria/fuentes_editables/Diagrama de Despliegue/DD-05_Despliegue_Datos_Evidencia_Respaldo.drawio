@@ -1,0 +1,78 @@
+<mxfile host="Electron" agent="ChatGPT">
+  <diagram id="deployment" name="DD-05_Despliegue_Datos_Evidencia_Respaldo">
+    <mxGraphModel dx="993" dy="660" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1900" pageHeight="1400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=20;fontStyle=1;fontColor=#000000;" value="DD-05 — Despliegue de datos, evidencia cifrada y respaldo" vertex="1">
+          <mxGeometry height="40" width="1400" x="250" y="15" as="geometry" />
+        </mxCell>
+        <mxCell id="app" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=13;fontStyle=1;" value="«node» Servidor SICST" vertex="1">
+          <mxGeometry height="240" width="340" x="100" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="api" parent="1" style="shape=component;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=11;" value="API / Servicios" vertex="1">
+          <mxGeometry height="75" width="220" x="170" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="dbnode" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=13;fontStyle=1;" value="«node» Servidor de Base de Datos" vertex="1">
+          <mxGeometry height="280" width="400" x="650" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="db" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=11;" value="BD relacional SICST" vertex="1">
+          <mxGeometry height="100" width="220" x="750" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="storage" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=13;fontStyle=1;" value="«node» Almacenamiento restringido" vertex="1">
+          <mxGeometry height="280" width="400" x="650" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="enc" parent="1" style="shape=document;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=11;" value="Evidencias cifradas .7z" vertex="1">
+          <mxGeometry height="70" width="220" x="740" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="hash" parent="1" style="shape=document;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=11;" value="Hashes SHA-256" vertex="1">
+          <mxGeometry height="70" width="220" x="740" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="backup" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=13;fontStyle=1;" value="«node» Repositorio de respaldo" vertex="1">
+          <mxGeometry height="320" width="360" x="1260" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="dump" parent="1" style="shape=document;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=11;" value="Dump / exportación de datos" vertex="1">
+          <mxGeometry height="70" width="220" x="1330" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="pkg" parent="1" style="shape=document;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=11;" value="Paquete de replicación" vertex="1">
+          <mxGeometry height="70" width="220" x="1330" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="api" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="db" value="SQL / transacciones">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="270.06" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;" value="evidencia sensible">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="570.06" y="380" />
+              <mxPoint x="570.06" y="710" />
+            </Array>
+            <mxPoint x="390" y="380" as="sourcePoint" />
+            <mxPoint x="740" y="710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="enc" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="hash" value="integridad">
+          <mxGeometry relative="1" x="-0.75" as="geometry">
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="db" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="dump" value="respaldo">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="enc" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="pkg" value="copia cifrada">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="hash" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="pkg" value="manifest">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1489.94" y="855.06" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,67 @@
+<mxfile host="Electron" agent="ChatGPT">
+  <diagram id="deployment" name="DD-01_Despliegue_Aplicacion_Paciente">
+    <mxGraphModel dx="1407" dy="935" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1900" pageHeight="1400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=20;fontStyle=1;fontColor=#000000;" value="DD-01 — Despliegue de la aplicación del paciente" vertex="1">
+          <mxGeometry height="40" width="1400" x="250" y="15" as="geometry" />
+        </mxCell>
+        <mxCell id="phone" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="«device» Móvil del Paciente" vertex="1">
+          <mxGeometry height="280" width="360" x="110" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="browser" parent="1" style="shape=document;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=11;" value="Navegador / WebView" vertex="1">
+          <mxGeometry height="70" width="220" x="180" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="client" parent="1" style="shape=document;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=11;" value="Cliente SICST Paciente" vertex="1">
+          <mxGeometry height="70" width="220" x="180" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="camera" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="«device» Cámara del dispositivo" vertex="1">
+          <mxGeometry height="210" width="360" x="110" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="cam_api" parent="1" style="shape=component;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=11;" value="API de cámara / permisos" vertex="1">
+          <mxGeometry height="70" width="220" x="190" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="server" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=13;fontStyle=1;" value="«node» Servidor SICST" vertex="1">
+          <mxGeometry height="270" width="360" x="800" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="api" parent="1" style="shape=component;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=11;" value="API de sesiones y rutinas" vertex="1">
+          <mxGeometry height="80" width="220" x="880" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="ia" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=13;fontStyle=1;" value="«node» Servicio IA" vertex="1">
+          <mxGeometry height="250" width="320" x="1320" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="pose" parent="1" style="shape=component;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=11;" value="Análisis de postura" vertex="1">
+          <mxGeometry height="80" width="220" x="1370" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="data" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=13;fontStyle=1;" value="«node» Datos" vertex="1">
+          <mxGeometry height="230" width="360" x="800" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="db" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=11;" value="BD progreso / sesiones" vertex="1">
+          <mxGeometry height="100" width="220" x="880" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="browser" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="client" value="ejecuta">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="client" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="cam_api" value="solicita permisos">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="cam_api" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="client" value="capturas">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="client" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="api" value="HTTPS">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="api" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="pose" value="frames / métricas">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="pose" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="api" value="resultado">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="api" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="db" value="guardar progreso">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

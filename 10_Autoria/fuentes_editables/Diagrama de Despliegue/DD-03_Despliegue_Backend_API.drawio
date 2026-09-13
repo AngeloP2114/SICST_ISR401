@@ -1,0 +1,127 @@
+<mxfile host="Electron" agent="ChatGPT">
+  <diagram id="deployment" name="DD-03_Despliegue_Backend_API">
+    <mxGraphModel dx="582" dy="387" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1900" pageHeight="1400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=20;fontStyle=1;fontColor=#000000;" value="DD-03 — Despliegue del backend y servicios de aplicación" vertex="1">
+          <mxGeometry height="40" width="1400" x="250" y="15" as="geometry" />
+        </mxCell>
+        <mxCell id="app_srv" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=13;fontStyle=1;" value="«node» Servidor / Runtime de Aplicación" vertex="1">
+          <mxGeometry height="850" width="650" x="250" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="gateway" parent="1" style="shape=component;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=11;" value="Controladores / API REST" vertex="1">
+          <mxGeometry height="80" width="250" x="450" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="auth" parent="1" style="shape=component;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=11;" value="Servicio de autenticación" vertex="1">
+          <mxGeometry height="80" width="250" x="350" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="patient" parent="1" style="shape=component;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=11;" value="Servicio de pacientes" vertex="1">
+          <mxGeometry height="80" width="250" x="650" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="therapy" parent="1" style="shape=component;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=11;" value="Servicio de terapias" vertex="1">
+          <mxGeometry height="80" width="250" x="300" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="session" parent="1" style="shape=component;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=11;" value="Servicio de sesiones" vertex="1">
+          <mxGeometry height="80" width="250" x="640" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="follow" parent="1" style="shape=component;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=11;" value="Servicio de seguimiento" vertex="1">
+          <mxGeometry height="80" width="250" x="350" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="report" parent="1" style="shape=component;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=11;" value="Servicio de reportes" vertex="1">
+          <mxGeometry height="80" width="250" x="650" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="notif" parent="1" style="shape=component;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=11;" value="Adaptador notificaciones" vertex="1">
+          <mxGeometry height="80" width="250" x="490" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="data" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=13;fontStyle=1;" value="«node» Servidor de Base de Datos" vertex="1">
+          <mxGeometry height="290" width="390" x="1120" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="db" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=11;" value="BD clínica SICST" vertex="1">
+          <mxGeometry height="100" width="220" x="1205" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="ai" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=13;fontStyle=1;" value="«node» Servicio IA" vertex="1">
+          <mxGeometry height="260" width="390" x="1120" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="motor" parent="1" style="shape=component;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=11;" value="Motor de análisis" vertex="1">
+          <mxGeometry height="80" width="230" x="1220" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="gateway" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="auth" value="valida">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="gateway" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="patient" value="rutea">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="775" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="gateway" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="therapy" value="rutea">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="330" y="280" />
+              <mxPoint x="330" y="395" />
+              <mxPoint x="340" y="395" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="gateway" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="session" value="rutea">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="630" y="530" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="session" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="follow" value="métricas">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="775.03" y="649.97" />
+              <mxPoint x="430" y="649.97" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="follow" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="report" value="datos">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="patient" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="db" value="SQL">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="therapy" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="db" value="SQL">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="425" y="600" />
+              <mxPoint x="1340" y="600" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="session" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="db" value="SQL">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="follow" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="db" value="SQL">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="474.97" y="689.97" />
+              <mxPoint x="1350" y="689.97" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="session" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="motor" value="análisis">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1430" y="560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="notif" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="gateway" value="eventos / avisos">
+          <mxGeometry relative="1" x="-0.0707" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="280" y="890" />
+              <mxPoint x="280" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,80 @@
+<mxfile host="Electron" agent="ChatGPT">
+  <diagram id="deployment" name="DD-04_Despliegue_SubSistema_IA">
+    <mxGraphModel dx="993" dy="660" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1900" pageHeight="1400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=20;fontStyle=1;fontColor=#000000;" value="DD-04 — Despliegue del subsistema inteligente" vertex="1">
+          <mxGeometry height="40" width="1400" x="250" y="15" as="geometry" />
+        </mxCell>
+        <mxCell id="device" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="«device» Dispositivo del Paciente" vertex="1">
+          <mxGeometry height="230" width="330" x="90" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="capture" parent="1" style="shape=document;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=11;" value="Módulo captura / cámara" vertex="1">
+          <mxGeometry height="70" width="220" x="150" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="ai" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=13;fontStyle=1;" value="«node» Nodo IA / Procesamiento" vertex="1">
+          <mxGeometry height="700" width="520" x="650" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="pre" parent="1" style="shape=component;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=11;" value="Preprocesamiento" vertex="1">
+          <mxGeometry height="70" width="220" x="800" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="pose" parent="1" style="shape=component;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=11;" value="Estimación de postura" vertex="1">
+          <mxGeometry height="70" width="220" x="800" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="metric" parent="1" style="shape=component;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=11;" value="Cálculo de ángulos y repeticiones" vertex="1">
+          <mxGeometry height="75" width="310" x="755" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="rules" parent="1" style="shape=component;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=11;" value="Motor de reglas terapéuticas" vertex="1">
+          <mxGeometry height="75" width="260" x="780" y="585" as="geometry" />
+        </mxCell>
+        <mxCell id="explain" parent="1" style="shape=component;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=11;" value="Explicabilidad / recomendación" vertex="1">
+          <mxGeometry height="75" width="280" x="770" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="backend" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=13;fontStyle=1;" value="«node» Servidor SICST" vertex="1">
+          <mxGeometry height="240" width="330" x="1350" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="api" parent="1" style="shape=component;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=11;" value="API terapéutica" vertex="1">
+          <mxGeometry height="80" width="220" x="1405" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="audit" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=13;fontStyle=1;" value="«node» Auditoría IA" vertex="1">
+          <mxGeometry height="230" width="330" x="1350" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="log" parent="1" style="shape=document;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=11;" value="Log de inferencias / resultados" vertex="1">
+          <mxGeometry height="80" width="230" x="1400" y="745" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="capture" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="pre" value="frames">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="740" y="425" />
+              <mxPoint x="740" y="285" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="pre" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="pose" value="imagen normalizada">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="pose" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="metric" value="landmarks">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="metric" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="rules" value="métricas">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="rules" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="explain" value="resultado / regla activada">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="explain" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="api" value="feedback">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="explain" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="log" value="registro de salida">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1225" y="770" />
+              <mxPoint x="1225" y="785.06" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
