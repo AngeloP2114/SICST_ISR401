@@ -1,150 +1,66 @@
 # Publicación académica — SICST
 
 Esta carpeta reúne los artefactos de publicación académica del proyecto
-**Sistema Inteligente de Control y Seguimiento de Terapia Física (SICST)**.
+**Sistema Inteligente de Control y Seguimiento de Terapia Física (SICST)**,
+correspondientes al Enfoque 1: comparación empírica de calidad de
+Requisitos Funcionales (RF) elicitados por humanos vs. generados por un
+LLM.
 
 ## Autores actuales
 
 - Contreras Chávez Kevin Germán
-- Zambrano Moya Angelo Paul
+- Zambrano Moya Angelo Paul (ORCID: 0009-0006-0056-8482)
 
 ## Manuscrito científico
 
-El manuscrito final del proyecto se encuentra disponible en:
+El manuscrito final del proyecto se encuentra en:
 
-- `manuscrito_final.pdf`
-- `manuscrito_final.tex`
-- `manuscrito_final_springer.tex`
-- `manuscrito_final.bbl`
-- `references.bib`
-- `README_manuscrito.md`
+- `manuscrito_final.pdf` (8 páginas, compilado)
+- `manuscrito_final.tex` (fuente LaTeX completa)
+- `manuscrito_final.bbl` (bibliografía compilada)
+- `references.bib` (33 entradas, en progreso hacia el mínimo de 40)
 
-La revista objetivo prioritaria documentada para el trabajo es
-**Requirements Engineering (Springer Nature)**.
+**Título:** *An Empirical Comparison of Human-Elicited and LLM-Generated
+Functional Requirements in a Physical Therapy Follow-Up System: A
+Paired-Analyst Study in Ecuador*
 
-El archivo:
+**Revista objetivo:** Requirements Engineering (Springer Nature). El
+análisis completo de revistas objetivo se encuentra en `analisis_revistas.md`.
 
-`manuscrito_final_springer.tex`
+## Diseño del estudio reportado
 
-contiene una versión preparada para adaptación editorial a la plantilla oficial
-de Springer Nature.
-
-Para la evaluación y reproducibilidad del repositorio se utiliza como fuente
-principal:
-
-`manuscrito_final.tex`
-
-porque puede compilarse sin depender de archivos externos de la plantilla
-editorial.
+- **Pregunta de investigación:** ¿Difieren en calidad los RF elicitados
+  por un proceso humano de los generados por un LLM, cuando ambos parten
+  de las mismas transcripciones anonimizadas?
+- **Registro previo:** OSF, DOI [10.17605/OSF.IO/82Q76](https://doi.org/10.17605/OSF.IO/82Q76)
+  (2026-09-12, antes de generar los datos).
+- **Diseño:** comparativo no experimental, ciego, 66 ítems (33 humanos +
+  33 LLM) evaluados por 4 jueces independientes en 5 dimensiones (escala
+  Likert 1-5).
+- **Análisis confirmatorio:** 11 pares con correspondencia temática
+  estricta, prueba t apareada / Wilcoxon con corrección de
+  Holm-Bonferroni.
+- **Hallazgo principal:** acuerdo inter-evaluador bajo (κ de Fleiss entre
+  -0.011 y 0.167); ninguna dimensión mostró diferencia estadísticamente
+  significativa (todos los p ajustados > 0.05).
 
 ## Figuras
 
-Las figuras utilizadas por el manuscrito se encuentran en:
+Las figuras utilizadas por el manuscrito se encuentran en `figuras/`:
 
-`figuras/`
+- `figura_comparacion_pareada.png` — comparación pareada por tema (Figura 1
+  del manuscrito, resultado principal).
+- `figura_perfiles.png`, `figura_saturacion.png`, `figura_subtemas.png` —
+  evidencia descriptiva del corpus cualitativo de 18 entrevistas que
+  alimentó tanto la elicitación humana como la generación por LLM (no son
+  el resultado principal, sirven de contexto del dominio).
 
-Contenido:
-
-- `figura_perfiles.png`
-- `figura_saturacion.png`
-- `figura_subtemas.png`
-
-Las rutas relativas de las figuras deben mantenerse sin cambios para permitir
-la compilación correcta del manuscrito.
-
-## Evidencia utilizada por el manuscrito
-
-El manuscrito se basa en evidencia real y trazable del proyecto SICST.
-
-La versión reproducible actual del cuestionario contiene **79 respuestas codificadas**:
-
-- 62 pacientes o ex pacientes de terapia física;
-- 14 familiares o cuidadores;
-- 3 fisioterapeutas.
-
-El análisis cualitativo principal utiliza **11 entrevistas** y un libro de códigos
-de **12 subtemas**.
-
-La segunda codificación independiente cubre 3 de las 11 entrevistas
-(27,27 % del corpus), con los siguientes resultados:
-
-- 36 decisiones comparadas;
-- 33 acuerdos;
-- 3 desacuerdos;
-- 91,67 % de acuerdo;
-- Cohen κ = 0,7187;
-- IC 95 % bootstrap = [0,3077, 1,0000].
-
-La matriz de trazabilidad vigente contiene **58 trazas documentales**:
-
-- 33 requisitos funcionales;
-- 15 requisitos no funcionales generales;
-- 10 requisitos no funcionales específicos de IA.
+Las rutas relativas de las figuras deben mantenerse sin cambios para
+permitir la compilación correcta del manuscrito.
 
 ## Compilación del manuscrito LaTeX
 
-El manuscrito principal compilable se encuentra en:
-
-`07_Publicacion/manuscrito_final.tex`
-
-La bibliografía utilizada se encuentra en:
-
-`07_Publicacion/references.bib`
-
-Las figuras requeridas se encuentran en:
-
-`07_Publicacion/figuras/`
-
-### Requisitos
-
-Se recomienda utilizar una distribución LaTeX completa, por ejemplo:
-
-- TeX Live;
-- MiKTeX;
-- Overleaf.
-
-El documento utiliza, entre otros, los siguientes paquetes:
-
-- `graphicx`
-- `booktabs`
-- `tabularx`
-- `longtable`
-- `natbib`
-- `hyperref`
-- `caption`
-- `float`
-- `amsmath`
-- `amssymb`
-- `lmodern`
-- `microtype`
-- `geometry`
-- `setspace`
-- `xcolor`
-- `titlesec`
-
-## Compilación desde la raíz del repositorio
-
-Desde la raíz del repositorio ejecutar:
-
-```bash
-cd 07_Publicacion
-pdflatex manuscrito_final.tex
-bibtex manuscrito_final
-pdflatex manuscrito_final.tex
-pdflatex manuscrito_final.tex
-```
-
-El archivo generado será:
-
-`07_Publicacion/manuscrito_final.pdf`
-
-## Compilación desde 07_Publicacion
-
-Si ya se encuentra dentro de la carpeta:
-
-`07_Publicacion/`
-
-ejecutar:
+Desde esta carpeta ejecutar:
 
 ```bash
 pdflatex manuscrito_final.tex
@@ -153,124 +69,78 @@ pdflatex manuscrito_final.tex
 pdflatex manuscrito_final.tex
 ```
 
-La ejecución de `bibtex` genera la bibliografía.
+El PDF resultante es `manuscrito_final.pdf`.
 
-Las dos ejecuciones finales de `pdflatex` permiten resolver correctamente:
+### Paquetes requeridos
 
-- referencias cruzadas;
-- numeración;
-- citas;
-- bibliografía;
-- figuras;
-- referencias internas.
+`graphicx`, `booktabs`, `array`, `tabularx`, `longtable`, `enumitem`,
+`natbib`, `hyperref`, `url`, `caption`, `float`, `setspace`, `xcolor`,
+`amsmath`, `amssymb`, `titlesec`, `microtype` (con `expansion=false` si el
+motor LaTeX no tiene fuentes escalables disponibles).
 
-## Archivos mínimos necesarios para compilar
-
-La estructura mínima requerida es:
+### Archivos mínimos necesarios para compilar
 
 ```text
 07_Publicacion/
 ├── manuscrito_final.tex
 ├── references.bib
 └── figuras/
+    ├── figura_comparacion_pareada.png
     ├── figura_perfiles.png
     ├── figura_saturacion.png
     └── figura_subtemas.png
 ```
 
-No deben cambiarse los nombres de estos archivos ni las rutas relativas utilizadas por el manuscrito.
+## Evidencia utilizada por el manuscrito
 
-## PDF versionado
+Todos los datos, tablas y figuras citados en el manuscrito provienen de
+scripts versionados y reproducibles en `06_Experimento/`:
 
-El repositorio incluye el archivo:
+- Prompt exacto del LLM y confirmación del modelo:
+  `06_Experimento/prompts_llm/prompt_generacion_RF_llm.md`
+- Datos crudos (RF del LLM, hoja de evaluación ciega, 4 evaluaciones):
+  `06_Experimento/datos_crudos/`
+- Matriz de pareo temático: `06_Experimento/datos_procesados/matriz_trazabilidad_tema_RF.csv`
+- Script de análisis reproducible: `06_Experimento/scripts_analisis/analisis_experimento_llm_humano.py`
+- Resultados (Tablas 1-2 y Figura 1 del manuscrito): `06_Experimento/resultados/`
 
-`manuscrito_final.pdf`
+Ejecutar el script reproduce exactamente las cifras citadas en el
+manuscrito, a partir de los datos crudos.
 
-Este PDF representa la versión visual esperada del manuscrito.
+## Reproducibilidad de los datos generales del proyecto
 
-Sin embargo, la reproducibilidad se verifica compilando nuevamente:
-
-`manuscrito_final.tex`
-
-junto con:
-
-`references.bib`
-
-y la carpeta:
-
-`figuras/`
-
-## Archivo BBL
-
-También se conserva:
-
-`manuscrito_final.bbl`
-
-Este archivo contiene la bibliografía generada por BibTeX y sirve como evidencia adicional de la compilación realizada.
-
-## Versión Springer Nature
-
-También se incluye:
-
-`manuscrito_final_springer.tex`
-
-Esta versión se encuentra preparada para adaptación a la plantilla editorial de Springer Nature.
-
-No constituye evidencia de que el manuscrito haya sido enviado o aceptado por la revista.
-
-La revista objetivo prioritaria es:
-
-**Requirements Engineering — Springer Nature**
-
-El análisis completo de revistas objetivo se encuentra en:
-
-`analisis_revistas.md`
-
-## Reproducibilidad de los datos
-
-La fuente reproducible vigente de los datos se encuentra en:
-
-`../07_Datos/`
-
-Desde la raíz del repositorio puede ejecutarse:
+La fuente reproducible del cuestionario general del proyecto (no del
+experimento comparativo) se encuentra en `../07_Datos/`:
 
 ```bash
 python 07_Datos/scripts/orquestar.py
 ```
 
-La ejecución genera:
-
-- datos procesados;
-- resumen de perfiles;
-- checksums SHA-256.
-
 ## Dataset publicado
 
-El paquete reproducible del proyecto SICST fue publicado en Zenodo como versión 1.0.
+El paquete reproducible del proyecto SICST está publicado en Zenodo.
 
 - **DOI:** `10.5281/zenodo.22315298`
 - **URL DOI:** `https://doi.org/10.5281/zenodo.22315298`
 - **Versión:** 1.0
-- **Fecha de publicación:** 2026-09-05
 - **Acceso:** Público / Open
 
-Los metadatos relacionados con el depósito se encuentran en:
-
-`dataset_zenodo/`
+Los metadatos y el contenido del depósito se encuentran en `dataset_zenodo/`.
 
 ## Alcance del manuscrito
 
-El manuscrito presenta un estudio de caso de ingeniería de requisitos aplicado al seguimiento de terapia física.
-
-El manuscrito **no afirma eficacia clínica del sistema** y tampoco afirma que exista un modelo de inteligencia artificial clínicamente validado.
-
-Los resultados sintéticos utilizados en ejercicios metodológicos o experimentales no se presentan como evidencia de participantes reales.
+El manuscrito reporta un estudio empírico de pequeña muestra (n=11 pares),
+preregistrado, ciego, sobre calidad de requisitos funcionales. No afirma
+que los LLM igualen a los analistas humanos en general, ni en otros
+dominios, idiomas o modelos — las conclusiones se restringen explícitamente
+al alcance de este estudio.
 
 ## Privacidad y protección de datos
 
-El paquete público de publicación no debe contener identificadores directos, consentimientos firmados, firmas, rostros, audios o videos identificables de participantes.
-
-Los materiales sensibles deben mantenerse fuera de la publicación abierta.
+El paquete público de publicación no contiene identificadores directos,
+consentimientos firmados, firmas, rostros, audios o videos identificables
+de participantes. La clave que revela el origen real (humano/LLM) de cada
+ítem evaluado se mantiene cifrada en `02_Evidencias/00_Restringido/`.
 
 ## Relación con el repositorio
 
@@ -278,12 +148,14 @@ Los materiales sensibles deben mantenerse fuera de la publicación abierta.
 - Evidencias: `../02_Evidencias/`
 - Trazabilidad: `../04_Trazabilidad/`
 - MVP: `../05_MVP/`
-- Datos reproducibles: `../07_Datos/`
+- Experimento (Enfoque 1): `../06_Experimento/`
+- Datos reproducibles generales: `../07_Datos/`
 
 ## Estado de publicación
 
-El manuscrito científico y los materiales de publicación corresponden a la línea base vigente de la **Entrega Final 2B**.
-
-El manuscrito se encuentra preparado como artefacto académico de publicación, pero el repositorio no declara aceptación editorial ni publicación del artículo en una revista científica.
-
-El dataset reproducible sí cuenta con publicación independiente en Zenodo y DOI persistente.
+El manuscrito corresponde a la línea base vigente de la Entrega Final 2B.
+Se encuentra preparado como artefacto académico de publicación; el
+repositorio no declara aceptación editorial ni publicación en una revista
+científica. El dataset reproducible cuenta con publicación independiente
+en Zenodo (DOI persistente) y el protocolo con registro previo en OSF
+(DOI persistente).
