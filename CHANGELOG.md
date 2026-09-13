@@ -3,6 +3,91 @@
 Registro de los cambios correspondientes a la línea base vigente del proyecto
 **Sistema Inteligente de Control y Seguimiento de Terapia Física (SICST)**.
 
+## [2B-v2.1] - 2026-09-13
+
+### Línea base
+
+Cierre de los criterios de piso de la Entrega Final 2B: registro previo
+externo del experimento (OSF), ejecución del experimento comparativo real
+(Enfoque 1), reescritura del manuscrito, expansión del paquete de datos, y
+completitud de la carpeta de autoría.
+
+### Agregado
+
+- Registro previo del protocolo experimental en OSF, DOI
+  `10.17605/OSF.IO/82Q76` (2026-09-12), anterior a la generación de datos.
+- Experimento comparativo real (Enfoque 1): 33 RF elicitados por el equipo
+  humano vs. 33 RF generados por LLM (GPT-5.5-mini), a partir de las mismas
+  18 transcripciones anonimizadas.
+  - `06_Experimento/prompts_llm/prompt_generacion_RF_llm.md`: prompt exacto,
+    modelo, fecha, confirmación de no uso de información externa.
+  - `06_Experimento/datos_crudos/`: RF del LLM, hoja de evaluación ciega,
+    evaluaciones de 4 jueces independientes.
+  - `06_Experimento/datos_procesados/matriz_trazabilidad_tema_RF.csv`: pareo
+    temático humano-LLM (11 pares estrictos).
+  - `06_Experimento/scripts_analisis/analisis_experimento_llm_humano.py`:
+    análisis reproducible (κ de Fleiss, prueba t apareada, corrección
+    Holm-Bonferroni).
+  - `06_Experimento/protocolo.pdf`, `osf_registration.pdf`,
+    `osf_deviations.pdf`.
+- Manuscrito reescrito por completo (`07_Publicacion/manuscrito_final.tex`
+  y `.pdf`, 8 páginas), alineado con la pregunta de investigación real
+  (Enfoque 1) y con los resultados del experimento comparativo.
+- Paquete `07_Publicacion/dataset_zenodo/` completado: `ANONYMIZATION.md`,
+  `ETHICS.md`, prompts del LLM, script de análisis, matriz de pareo
+  temático, transcripciones anonimizadas de las 18 entrevistas.
+- Pipeline de `07_Datos/` expandido de 1 a 8 scripts numerados
+  (`01_extraer_crudos.py` a `08_generar_figuras.py`) con un orquestador de
+  una sola orden; de 1 a 13 archivos de resultados (tablas y figuras).
+- `10_Autoria/`: agregada bitácora de sesiones (`bitacora_sesiones/`,
+  derivada del historial real de Git), inventario EXIF/hash de 48 archivos
+  multimedia (`inventario_exif/`), verificación previa
+  (`verificacion_previa/`), correspondencia con la organización (6
+  fotografías reales), y notas de campo (8 fotografías reales).
+- `fair_assessment.pdf` en la raíz: autoevaluación FAIR con F-UJI sobre el
+  dataset de Zenodo, puntaje agregado 88% (Findable: advanced, Accessible:
+  advanced, Interoperable: moderate, Reusable: moderate).
+- Etiqueta anotada de línea base: `v2.0-entrega4`.
+
+### Corregido
+
+- Referencias bibliográficas: de 30 a 33 entradas (`references.bib`),
+  agregadas las citas de Fleiss (1971), Cohen (1960) y Cheng et al. (2026)
+  usadas en el manuscrito reescrito.
+- URLs desactualizadas (`_2A`) corregidas a `_2B` en `README.md`,
+  `CITATION.cff` (raíz y `dataset_zenodo/`), y archivos relacionados.
+- Renombrado `9_Defensa/` a `09_Defensa/` para coincidir exactamente con el
+  árbol de la Sección 9.1 de la guía.
+- Renombradas carpetas de `10_Autoria/` para consistencia de nomenclatura
+  (minúsculas, sin espacios).
+- `.mailmap` actualizado con la identidad de `FrixonMP`, colaborador que
+  dejó de formar parte del equipo el 06/09/2026; su aporte histórico se
+  conserva en el historial de Git por transparencia.
+
+### Eliminado
+
+- Enfoque de explicabilidad con datos sintéticos (protocolo, script y
+  resultados de una exploración descartada en favor del Enfoque 1),
+  eliminado de `06_Experimento/` con commits documentados individualmente.
+- `manuscrito_final_springer.tex`: fuente no compilable (requería
+  `sn-jnl.cls`, no redistribuible por Springer Nature), huérfano.
+- `07_Publicacion/07_Datos/`: subcarpeta duplicada con transcripciones que
+  ya residían correctamente en `02_Evidencias/`.
+- Archivos `.docx` duplicados y desactualizados en `07_Datos/` y
+  `07_Publicacion/dataset_zenodo/`.
+
+### Pendiente para el cierre
+
+- Referencias: completar de 33 a 40 entradas mínimas.
+- SWHID: archivar el repositorio en Software Heritage y agregar el
+  identificador a `CITATION.cff`.
+- Publicar la versión 2.0 del depósito de Zenodo incluyendo el material del
+  experimento comparativo.
+- Completar en `10_Autoria/`: capturas por integrante, fuentes editables de
+  diagramas, grabación de sesión de trabajo, fotos del equipo.
+
+---
+
 ## [2B-v2.0] - 2026-09-05
 
 ### Línea base
@@ -29,178 +114,38 @@ Autores actuales de la entrega:
 - Archivo `desviaciones.md` para documentar transformaciones y limitaciones.
 - Archivo `registro_deposito.md` para registrar el depósito persistente.
 - Condiciones específicas de uso en `07_Datos/LICENSE-DATA.txt`.
-- Script reproducible:
-
-  `07_Datos/scripts/orquestar.py`
-
-- Ejecución de la cadena reproducible mediante:
-
-  `python 07_Datos/scripts/orquestar.py`
-
-- Resultado reproducible de distribución de perfiles en:
-
-  `07_Datos/resultados/resumen_perfiles.csv`
-
-- Evidencia de doble codificación en:
-
-  `10_Autoria/doble_codificacion/`
-
-- Cálculo del porcentaje de acuerdo entre codificadores.
-- Cálculo de Cohen κ.
-- Intervalo de confianza mediante bootstrap para el acuerdo.
-- Registro de desacuerdos entre codificadores.
-- Declaración de uso de inteligencia artificial en:
-
-  `10_Autoria/declaracion_uso_ia.md`
-
-- Archivo `.mailmap` en la raíz para normalizar identidades Git de los autores actuales.
-
----
+- Script reproducible: `07_Datos/scripts/orquestar.py`.
+- Evidencia de doble codificación en `10_Autoria/doble_codificacion/`.
+- Cálculo del porcentaje de acuerdo entre codificadores, Cohen κ, e
+  intervalo de confianza mediante bootstrap.
+- Declaración de uso de inteligencia artificial en
+  `10_Autoria/declaracion_uso_ia.md`.
+- Archivo `.mailmap` en la raíz para normalizar identidades Git de los
+  autores actuales.
 
 ### Dataset reproducible
 
-El conjunto reproducible vigente contiene **79 respuestas codificadas**:
-
-- 62 pacientes o ex pacientes de terapia física;
-- 14 familiares o cuidadores;
-- 3 fisioterapeutas.
-
-La fuente reproducible vigente se encuentra en:
-
-`07_Datos/`
-
-Los archivos generados por el script incluyen:
-
-- `07_Datos/datos_procesados/respuestas_cuestionario_procesadas.csv`
-- `07_Datos/resultados/resumen_perfiles.csv`
-- `07_Datos/checksums_datos.sha256`
-
----
+El conjunto reproducible vigente contenía **79 respuestas codificadas**:
+62 pacientes o ex pacientes, 14 familiares o cuidadores, 3 fisioterapeutas.
 
 ### Publicación en Zenodo
 
-El paquete reproducible del proyecto SICST fue publicado en Zenodo.
-
-Datos del depósito:
-
-- **Título:** SICST — Dataset reproducible del Sistema Inteligente de Control y Seguimiento de Terapia Física
+- **DOI:** `10.5281/zenodo.22315298`
 - **Versión:** 1.0
 - **Fecha de publicación:** 2026-09-05
-- **DOI:** `10.5281/zenodo.22315298`
-- **URL DOI:** `https://doi.org/10.5281/zenodo.22315298`
-- **Zenodo:** `https://zenodo.org/records/22315298`
-- **Acceso:** Público / Open
-
-Autores registrados en la publicación:
-
-- Contreras Chávez Kevin Germán
-- Zambrano Moya Angelo Paul
-
-ORCID registrado:
-
-- Zambrano Moya Angelo Paul:
-  `https://orcid.org/0009-0006-0056-8482`
-
----
-
-### Actualizado
-
-- `README.md` principal actualizado con la línea base de Entrega Final 2B.
-- DOI de Zenodo agregado al README principal.
-- Información de reproducción agregada al README principal.
-- Se actualizó `07_Datos/README_datos.md`.
-- Se actualizó `07_Datos/registro_deposito.md`.
-- Se actualizó la documentación de publicación en `07_Publicacion/dataset_zenodo/`.
-- Se actualizó `07_Publicacion/dataset_zenodo/CITATION.cff`.
-- Se actualizó `07_Publicacion/dataset_zenodo/README.md`.
-- Se actualizó `07_Publicacion/dataset_zenodo/README_dataset.md`.
-- Se actualizó `07_Publicacion/dataset_zenodo/LICENSE.txt`.
-- Se actualizó `07_Publicacion/dataset_zenodo/resumen_perfiles.csv`.
-- Se sincronizó la documentación con el DOI real publicado.
-- Se estableció `07_Datos/` como fuente oficial de los datos reproducibles.
-- Se documentó que el depósito de Zenodo corresponde a la versión 1.0 del dataset.
-
----
 
 ### Corregido
 
-- Se eliminó la indicación antigua de que todavía no existía un depósito en Zenodo.
-- Se eliminó la indicación antigua de que todavía no existía un DOI.
-- Se corrigieron referencias a un conjunto anterior de únicamente 31 respuestas.
-- Se corrigió la distribución de perfiles a los valores actuales:
-
-  - 62 pacientes o ex pacientes;
-  - 14 familiares o cuidadores;
-  - 3 fisioterapeutas.
-
-- Se eliminó el archivo antiguo:
-
-  `07_Publicacion/dataset_zenodo/respuestas_cuestionario_anonimizadas.csv`
-
-  debido a que correspondía al conjunto anterior de 31 respuestas.
-
-- Se eliminó la figura antigua:
-
-  `07_Publicacion/dataset_zenodo/figura_distribucion_perfiles.png`
-
-  debido a que había sido generada con la versión anterior del conjunto de datos.
-
-- Se eliminó el diccionario de datos antiguo de:
-
-  `07_Publicacion/dataset_zenodo/diccionario_datos.csv`
-
-  para evitar mantener dos versiones incompatibles.
-
-- Se reemplazó la referencia antigua a licencia CC BY 4.0 por las condiciones de uso específicas del dataset SICST.
-
-- Se eliminaron contradicciones entre:
-
-  `07_Publicacion/dataset_zenodo/`
-
-  y
-
-  `07_Datos/`
-
-- Se sincronizaron README, citación, licencia, resultados y registro de depósito con la publicación real.
-
----
-
-### Integridad y reproducibilidad
-
-La reproducción del conjunto se realiza desde la raíz del repositorio con:
-
-`python 07_Datos/scripts/orquestar.py`
-
-Los hashes SHA-256 vigentes se encuentran en:
-
-`07_Datos/checksums_datos.sha256`
-
-La cadena reproducible genera los datos procesados y los resultados derivados sin crear participantes ni respuestas ficticias.
-
----
-
-### Privacidad
-
-El paquete reproducible público no incluye:
-
-- nombres completos;
-- números de cédula;
-- teléfonos;
-- firmas;
-- consentimientos firmados.
-
-Los códigos de participante se conservan únicamente para trazabilidad académica.
-
-No se autoriza utilizar los datos para intentar identificar o reidentificar participantes.
-
-Las condiciones completas de uso se encuentran en:
-
-`07_Datos/LICENSE-DATA.txt`
-
----
+- Se eliminó la indicación antigua de que todavía no existía un depósito
+  en Zenodo ni un DOI.
+- Se corrigieron referencias a un conjunto anterior de únicamente 31
+  respuestas, actualizadas a 79.
+- Se eliminaron archivos y figuras generados con la versión anterior del
+  conjunto de datos.
+- Se sincronizaron README, citación, licencia, resultados y registro de
+  depósito con la publicación real.
 
 ### Estado de la versión
 
-La versión `2B-v2.0` constituye la línea base vigente de la Entrega Final 2B.
-
-Las futuras modificaciones deberán registrarse en este archivo sin alterar retroactivamente la información correspondiente a esta versión.
+La versión `2B-v2.0` constituyó la línea base intermedia previa al cierre
+de los criterios de piso de la Entrega Final 2B (ver `2B-v2.1` arriba).
