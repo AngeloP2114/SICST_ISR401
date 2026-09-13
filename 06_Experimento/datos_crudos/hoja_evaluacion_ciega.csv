@@ -1,0 +1,67 @@
+﻿item_id,descripcion
+ITEM-001,El sistema deberá enviar avisos a familiares autorizados cuando el paciente requiera apoyo.
+ITEM-002,El sistema deberá registrar las repeticiones realizadas por el paciente durante una rutina.
+ITEM-003,El sistema deberá permitir generar reportes con indicadores cumplimiento observaciones y alertas.
+ITEM-004,El sistema deberá guardar fecha hora rutina ejercicio realizado repeticiones y evidencia de cumplimiento.
+ITEM-005,El sistema deberá permitir registrar signos vitales antes de una sesión terapéutica.
+ITEM-006,El sistema deberá mostrar videos explicativos de los ejercicios asignados al paciente.
+ITEM-007,El sistema deberá registrar los resultados de evaluaciones realizadas durante el seguimiento.
+ITEM-008,El sistema deberá permitir que un familiar o cuidador autorizado consulte el avance general del paciente.
+ITEM-009,El sistema deberá permitir asignar ejercicios con series repeticiones duración frecuencia e instrucciones al paciente.
+ITEM-010,El sistema deberá registrar el tiempo empleado por el paciente al realizar una rutina.
+ITEM-011,El sistema deberá permitir registrar resultados de pruebas ortopédicas o funcionales aplicadas en la evaluación inicial.
+ITEM-012,El sistema deberá registrar el diagnóstico del paciente antes de iniciar una terapia física.
+ITEM-013,El sistema deberá enviar recordatorios automáticos al paciente sobre rutinas pendientes.
+ITEM-014,El sistema deberá analizar mediante IA los ejercicios del catálogo compatibles con análisis automático y patrón de movimiento configurado.
+ITEM-015,El sistema deberá permitir al paciente iniciar y ejecutar rutinas asignadas desde casa.
+ITEM-016,El sistema deberá permitir consultar la evolución del paciente mediante registros históricos.
+ITEM-017,El sistema deberá evitar que movimientos mal ejecutados se registren como repeticiones válidas.
+ITEM-018,El sistema deberá mostrar indicaciones sobre la ejecución correcta de los ejercicios.
+ITEM-019,El sistema deberá mostrar el tiempo de descanso indicado entre ejercicios.
+ITEM-020,El sistema deberá permitir consultar las observaciones de sesiones anteriores del paciente.
+ITEM-021,El sistema deberá permitir activar la cámara para capturar la ejecución del ejercicio.
+ITEM-022,El sistema deberá permitir contabilizar únicamente repeticiones realizadas correctamente.
+ITEM-023,El sistema deberá permitir registrar el nivel de fatiga mediante escala Borg u otra escala definida.
+ITEM-024,El sistema deberá registrar la evaluación del paciente durante el tratamiento terapéutico.
+ITEM-025,El sistema deberá mostrar la rutina activa de ejercicios asignada al paciente.
+ITEM-026,El sistema deberá registrar el nivel de fatiga o esfuerzo percibido por el paciente después de una rutina.
+ITEM-027,El sistema deberá permitir consultar información compartida del progreso del paciente según autorización.
+ITEM-028,El sistema deberá registrar el plan terapéutico asignado al paciente.
+ITEM-029,El sistema deberá mostrar retroalimentación automática cuando detecte un error postural o repetición incorrecta.
+ITEM-030,El sistema deberá generar informes fisioterapéuticos con información del tratamiento realizado.
+ITEM-031,El sistema deberá permitir registrar tratamientos previos lesiones anteriores y tiempo de evolución del dolor o lesión.
+ITEM-032,El sistema deberá registrar la actividad física del paciente durante la evaluación inicial.
+ITEM-033,El sistema deberá permitir identificar errores de postura o movimientos compensatorios durante la ejecución.
+ITEM-034,El sistema deberá registrar dificultades u observaciones reportadas por el paciente durante los ejercicios.
+ITEM-035,El sistema deberá permitir registrar el nivel de dolor del paciente mediante escala EVA u otra escala definida.
+ITEM-036,El sistema deberá permitir el inicio de sesión de fisioterapeutas pacientes administradores y familiares autorizados mediante credenciales válidas.
+ITEM-037,El sistema deberá permitir al paciente consultar instrucciones imágenes o videos guía para ejecutar ejercicios.
+ITEM-038,El sistema deberá generar recomendaciones basadas en desempeño sujetas a validación profesional.
+ITEM-039,"El sistema deberá registrar evidencia de progreso del paciente mediante fotos, videos o reportes."
+ITEM-040,El sistema deberá permitir visualizar evolución de dolor fatiga movilidad cumplimiento y desempeño.
+ITEM-041,El sistema deberá registrar mediciones de progreso del paciente como rango de movimiento.
+ITEM-042,El sistema deberá registrar los ejercicios indicados para realizar durante la terapia física.
+ITEM-043,El sistema deberá permitir registrar la capacidad del paciente para realizar actividades diarias.
+ITEM-044,El sistema deberá permitir al familiar autorizado consultar el cumplimiento de la rutina del paciente.
+ITEM-045,El sistema deberá registrar el nivel de dolor del paciente después de realizar una rutina.
+ITEM-046,El sistema deberá registrar el nivel de dolor del paciente mediante una escala de valoración.
+ITEM-047,El sistema deberá permitir al fisioterapeuta gestionar el estado de cada alerta terapéutica como Pendiente Revisada o Atendida.
+ITEM-048,El sistema deberá enviar recordatorios al paciente sobre ejercicios pendientes.
+ITEM-049,El sistema deberá permitir documentar observaciones sobre progreso dificultades o recomendaciones por sesión.
+ITEM-050,"El sistema deberá permitir comparar registros de dolor, movilidad o progreso del paciente durante diferentes periodos."
+ITEM-051,El sistema deberá permitir al administrador crear modificar activar desactivar usuarios y asignar permisos según rol.
+ITEM-052,El sistema deberá permitir registrar nombres edad sexo contacto identificación y antecedentes relevantes del paciente.
+ITEM-053,El sistema deberá generar alertas terapéuticas ante incumplimientos niveles elevados de dolor fatiga o errores configurados.
+ITEM-054,El sistema deberá registrar las limitaciones funcionales del paciente antes de la terapia.
+ITEM-055,El sistema deberá permitir clasificar al paciente según condición traumatológica neurológica geriátrica u otra definida por el fisioterapeuta.
+ITEM-056,El sistema deberá registrar los antecedentes clínicos del paciente durante el seguimiento terapéutico.
+ITEM-057,El sistema deberá permitir registrar observaciones del fisioterapeuta sobre las sesiones del paciente.
+ITEM-058,El sistema deberá mostrar las repeticiones indicadas para cada ejercicio de la rutina.
+ITEM-059,El sistema deberá permitir registrar el nivel de gravedad del caso según criterio profesional.
+ITEM-060,El sistema deberá registrar los ejercicios completados por el paciente durante una rutina.
+ITEM-061,El sistema deberá permitir registrar mediciones de movilidad articular del paciente.
+ITEM-062,"El sistema deberá registrar alertas relacionadas con dolor, fatiga o dificultades durante la realización de ejercicios."
+ITEM-063,El sistema deberá permitir registrar editar consultar o desactivar ejercicios isométricos aeróbicos de movilidad resistencia y fortalecimiento.
+ITEM-064,El sistema deberá registrar la edad del paciente para considerar la planificación del tratamiento.
+ITEM-065,El sistema deberá permitir documentar la razón principal por la cual el paciente inicia terapia física.
+ITEM-066,El sistema deberá permitir crear un plan terapéutico según diagnóstico condición clínica gravedad y evolución del paciente.
