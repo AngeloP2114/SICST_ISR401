@@ -8,7 +8,7 @@ fotografía física conjunta en la organización.
 
 Se incluyen:
 
-- 2 fotografías del área de trabajo del centro de terapia física
+- 3 fotografías del área de trabajo del centro de terapia física
   (césped sintético, barras paralelas, equipo de terapia).
 - 3 fotografías de demostraciones del MVP con pacientes reales (rostros
   censurados por privacidad), mostrando distintas pantallas del
