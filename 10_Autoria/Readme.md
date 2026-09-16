@@ -7,7 +7,7 @@ Composición final del equipo
 
 La entrega final del proyecto Sistema Inteligente de Control y Seguimiento de Terapia Física (SICST) fue desarrollada y presentada por:
 
-Contreras Chávez Kevin Germán
+Contreras Chávez Kevin Germán,
 Zambrano Moya Angelo Paul
 
 Morán Pilaguano Frixon Fernando y Viteri García Jonathan Enrique dejaron de formar parte del equipo durante el semestre. Por esta razón, no se los considera integrantes ni autores de la entrega final.
@@ -16,5 +16,5 @@ Los aportes y commits históricos realizados antes de su salida, cuando existan,
 
 En consecuencia, las evidencias individuales correspondientes al cierre del proyecto, como capturas, grabaciones, declaraciones y aportes finales, pertenecen a:
 
-Kevin Germán Contreras Chávez
+Kevin Germán Contreras Chávez, 
 Angelo Paul Zambrano Moya
