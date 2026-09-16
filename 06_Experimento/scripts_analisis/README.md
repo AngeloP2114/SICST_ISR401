@@ -1,50 +1,79 @@
-# Scripts de análisis — SICST, Enfoque 1 (RF humano vs LLM)
-
-Esta carpeta contiene el script reproducible del experimento comparativo
-registrado en OSF (https://doi.org/10.17605/OSF.IO/82Q76): calidad de
-Requisitos Funcionales (RF) elicitados por humanos vs. generados por un LLM,
-evaluados de forma ciega por 4 jueces independientes.
+# Scripts de análisis — SICST, Enfoque 1
 
 ## Script principal
 
 `analisis_experimento_llm_humano.py`
 
-El script lee:
+El script implementa el análisis reproducible del experimento humano vs. LLM.
 
-- `../datos_crudos/hoja_evaluacion_ciega.csv`
-- `../datos_crudos/evaluaciones_ciegas/Evaluacion_*.xlsx` (4 evaluadores)
-- `../../02_Evidencias/00_Restringido/` (clave de desciego, cifrada)
+## Entradas públicas
 
-Y calcula:
+El script resuelve automáticamente estas rutas a partir de su propia
+ubicación:
 
-- Acuerdo entre evaluadores (κ de Fleiss) por dimensión
-- Estadísticos descriptivos por grupo (humano vs LLM)
-- Prueba de normalidad (Shapiro-Wilk) y prueba de hipótesis correspondiente
-  (t de Student o U de Mann-Whitney según corresponda)
-- Tamaño del efecto (δ de Cliff) con intervalo de confianza al 95% por
-  bootstrap
-- Figura comparativa (boxplot) entre ambos grupos
+- `../datos_crudos/evaluaciones_ciegas/Evaluacion_Mishell.xlsx`
+- `../datos_crudos/evaluaciones_ciegas/Evaluacion_Angel.xlsx`
+- `../datos_crudos/evaluaciones_ciegas/Evaluacion_Dayana.xlsx`
+- `../datos_crudos/evaluaciones_ciegas/Evaluacion_sebas.xlsx`
+- `../datos_procesados/matriz_trazabilidad_tema_RF.csv`
+
+## Entrada restringida
+
+También necesita:
+
+`clave_privada_desciego.csv`
+
+La clave **no se publica** en esta carpeta. Debe extraerse localmente de la
+zona restringida cifrada por una persona autorizada y pasarse mediante
+`--clave`.
+
+El script no descifra automáticamente el contenedor restringido.
+
+## Cálculos
+
+- κ de Fleiss por dimensión sobre los 66 ítems.
+- descriptivos humano/LLM sobre los 66 ítems.
+- construcción de los 11 pares estrictos.
+- Shapiro-Wilk sobre las diferencias por par.
+- t apareada o Wilcoxon de rangos con signo.
+- Holm-Bonferroni sobre las cinco dimensiones.
+- diferencia media humano − LLM.
+- IC bootstrap 95 % de la diferencia media.
+- Cohen's dz.
+- IC bootstrap 95 % de Cohen's dz.
+- 10 000 remuestreos bootstrap con semilla 42.
+- figura de comparación pareada.
+
+## Instalación
+
+Desde la raíz del repositorio:
+
+```bash
+python -m pip install -r 06_Experimento/scripts_analisis/requirements.txt
+```
 
 ## Ejecución
 
-Desde la carpeta `06_Experimento/scripts_analisis/`:
-
 ```bash
-pip install pandas scipy openpyxl matplotlib
-python analisis_experimento_llm_humano.py
+python 06_Experimento/scripts_analisis/analisis_experimento_llm_humano.py \
+  --clave /ruta/local/clave_privada_desciego.csv
 ```
 
-Genera en `../resultados/`:
+## Salidas
+
+El script escribe automáticamente en `06_Experimento/resultados/`:
+
 - `descriptivos_por_grupo.csv`
 - `fleiss_kappa.csv`
-- `prueba_hipotesis.csv`
-- `figura_comparacion_grupos.png`
+- `prueba_hipotesis_apareada.csv`
+- `pares_estrictos_utilizados.csv`
+- `figura_comparacion_pareada.png`
 
-## Nota sobre resultados
+## Comprobación mínima
 
-El acuerdo inter-evaluador (κ de Fleiss) resultó bajo en varias dimensiones
-(rango entre -0.01 y 0.17). No se encontraron diferencias estadísticamente
-significativas entre RF humanos y RF del LLM en ninguna dimensión (todos los
-valores p > 0.05). Ambos hallazgos se reportan tal como salieron del
-análisis, sin ajustes posteriores, y se discuten como limitaciones y
-resultado principal respectivamente en el manuscrito.
+Una ejecución correcta debe informar:
+
+- 4 evaluadores cargados;
+- 11 pares estrictos;
+- creación de las cinco salidas;
+- ausencia de errores por rutas o columnas faltantes.
