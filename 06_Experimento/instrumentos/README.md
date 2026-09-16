@@ -1,17 +1,12 @@
 # Instrumentos del experimento SICST — Enfoque 1
 
-## Objetivo
-
-Definir el instrumento empleado para evaluar comparativamente la calidad de
-los RF humanos y los RF generados por LLM.
-
 ## Rúbrica
 
 Archivo:
 
 `rubrica_evaluacion_requisitos.md`
 
-Cada RF se puntúa de 1 a 5 en cinco dimensiones:
+Cada requisito se puntúa de 1 a 5 en cinco dimensiones:
 
 - completitud;
 - ausencia de ambigüedad;
@@ -19,22 +14,16 @@ Cada RF se puntúa de 1 a 5 en cinco dimensiones:
 - corrección respecto a la fuente;
 - consistencia interna.
 
-## Ítems evaluados
+## Evaluación ciega
 
-Archivo:
+La hoja:
 
 `../datos_crudos/hoja_evaluacion_ciega.csv`
 
-Contiene 66 ítems anonimizados:
+contiene 66 ítems anonimizados con identificadores `ITEM-001` a `ITEM-066`.
+La hoja no incluye una columna que revele el origen humano/LLM.
 
-- 33 RF humanos;
-- 33 RF LLM.
-
-La hoja no revela el origen de cada ítem.
-
-## Evaluadores
-
-Las hojas individuales están en:
+Las evaluaciones individuales están en:
 
 ```text
 ../datos_crudos/evaluaciones_ciegas/
@@ -44,26 +33,26 @@ Las hojas individuales están en:
 └── Evaluacion_sebas.xlsx
 ```
 
-Los cuatro evaluadores puntuaron independientemente los 66 ítems.
+Los cuatro evaluadores calificaron los mismos 66 ítems.
 
-## Procedimiento
+## Desciego para el análisis
 
-1. Se prepararon los dos conjuntos de 33 RF.
-2. Se anonimizaron y mezclaron en un listado común.
-3. Los evaluadores recibieron los ítems sin conocer su origen.
-4. Cada evaluador puntuó las cinco dimensiones.
-5. Finalizada la evaluación, el análisis utiliza una clave privada de
-   desciego para recuperar el origen real de cada `item_id`.
-6. La clave se pasa al script mediante `--clave`.
+Una vez finalizada la evaluación, el análisis reconstruye la correspondencia
+de cada `ITEM` con su RF real mediante coincidencia exacta normalizada del
+texto entre:
 
-## Clave de desciego
+- `../datos_crudos/hoja_evaluacion_ciega.csv`
+- `../datos_procesados/matriz_trazabilidad_tema_RF.csv`
 
-La clave no se publica en texto plano.
+No se requiere ni se afirma la existencia de una clave privada externa.
 
-La copia maestra se conserva en la zona restringida cifrada del proyecto.
-El script de análisis **no descifra el contenedor**; únicamente lee una copia
-local autorizada de `clave_privada_desciego.csv` proporcionada mediante el
-argumento `--clave`.
+El script exige que la reconstrucción produzca exactamente:
 
-Esto mantiene separada la evidencia pública de evaluación y la
-correspondencia privada necesaria para el análisis.
+- 66 ítems;
+- 33 RF humanos;
+- 33 RF LLM;
+- cero coincidencias faltantes;
+- cero coincidencias ambiguas.
+
+Esto preserva el cegado durante la evaluación y permite reproducir el
+desciego después de finalizada.
