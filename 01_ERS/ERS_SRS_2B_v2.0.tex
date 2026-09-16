@@ -21,6 +21,8 @@
 \usepackage{graphicx}
 \usepackage{xcolor}
 \usepackage{geometry}
+\usepackage{array}
+\usepackage{tabularx}
 \geometry{a4paper,margin=0pt}
 \usepackage{hyperref}
 \hypersetup{
@@ -35,6 +37,7 @@
 \pagestyle{empty}
 \setlength{\parindent}{0pt}
 \setlength{\fboxsep}{0pt}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
 \newcommand{\T}[5]{\put(#1,-#2){\raisebox{\dimexpr\topskip+12pt\relax}[0pt][0pt]{\makebox(0,0)[tl]{\fontsize{#3pt}{#3pt}\selectfont #4 #5}}}}
 \newcommand{\Img}[5]{\put(#1,-#2){\raisebox{\dimexpr\topskip+12pt\relax}[0pt][0pt]{\makebox(0,0)[tl]{\includegraphics[width=#3pt,height=#4pt]{#5}}}}}
 \newcommand{\Fill}[5]{\put(#1,-#2){\raisebox{\dimexpr\topskip+12pt\relax}[0pt][0pt]{\color[HTML]{#5}\rule{#3pt}{#4pt}}}}
@@ -69,7 +72,7 @@
   \T{278.30}{574.91}{12.00}{\rmfamily}{2B-v2.0}
   \T{85.15}{595.76}{12.00}{\rmfamily \bfseries}{PPA 2026 - 2027}
   \T{255.05}{630.46}{12.00}{\rmfamily \bfseries}{Enlace a GitHub}
-  \T{152.55}{650.25}{10.50}{\rmfamily \color[HTML]{0000FF}}{https://github.com/AngeloP2114/Sistema\_Terapia\_Fisica\_ISR401\_2A}
+  \T{118.00}{650.25}{8.00}{\rmfamily \color[HTML]{0000FF}}{\href{https://github.com/AngeloP2114/Sistema_Terapia_Fisica_ISR401_2B/tree/main}{https://github.com/AngeloP2114/Sistema\_Terapia\_Fisica\_ISR401\_2B/tree/main}}
   \T{278.55}{689.11}{12.00}{\rmfamily \bfseries}{Contenido}
   \T{85.15}{710.96}{12.00}{\rmfamily}{1. Introducción........................................................................................................................11}
   \T{113.50}{730.81}{12.00}{\rmfamily}{Propósito del documento...............................................................................................11}
@@ -498,7 +501,7 @@
   \T{208.80}{400.52}{8.00}{\rmfamily}{Equipo SICST}
   \T{353.30}{400.52}{8.00}{\rmfamily}{Consolidación de la Entrega 4 (2B): identidad }
   \T{353.30}{411.07}{8.00}{\rmfamily}{documental final, protocolo LLM vs humano, }
-  \T{353.30}{421.62}{8.00}{\rmfamily}{trazabilidad terminal de 60 filas, catálogo verificable }
+  \T{353.30}{421.62}{8.00}{\rmfamily}{trazabilidad terminal de 62 filas, catálogo verificable }
   \T{353.30}{432.17}{8.00}{\rmfamily}{BDD/CP, corrección bibliográfica y eliminación de }
   \T{353.30}{442.72}{8.00}{\rmfamily}{resultados sintéticos como evidencia final.}
 \EndPage
@@ -15488,8 +15491,8 @@
   \T{39.70}{81.61}{12.00}{\rmfamily}{conserva la cadena Fuente → Requisito → Caso de uso → Clase UML → Proceso/estado → Historia de usuario → BDD → Caso de prueba; la matriz externa }
   \T{39.70}{97.46}{12.00}{\rmfamily}{de 04\_Trazabilidad amplía la cadena terminal con los campos exigidos para el cierre 2B, incluida la relación Ley/Norma → Objetivo → Stakeholder → }
   \T{39.70}{113.31}{12.00}{\rmfamily}{Evidencia → Requisito → CU → HU → BDD/CA → UML → Componente → Mockup → CP.}
-  \T{39.70}{135.16}{12.00}{\rmfamily}{La matriz interna contiene 60 trazas terminales identificadas de TR-001 a TR-060: 33 asociadas a requisitos funcionales, 15 a requisitos no funcionales }
-  \T{39.70}{151.01}{12.00}{\rmfamily}{generales, 10 a requisitos específicos de inteligencia artificial y 2 a restricciones críticas de consentimiento y revocatoria. El estado “Completa” describe la  }
+  \T{39.70}{135.16}{12.00}{\rmfamily}{La matriz interna contiene 62 trazas terminales identificadas de TR-001 a TR-062: 33 asociadas a requisitos funcionales, 15 a requisitos no funcionales }
+  \T{39.70}{151.01}{12.00}{\rmfamily}{generales, 12 a requisitos específicos de inteligencia artificial y 2 a restricciones críticas de consentimiento y revocatoria. El estado “Completa” describe la  }
   \T{39.70}{166.86}{12.00}{\rmfamily}{presencia de la cadena documentada en esta base; antes del corte final, cada vínculo debe contrastarse contra el artefacto real correspondiente en el repositorio.}
   \T{399.90}{188.71}{12.00}{\rmfamily}{Tabla 69}
   \T{337.05}{204.56}{12.00}{\rmfamily \itshape}{Matriz de trazabilidad terminal 2B}
@@ -17912,10 +17915,10 @@
   \T{75.40}{274.96}{12.00}{\rmfamily \bfseries}{Elemento}
   \T{222.80}{274.96}{12.00}{\rmfamily \bfseries}{Ubicación}
   \T{75.40}{294.51}{12.00}{\rmfamily}{Repositorio principal}
-  \T{222.80}{295.54}{10.00}{\rmfamily}{https://github.com/AngeloP2114/Sistema\_Terapia\_Fisica\_ISR401\_2A}
+  \T{222.80}{295.54}{7.00}{\rmfamily}{https://github.com/AngeloP2114/Sistema\_Terapia\_Fisica\_ISR401\_2B/tree/main}
   \T{75.40}{318.71}{12.00}{\rmfamily}{Repositorio/carpeta del MVP}
   \T{215.48}{313.99}{10.00}{\rmfamily}{ }
-  \T{222.80}{313.99}{10.00}{\rmfamily}{https://github.com/AngeloP2114/Sistema\_Terapia\_Fisica\_ISR401\_2A/tree/ }
+  \T{222.80}{313.99}{10.00}{\rmfamily}{https://github.com/AngeloP2114/Sistema\_Terapia\_Fisica\_ISR401\_2B/tree/ }
   \T{222.80}{325.54}{10.00}{\rmfamily}{main/05\_MVP}
   \T{75.40}{342.91}{12.00}{\rmfamily}{Aplicación del fisioterapeuta}
   \T{222.80}{342.91}{12.00}{\rmfamily}{05\_MVP/SICST\_Fisioterapeuta\_APP/}
@@ -20426,7 +20429,7 @@
   \T{353.20}{444.91}{12.00}{\rmfamily}{CP-33}
   \T{443.90}{444.91}{12.00}{\rmfamily}{Should}
   \T{85.15}{566.56}{12.00}{\rmfamily \bfseries}{13.6 Requisitos específicos de inteligencia artificial}
-  \T{113.50}{586.41}{12.00}{\rmfamily}{Los RNF generales se complementan con diez requisitos específicos de IA para }
+  \T{113.50}{586.41}{12.00}{\rmfamily}{Los RNF generales se complementan con doce requisitos específicos de IA para }
   \T{85.15}{602.26}{12.00}{\rmfamily}{rendimiento, equidad y explicabilidad. Estos requisitos definen objetivos de ingeniería con }
   \T{85.15}{618.11}{12.00}{\rmfamily}{umbral,  unidad  y  método  de  comprobación;  el  sistema  se  mantiene  como  apoyo  al }
   \T{85.15}{633.96}{12.00}{\rmfamily}{fisioterapeuta y no realiza diagnóstico autónomo.}
@@ -20866,6 +20869,165 @@
 \PortraitSize
 
 % ------------------------------------------------------------------
+% ===== ADENDA COMPONENTES IA INSERTADA DESPUES DE PAGINA 138 =====
+\thispagestyle{empty}
+\vspace*{34pt}\hspace*{30pt}\begin{minipage}{535pt}
+{\centering\fontsize{15}{18}\selectfont\bfseries\color[HTML]{006B3C} Adenda 13.6-A - Requisitos verificables del componente inteligente\par}
+\vspace{8pt}
+\fontsize{8.2}{10.1}\selectfont
+Esta adenda complementa la Tabla 98 del ERS/SRS 2B v2.0 y queda sincronizada con la carpeta \textbf{01\_ERS/componentes\_IA/}. La fuente tabular principal es \textbf{01\_ERS/componentes\_IA/requisitos\_no\_funcionales\_ia.csv}, que conserva las doce columnas exigidas: id, enunciado, metrica, unidad, umbral, metodo\_verificacion, responsable, frecuencia, equidad, supervision\_humana, monitoreo y nivel\_riesgo.\par
+\vspace{7pt}
+{\bfseries\color[HTML]{006B3C} Documentos complementarios sincronizados}\par\vspace{3pt}
+\renewcommand{\arraystretch}{1.18}
+\begin{tabularx}{\linewidth}{|p{155pt}|Y|}\hline
+\textbf{Archivo} & \textbf{Finalidad}\\ \hline
+requisitos\_no\_funcionales\_ia.csv & Fuente canónica de los 12 RNF-IA y sus criterios verificables.\\ \hline
+clasificacion\_riesgo\_ia.md & Justifica la clasificación interna de riesgo y las salvaguardas.\\ \hline
+plan\_monitoreo\_postdespliegue.md & Define indicadores, umbrales, periodicidad, responsables y acciones.\\ \hline
+trazado\_requisitos\_ia.csv & Relaciona cada RNF-IA con componente, RF/CU, BDD/CP y fila de la matriz general.\\ \hline
+\end{tabularx}
+\vspace{7pt}
+{\bfseries\color[HTML]{006B3C} Nuevos requisitos de rendimiento para IA-01}\par\vspace{3pt}
+\begin{tabularx}{\linewidth}{|p{82pt}|Y|}\hline
+\textbf{RNF-IA1-P02} & La detección postural debe clasificar correctamente si la ejecución del ejercicio cumple el patrón postural esperado.\\ \hline
+Métrica / umbral & F1-score de detección postural correcta/incorrecta: >= 0.85 F1 (0-1)\\ \hline
+Verificación & Evaluar un conjunto de videos etiquetado manualmente por criterio fisioterapéutico, versionado y estratificado; calcular precisión, recall y F1 global y por grupo.\\ \hline
+Responsable & Equipo de desarrollo, con validación clínica del fisioterapeuta responsable\\ \hline
+\end{tabularx}\vspace{4pt}
+\begin{tabularx}{\linewidth}{|p{82pt}|Y|}\hline
+\textbf{RNF-IA1-P03} & El conteo automático de repeticiones debe aproximarse al conteo manual de referencia del ejercicio.\\ \hline
+Métrica / umbral & Error absoluto medio (MAE) del conteo de repeticiones por serie: <= 1 repetición repeticiones por serie\\ \hline
+Verificación & Comparar el conteo automático con el conteo manual de referencia en videos de prueba etiquetados y versionados; calcular el MAE global y por grupo.\\ \hline
+Responsable & Equipo de desarrollo, con validación clínica del fisioterapeuta responsable\\ \hline
+\end{tabularx}\vspace{4pt}
+{\bfseries\color[HTML]{006B3C} BDD y casos de prueba añadidos}\par\vspace{3pt}
+\begin{tabularx}{\linewidth}{|p{88pt}|Y|}\hline
+\textbf{BDD-RNF-IA1-P02} & Dado un conjunto de videos etiquetados por criterio fisioterapéutico, cuando se evalúe la detección postural, entonces el F1 global deberá ser $\geq 0.85$ y se reportará también por grupo.\\ \hline
+\textbf{CP-RNF-IA1-P02} & Calcular precisión, recall y F1 sobre el conjunto versionado; resultado esperado: F1 $\geq 0.85$.\\ \hline
+\textbf{BDD-RNF-IA1-P03} & Dado un conjunto de series con conteo manual de referencia, cuando se ejecute el conteo automático, entonces el MAE deberá ser $\leq 1$ repetición por serie.\\ \hline
+\textbf{CP-RNF-IA1-P03} & Comparar conteo automático frente al manual y calcular MAE global y por grupo; resultado esperado: MAE $\leq 1$ repetición por serie.\\ \hline
+\end{tabularx}
+\vspace{7pt}
+{\bfseries\color[HTML]{006B3C} Gobernanza, riesgo y trazabilidad}\par\vspace{3pt}
+IA-01 e IA-02 se clasifican como \textbf{riesgo alto en la escala interna del proyecto}. Esta clasificación es de ingeniería y no constituye certificación legal. El SICST es asistivo: no diagnostica, no prescribe ni ejecuta decisiones clínicas autónomas; el fisioterapeuta conserva la decisión profesional final. Los umbrales son criterios de aceptación, no resultados observados.\par
+\vspace{4pt}
+\begin{tabularx}{\linewidth}{|p{55pt}|p{85pt}|Y|}\hline
+\textbf{Traza} & \textbf{Requisito} & \textbf{Relación}\\ \hline
+TR-061 & RNF-IA1-P02 & CU-06 / P6 - AnalisisMovimiento; BDD-RNF-IA1-P02; CP-RNF-IA1-P02; Must.\\ \hline
+TR-062 & RNF-IA1-P03 & CU-06 / P6 - AnalisisMovimiento; Repeticion; BDD-RNF-IA1-P03; CP-RNF-IA1-P03; Must.\\ \hline
+\end{tabularx}
+\vspace{3pt}
+\textbf{Nota:} TR-059 y TR-060 se reservan para RES-02 (consentimiento) y RES-15 (revocatoria), tal como se documenta en la matriz interna del ERS. Por ello, los dos nuevos RNF-IA usan TR-061 y TR-062.\par
+\end{minipage}
+\newpage
+\thispagestyle{empty}
+\vspace*{34pt}\hspace*{30pt}\begin{minipage}{535pt}
+{\centering\fontsize{15}{18}\selectfont\bfseries\color[HTML]{006B3C} Adenda 13.6-B - Responsabilidad, equidad, supervisión y monitoreo\par}
+\vspace{8pt}
+\fontsize{8.2}{10.1}\selectfont
+\renewcommand{\arraystretch}{1.13}
+\begin{tabularx}{\linewidth}{|p{115pt}|Y|}\hline
+\textbf{RNF-IA1-P01} & \textbf{Riesgo:} Alto (clasificación interna; apoyo clínico no autónomo)\\ \hline
+Responsable / frecuencia & Equipo de desarrollo (responsable técnico del componente IA) - En cada versión/release del módulo de visión, antes del despliegue.\\ \hline
+Equidad & Desagregar el p95 por los grupos definidos en RNF-IA1-EQ01 y RNF-IA1-EQ02 para detectar degradaciones sistemáticas; cualquier diferencia material debe documentarse antes del release.\\ \hline
+Supervisión / fallback & Si no cumple el umbral, la retroalimentación automática se marca como no confiable y el fisioterapeuta decide si repite, pausa o continúa la sesión sin usar esa salida automática.\\ \hline
+Monitoreo & Predespliegue: verificar por release. En producción: revisar mensualmente los logs de latencia y abrir incidencia si p95 supera 2 s.\\ \hline
+\end{tabularx}\vspace{5pt}
+\begin{tabularx}{\linewidth}{|p{115pt}|Y|}\hline
+\textbf{RNF-IA1-P02} & \textbf{Riesgo:} Alto (clasificación interna; apoyo clínico no autónomo)\\ \hline
+Responsable / frecuencia & Equipo de desarrollo, con validación clínica del fisioterapeuta responsable - En cada versión o reentrenamiento del modelo de visión, antes del despliegue.\\ \hline
+Equidad & Reportar F1 por grupos etarios y niveles de limitación definidos en RNF-IA1-EQ01/EQ02; si una brecha supera 0.05, el release queda sujeto a revisión.\\ \hline
+Supervisión / fallback & El fisioterapeuta confirma la corrección postural. Si F1 no alcanza 0.85 o la confianza del caso es insuficiente, el sistema no presenta la corrección como definitiva y deriva el caso al fisioterapeuta.\\ \hline
+Monitoreo & Predespliegue: F1 por release. En producción: auditar mensualmente una muestra revisada por fisioterapeuta y alertar ante una caída de F1 >= 0.05 respecto de la línea base aprobada.\\ \hline
+\end{tabularx}\vspace{5pt}
+\begin{tabularx}{\linewidth}{|p{115pt}|Y|}\hline
+\textbf{RNF-IA1-P03} & \textbf{Riesgo:} Alto (clasificación interna; apoyo clínico no autónomo)\\ \hline
+Responsable / frecuencia & Equipo de desarrollo, con validación clínica del fisioterapeuta responsable - En cada versión o reentrenamiento del módulo de conteo, antes del despliegue.\\ \hline
+Equidad & Reportar el MAE por grupos etarios y niveles de limitación definidos en RNF-IA1-EQ01/EQ02 y revisar cualquier degradación sistemática antes de aprobar el release.\\ \hline
+Supervisión / fallback & El fisioterapeuta puede corregir el conteo. Si el MAE de validación supera 1 repetición o el caso queda marcado con baja confianza, el conteo se presenta como pendiente de revisión y no se usa como dato definitivo.\\ \hline
+Monitoreo & Predespliegue: MAE por release. En producción: auditar mensualmente una muestra con conteo manual y abrir incidencia si el MAE supera 1 repetición.\\ \hline
+\end{tabularx}\vspace{5pt}
+\begin{tabularx}{\linewidth}{|p{115pt}|Y|}\hline
+\textbf{RNF-IA1-EQ01} & \textbf{Riesgo:} Alto (clasificación interna; apoyo clínico no autónomo)\\ \hline
+Responsable / frecuencia & Equipo de desarrollo, con revisión clínica del fisioterapeuta responsable - En cada reentrenamiento o actualización del modelo de visión.\\ \hline
+Equidad & Grupos etarios 18-39 años y >= 40 años; el release no se aprueba sin analizar una brecha > 0.05.\\ \hline
+Supervisión / fallback & El fisioterapeuta revisa manualmente los casos de confianza baja o pertenecientes a un grupo con desempeño fuera del umbral antes de aplicar la corrección.\\ \hline
+Monitoreo & Predespliegue: reporte por release. En producción: revisión trimestral de F1 y brecha por grupo etario.\\ \hline
+\end{tabularx}\vspace{5pt}
+\end{minipage}
+\newpage
+\thispagestyle{empty}
+\vspace*{34pt}\hspace*{30pt}\begin{minipage}{535pt}
+{\centering\fontsize{15}{18}\selectfont\bfseries\color[HTML]{006B3C} Adenda 13.6-B - Responsabilidad, equidad, supervisión y monitoreo (continuación)\par}
+\vspace{8pt}
+\fontsize{8.2}{10.1}\selectfont
+\renewcommand{\arraystretch}{1.13}
+\begin{tabularx}{\linewidth}{|p{115pt}|Y|}\hline
+\textbf{RNF-IA1-EQ02} & \textbf{Riesgo:} Alto (clasificación interna; apoyo clínico no autónomo)\\ \hline
+Responsable / frecuencia & Equipo de desarrollo, con revisión clínica del fisioterapeuta responsable - En cada reentrenamiento del modelo de visión.\\ \hline
+Equidad & Grupos de limitación de movilidad leve y moderada; toda brecha > 0.05 requiere revisión antes de aprobar el release.\\ \hline
+Supervisión / fallback & El fisioterapeuta revisa los casos con recall bajo antes de confirmar el ejercicio como correcto o incorrecto.\\ \hline
+Monitoreo & Predespliegue: reporte por release. En producción: revisión trimestral de recall y brecha por nivel de limitación.\\ \hline
+\end{tabularx}\vspace{5pt}
+\begin{tabularx}{\linewidth}{|p{115pt}|Y|}\hline
+\textbf{RNF-IA1-XAI01} & \textbf{Riesgo:} Alto (clasificación interna; apoyo clínico no autónomo)\\ \hline
+Responsable / frecuencia & Equipo de desarrollo, con evaluación del fisioterapeuta y pacientes participantes - Antes de cada release mayor del módulo de visión.\\ \hline
+Equidad & Aplicar el cuestionario de claridad por los grupos definidos en RNF-IA1-EQ01/EQ02; ningún grupo debe quedar por debajo de 4/5 sin acción correctiva.\\ \hline
+Supervisión / fallback & Paciente y fisioterapeuta pueden solicitar la explicación completa; la explicación no sustituye la decisión del fisioterapeuta y, si no cumple el umbral, la corrección se deriva a revisión humana.\\ \hline
+Monitoreo & Predespliegue: prueba por release mayor. En producción: revisión semestral de comprensión y registro de reclamaciones o explicaciones rechazadas.\\ \hline
+\end{tabularx}\vspace{5pt}
+\begin{tabularx}{\linewidth}{|p{115pt}|Y|}\hline
+\textbf{RNF-IA2-P01} & \textbf{Riesgo:} Alto (clasificación interna; apoyo clínico no autónomo)\\ \hline
+Responsable / frecuencia & Equipo de desarrollo, con validación clínica del fisioterapeuta responsable - En cada actualización del modelo de priorización.\\ \hline
+Equidad & Desagregar la precisión por grupos etarios y gravedad clínica; interpretar junto con RNF-IA2-EQ01/EQ02 antes de aprobar el release.\\ \hline
+Supervisión / fallback & El fisioterapeuta revisa y confirma cada alerta antes de tomar una acción clínica; si no se alcanza 0.80, la priorización automática no se usa como criterio de decisión.\\ \hline
+Monitoreo & Predespliegue: precisión por release. En producción: revisión mensual de alertas y de falsos positivos confirmados por fisioterapeuta.\\ \hline
+\end{tabularx}\vspace{5pt}
+\begin{tabularx}{\linewidth}{|p{115pt}|Y|}\hline
+\textbf{RNF-IA2-P02} & \textbf{Riesgo:} Alto (clasificación interna; apoyo clínico no autónomo)\\ \hline
+Responsable / frecuencia & Equipo de desarrollo, con validación clínica del fisioterapeuta responsable - En cada actualización del modelo de priorización.\\ \hline
+Equidad & Desagregar el recall por grupos etarios y gravedad clínica; interpretar junto con RNF-IA2-EQ01/EQ02 antes de aprobar el release.\\ \hline
+Supervisión / fallback & El fisioterapeuta revisa los eventos no priorizados en la muestra de validación. Si recall < 0.80, el sistema no puede usar la priorización automática como filtro exclusivo.\\ \hline
+Monitoreo & Predespliegue: recall por release. En producción: revisión mensual de falsos negativos detectados durante la supervisión clínica.\\ \hline
+\end{tabularx}\vspace{5pt}
+\end{minipage}
+\newpage
+\thispagestyle{empty}
+\vspace*{34pt}\hspace*{30pt}\begin{minipage}{535pt}
+{\centering\fontsize{15}{18}\selectfont\bfseries\color[HTML]{006B3C} Adenda 13.6-B - Responsabilidad, equidad, supervisión y monitoreo (continuación)\par}
+\vspace{8pt}
+\fontsize{8.2}{10.1}\selectfont
+\renewcommand{\arraystretch}{1.13}
+\begin{tabularx}{\linewidth}{|p{115pt}|Y|}\hline
+\textbf{RNF-IA2-P03} & \textbf{Riesgo:} Alto (clasificación interna; apoyo clínico no autónomo)\\ \hline
+Responsable / frecuencia & Equipo de desarrollo (responsable técnico del componente IA) - En cada release del módulo de priorización.\\ \hline
+Equidad & Desagregar la latencia por los grupos usados en RNF-IA2-EQ01/EQ02 para descartar degradaciones sistemáticas del servicio.\\ \hline
+Supervisión / fallback & Si la latencia supera 1 s de forma sostenida, el dashboard muestra estado degradado y el fisioterapeuta continúa con revisión manual sin depender de la prioridad automática.\\ \hline
+Monitoreo & Predespliegue: prueba por release. En producción: revisión mensual de logs de latencia y alerta operativa si p95 supera 1 s.\\ \hline
+\end{tabularx}\vspace{5pt}
+\begin{tabularx}{\linewidth}{|p{115pt}|Y|}\hline
+\textbf{RNF-IA2-EQ01} & \textbf{Riesgo:} Alto (clasificación interna; apoyo clínico no autónomo)\\ \hline
+Responsable / frecuencia & Equipo de desarrollo, con revisión clínica del fisioterapeuta responsable - En cada reentrenamiento del modelo de priorización.\\ \hline
+Equidad & Grupos etarios 18-39 años y >= 40 años; toda brecha > 0.05 requiere análisis antes del release.\\ \hline
+Supervisión / fallback & El fisioterapeuta revisa los casos límite antes de descartar o escalar la alerta.\\ \hline
+Monitoreo & Predespliegue: reporte por release. En producción: revisión trimestral de TPR y brecha por grupo etario.\\ \hline
+\end{tabularx}\vspace{5pt}
+\begin{tabularx}{\linewidth}{|p{115pt}|Y|}\hline
+\textbf{RNF-IA2-EQ02} & \textbf{Riesgo:} Alto (clasificación interna; apoyo clínico no autónomo)\\ \hline
+Responsable / frecuencia & Equipo de desarrollo, con revisión clínica del fisioterapeuta responsable - En cada reentrenamiento del modelo de priorización.\\ \hline
+Equidad & Niveles de gravedad clínica leve y moderada; toda brecha > 0.05 requiere revisión antes del release.\\ \hline
+Supervisión / fallback & El fisioterapeuta puede descartar manualmente una falsa alerta y su decisión queda registrada para revisión.\\ \hline
+Monitoreo & Predespliegue: reporte por release. En producción: revisión trimestral de FPR y brecha por nivel de gravedad.\\ \hline
+\end{tabularx}\vspace{5pt}
+\begin{tabularx}{\linewidth}{|p{115pt}|Y|}\hline
+\textbf{RNF-IA2-XAI01} & \textbf{Riesgo:} Alto (clasificación interna; apoyo clínico no autónomo)\\ \hline
+Responsable / frecuencia & Equipo de desarrollo, con evaluación del fisioterapeuta responsable - Antes de cada release mayor del módulo de priorización.\\ \hline
+Equidad & Aplicar la evaluación de claridad por grupos etarios y de gravedad definidos en RNF-IA2-EQ01/EQ02; ningún grupo debe quedar por debajo de 4/5 sin acción correctiva.\\ \hline
+Supervisión / fallback & El fisioterapeuta decide la acción final ante cada alerta; el sistema nunca actúa de forma autónoma. Si la explicación no cumple el umbral, la alerta se presenta para revisión manual.\\ \hline
+Monitoreo & Predespliegue: inspección por release mayor. En producción: revisión semestral de comprensión y de alertas cuya explicación fue rechazada o corregida.\\ \hline
+\end{tabularx}\vspace{5pt}
+\end{minipage}
+\newpage
 % PAGINA 139
 \BeginPage
   \Fill{78.00}{106.65}{113.35}{16.95}{D9EAF7}
@@ -21096,7 +21258,7 @@
   \T{81.05}{671.32}{8.00}{\rmfamily}{Trazabilidad}
   \T{194.45}{671.32}{8.00}{\rmfamily}{Matriz terminal}
   \T{307.85}{671.32}{8.00}{\rmfamily}{≥ 60 filas cerradas y verificables}
-  \T{421.25}{666.07}{8.00}{\rmfamily}{60 filas documentadas; auditoría }
+  \T{421.25}{666.07}{8.00}{\rmfamily}{62 filas documentadas; auditoría }
   \T{421.25}{676.62}{8.00}{\rmfamily}{externa en 04\_Trazabilidad}
   \T{81.05}{698.87}{8.00}{\rmfamily}{Resultados sintéticos PE5}
   \T{194.45}{698.87}{8.00}{\rmfamily}{Sección 13.7}
@@ -21216,170 +21378,67 @@
 \PortraitSize
 
 % ------------------------------------------------------------------
-% PAGINA 141
-\BeginPage
-  \T{295.85}{791.11}{12.00}{\rmfamily}{141}
-  \T{265.90}{71.36}{12.00}{\rmfamily \bfseries}{15. Referencias}
-  \T{113.50}{92.50}{10.50}{\rmfamily}{[1]}
-  \T{157.15}{91.16}{12.00}{\rmfamily}{ISO/IEC/IEEE,}
-  \T{241.52}{91.16}{12.00}{\rmfamily}{ }
-  \T{244.60}{91.16}{12.00}{\rmfamily \itshape}{ISO/IEC/IEEE  29148:2018  Systems  and  Software }
-  \T{85.15}{107.01}{12.00}{\rmfamily \itshape}{Engineering - Life Cycle Processes - Requirements Engineering}
-  \T{410.30}{107.01}{12.00}{\rmfamily}{. Geneva, Switzerland: }
-  \T{85.15}{122.86}{12.00}{\rmfamily}{ISO, 2018.}
-  \T{113.50}{143.05}{10.50}{\rmfamily}{[2]}
-  \T{157.15}{141.71}{12.00}{\rmfamily}{ISO/IEC,  }
-  \T{210.85}{141.71}{12.00}{\rmfamily \itshape}{ISO/IEC  25010:2023  Systems  and  Software  Engineering  - }
-  \T{85.15}{157.56}{12.00}{\rmfamily \itshape}{SQuaRE - Product Quality Model}
-  \T{247.75}{157.56}{12.00}{\rmfamily}{. Geneva, Switzerland: ISO, 2023.}
-  \T{113.50}{177.75}{10.50}{\rmfamily}{[3]}
-  \T{157.15}{176.41}{12.00}{\rmfamily}{K.  Pohl,  }
-  \T{213.65}{176.41}{12.00}{\rmfamily \itshape}{Requirements  Engineering:  Fundamentals,  Principles,  and }
-  \T{85.15}{192.26}{12.00}{\rmfamily \itshape}{Techniques}
-  \T{139.80}{192.26}{12.00}{\rmfamily}{. Berlin, Germany: Springer, 2010, doi: 10.1007/978-3-642-12578-2.}
-  \T{113.50}{212.45}{10.50}{\rmfamily}{[4]}
-  \T{157.15}{211.11}{12.00}{\rmfamily}{P. Runeson and M. Höst, “Guidelines for conducting and reporting case }
-  \T{85.15}{226.96}{12.00}{\rmfamily}{study research in software engineering,” }
-  \T{291.00}{226.96}{12.00}{\rmfamily \itshape}{Empirical Software Engineering}
-  \T{453.80}{226.96}{12.00}{\rmfamily}{, vol. 14, pp. }
-  \T{85.15}{242.81}{12.00}{\rmfamily}{131-164, 2009, doi: 10.1007/s10664-008-9102-8.}
-  \T{113.50}{263.00}{10.50}{\rmfamily}{[5]}
-  \T{157.15}{261.66}{12.00}{\rmfamily}{C.  Wohlin  et  al.,  }
-  \T{262.40}{261.66}{12.00}{\rmfamily \itshape}{Experimentation  in  Software  Engineering}
-  \T{479.90}{261.66}{12.00}{\rmfamily}{.  Berlin, }
-  \T{85.15}{277.51}{12.00}{\rmfamily}{Germany: Springer, 2012, doi: 10.1007/978-3-642-29044-2.}
-  \T{113.50}{297.70}{10.50}{\rmfamily}{[6]}
-  \T{157.15}{296.36}{12.00}{\rmfamily}{M. M. Hennink, B. N. Kaiser, and V. C. Marconi, “Code saturation versus }
-  \T{85.15}{312.21}{12.00}{\rmfamily}{meaning saturation,” }
-  \T{189.95}{312.21}{12.00}{\rmfamily \itshape}{Qualitative Health Research}
-  \T{329.05}{312.21}{12.00}{\rmfamily}{, vol. 27, no. 4, pp. 591-608, 2017, doi: }
-  \T{85.15}{328.06}{12.00}{\rmfamily}{10.1177/1049732316665344.}
-  \T{113.50}{348.25}{10.50}{\rmfamily}{[7]}
-  \T{157.15}{346.91}{12.00}{\rmfamily}{G. Guest, A. Bunce, and L. Johnson, “How many interviews are enough?,” }
-  \T{85.15}{362.76}{12.00}{\rmfamily \itshape}{Field Methods}
-  \T{154.80}{362.76}{12.00}{\rmfamily}{, vol. 18, no. 1, pp. 59-82, 2006, doi: 10.1177/1525822X05279903.}
-  \T{113.50}{382.95}{10.50}{\rmfamily}{[8]}
-  \T{157.15}{381.61}{12.00}{\rmfamily}{L.  Chazette  and  K.  Schneider,  “Explainability  as  a  non-functional }
-  \T{85.15}{397.46}{12.00}{\rmfamily}{requirement: Challenges and recommendations,” Requirements Engineering, vol. 25, pp. }
-  \T{85.15}{413.31}{12.00}{\rmfamily}{493-514, 2020, doi: 10.1007/s00766-020-00333-1.}
-  \T{113.50}{433.50}{10.50}{\rmfamily}{[9]}
-  \T{157.15}{432.16}{12.00}{\rmfamily}{M. T. Muñoz-Tomás et al., “Telerehabilitation as a therapeutic exercise tool }
-  \T{85.15}{448.01}{12.00}{\rmfamily}{versus  face-to-face  physiotherapy:  A  systematic  review,”  }
-  \T{397.15}{448.01}{12.00}{\rmfamily \itshape}{International  Journal  of }
-  \T{85.15}{463.86}{12.00}{\rmfamily \itshape}{Environmental Research and Public Health}
-  \T{306.00}{463.86}{12.00}{\rmfamily}{, vol. 20, no. 5, Art. no. 4358, 2023, doi: }
-  \T{85.15}{479.71}{12.00}{\rmfamily}{10.3390/ijerph20054358.}
-  \T{113.50}{499.90}{10.50}{\rmfamily}{[10]}
-  \T{157.15}{498.56}{12.00}{\rmfamily}{L. Suso-Martí  et  al.,  “Effectiveness  of  telerehabilitation  in  physical }
-  \T{85.15}{514.41}{12.00}{\rmfamily}{therapist practice: An umbrella and mapping review,” }
-  \T{355.45}{514.41}{12.00}{\rmfamily \itshape}{Physical Therapy}
-  \T{441.05}{514.41}{12.00}{\rmfamily}{, vol. 101, no. 5, }
-  \T{85.15}{530.26}{12.00}{\rmfamily}{2021, doi: 10.1093/ptj/pzab075.}
-  \T{113.50}{550.45}{10.50}{\rmfamily}{[11]}
-  \T{157.15}{549.11}{12.00}{\rmfamily}{ L.  Gava  et  al.,  “Effectiveness  of  physical  therapy  given  by }
-  \T{85.15}{564.96}{12.00}{\rmfamily}{telerehabilitation  on  shoulder  pain,”  Clinical  Rehabilitation,  2022,  doi: }
-  \T{85.15}{580.81}{12.00}{\rmfamily}{10.1177/02692155221083496.}
-  \T{113.50}{601.00}{10.50}{\rmfamily}{[12]}
-  \T{157.15}{599.66}{12.00}{\rmfamily}{B. Debnath, M. O’Brien, M. Yamaguchi, and A. Behera, “A review of }
-  \T{85.15}{615.51}{12.00}{\rmfamily}{computer vision-based approaches for physical rehabilitation and assessment,” Multimedia }
-  \T{85.15}{631.36}{12.00}{\rmfamily}{Systems, vol. 28, pp. 209-239, 2022, doi: 10.1007/s00530-021-00815-4.}
-  \T{113.50}{651.55}{10.50}{\rmfamily}{[13]}
-  \T{157.15}{650.21}{12.00}{\rmfamily}{ Z. Cao, G. Hidalgo, T. Simon, S.-E. Wei, and Y. Sheikh, “OpenPose: }
-  \T{85.15}{666.06}{12.00}{\rmfamily}{Realtime multi-person 2D pose estimation using part affinity fields,” IEEE Transactions on }
-  \T{85.15}{681.91}{12.00}{\rmfamily}{Pattern  Analysis  and  Machine  Intelligence,  vol.  43,  no.  1,  pp.  172-186,  2021,  doi: }
-  \T{85.15}{697.76}{12.00}{\rmfamily}{10.1109/TPAMI.2019.2929257.}
-  \T{113.50}{717.95}{10.50}{\rmfamily}{[14]}
-  \T{157.15}{716.61}{12.00}{\rmfamily}{C. Lugaresi et al., “MediaPipe: A framework for building perception }
-  \T{85.15}{732.46}{12.00}{\rmfamily}{pipelines,” arXiv:1906.08172, 2019, doi: 10.48550/arXiv.1906.08172.}
-  \T{113.50}{752.65}{10.50}{\rmfamily}{[15]}
-  \T{157.15}{751.31}{12.00}{\rmfamily}{M. T.  Ribeiro, S.  Singh, and  C.  Guestrin, “Why should I trust  you? }
-\EndPage
-
-\PortraitSize
-
-% ------------------------------------------------------------------
-% PAGINA 142
-\BeginPage
-  \T{295.85}{791.11}{12.00}{\rmfamily}{142}
-  \T{85.15}{71.36}{12.00}{\rmfamily}{Explaining the predictions of any classifier,” in  }
-  \T{333.85}{71.36}{12.00}{\rmfamily \itshape}{Proc. 22nd ACM SIGKDD Int. Conf. }
-  \T{85.15}{87.21}{12.00}{\rmfamily \itshape}{Knowledge  Discovery  and  Data  Mining}
-  \T{335.20}{87.21}{12.00}{\rmfamily}{,  2016,  pp.  1135-1144,  doi: }
-  \T{85.15}{103.06}{12.00}{\rmfamily}{10.1145/2939672.2939778.}
-  \T{113.50}{123.25}{10.50}{\rmfamily}{[16]}
-  \T{157.15}{121.91}{12.00}{\rmfamily}{S. M. Lundberg and S.-I. Lee, “A unified approach to interpreting model }
-  \T{85.15}{137.76}{12.00}{\rmfamily}{predictions,” in }
-  \T{162.10}{137.76}{12.00}{\rmfamily \itshape}{Advances in Neural Information Processing Systems}
-  \T{414.35}{137.76}{12.00}{\rmfamily}{, 2017.}
-  \T{113.50}{157.95}{10.50}{\rmfamily}{[17]}
-  \T{157.15}{156.61}{12.00}{\rmfamily}{S. S. Shapiro and M. B. Wilk, “An analysis of variance test for normality,” }
-  \T{85.15}{172.46}{12.00}{\rmfamily \itshape}{Biometrika}
-  \T{138.45}{172.46}{12.00}{\rmfamily}{, vol. 52, nos. 3-4, pp. 591-611, 1965, doi: 10.1093/biomet/52.3-4.591.}
-  \T{113.50}{192.65}{10.50}{\rmfamily}{[18]}
-  \T{157.15}{191.31}{12.00}{\rmfamily}{ Asamblea Nacional del Ecuador, Ley Orgánica de Protección de Datos }
-  \T{85.15}{207.16}{12.00}{\rmfamily}{Personales, Registro Oficial Suplemento 459, 2021.}
-  \T{113.50}{227.35}{10.50}{\rmfamily}{[19]}
-  \T{157.15}{226.01}{12.00}{\rmfamily}{ B. Kitchenham and S. Charters, Guidelines for Performing Systematic }
-  \T{85.15}{241.86}{12.00}{\rmfamily}{Literature Reviews in Software Engineering, EBSE Technical Report, 2007.}
-  \T{113.50}{262.05}{10.50}{\rmfamily}{[20]}
-  \T{157.15}{260.71}{12.00}{\rmfamily}{L. Chung and J. C. S. do Prado Leite, “On non-functional requirements in }
-  \T{85.15}{276.56}{12.00}{\rmfamily}{software engineering,” in }
-  \T{213.15}{276.56}{12.00}{\rmfamily \itshape}{Conceptual Modeling: Foundations and Applications}
-  \T{482.30}{276.56}{12.00}{\rmfamily}{. Berlin, }
-  \T{85.15}{292.41}{12.00}{\rmfamily}{Germany: Springer, 2009, pp. 363-379, doi: 10.1007/978-3-642-02463-4\_19.}
-  \T{113.50}{327.75}{10.50}{\rmfamily}{[21]}
-  \T{157.15}{326.41}{12.00}{\rmfamily}{N. Kano et al., “Attractive quality and must-be quality,” }
-  \T{452.50}{326.41}{12.00}{\rmfamily \itshape}{Journal of the }
-  \T{85.15}{342.26}{12.00}{\rmfamily \itshape}{Japanese Society for Quality Control}
-  \T{263.65}{342.26}{12.00}{\rmfamily}{, 1984.}
-  \T{113.50}{362.45}{10.50}{\rmfamily}{[22]}
-  \T{157.15}{361.11}{12.00}{\rmfamily}{B. Wake, “INVEST in good stories, and SMART tasks,” XP123, 2003.}
-  \T{113.50}{381.30}{10.50}{\rmfamily}{[23]}
-  \T{157.15}{379.96}{12.00}{\rmfamily}{I. Sommerville, }
-  \T{235.15}{379.96}{12.00}{\rmfamily \itshape}{Software Engineering}
-  \T{340.10}{379.96}{12.00}{\rmfamily}{, 10th ed. Boston, MA, USA: Pearson, }
-  \T{85.15}{395.81}{12.00}{\rmfamily}{2016.}
-  \T{113.50}{416.00}{10.50}{\rmfamily}{[24]}
-  \T{157.15}{414.66}{12.00}{\rmfamily}{Object  Management  Group,  }
-  \T{307.15}{414.66}{12.00}{\rmfamily \itshape}{Unified  Modeling  Language  Specification}
-  \T{521.50}{414.66}{12.00}{\rmfamily}{, }
-  \T{85.15}{430.51}{12.00}{\rmfamily}{Version 2.5.1, 2017.}
-  \T{113.50}{450.70}{10.50}{\rmfamily}{[25]}
-  \T{157.15}{449.36}{12.00}{\rmfamily}{D. L. Sackett et al., “Evidence based medicine: What it is and what it is }
-  \T{85.15}{465.21}{12.00}{\rmfamily}{not,” }
-  \T{111.80}{465.21}{12.00}{\rmfamily \itshape}{BMJ}
-  \T{134.45}{465.21}{12.00}{\rmfamily}{, vol. 312, pp. 71-72, 1996, doi: 10.1136/bmj.312.7023.71.}
-  \T{113.50}{485.40}{10.50}{\rmfamily}{[26]}
-  \T{157.15}{484.06}{12.00}{\rmfamily}{R. S. Pressman and B. R. Maxim, }
-  \T{331.60}{484.06}{12.00}{\rmfamily \itshape}{Software Engineering: A Practitioner’s }
-  \T{85.15}{499.91}{12.00}{\rmfamily \itshape}{Approach}
-  \T{132.45}{499.91}{12.00}{\rmfamily}{. New York, NY, USA: McGraw-Hill, 2020.}
-  \T{113.50}{520.10}{10.50}{\rmfamily}{[27]}
-  \T{157.15}{518.76}{12.00}{\rmfamily}{A. Holzinger et al., “What do we need to build explainable AI systems for }
-  \T{85.15}{534.61}{12.00}{\rmfamily}{the medical domain?,” arXiv:1712.09923, 2017, doi: 10.48550/arXiv.1712.09923.}
-  \T{113.50}{554.80}{10.50}{\rmfamily}{[28]}
-  \T{157.15}{553.46}{12.00}{\rmfamily}{J. Brooke, “SUS: A quick and dirty usability scale,” in }
-  \T{424.80}{553.46}{12.00}{\rmfamily \itshape}{Usability Evaluation }
-  \T{85.15}{569.31}{12.00}{\rmfamily \itshape}{in Industry}
-  \T{137.45}{569.31}{12.00}{\rmfamily}{. London, U.K.: Taylor \& Francis, 1996.}
-  \T{113.50}{589.50}{10.50}{\rmfamily}{[29]}
-  \T{157.15}{588.16}{12.00}{\rmfamily}{C. M. Bishop, }
-  \T{229.05}{588.16}{12.00}{\rmfamily \itshape}{Pattern Recognition and Machine Learning}
-  \T{440.65}{588.16}{12.00}{\rmfamily}{. New York, NY, }
-  \T{85.15}{604.01}{12.00}{\rmfamily}{USA: Springer, 2006.}
-  \T{113.50}{624.20}{10.50}{\rmfamily}{[30]}
-  \T{157.15}{622.86}{12.00}{\rmfamily}{ OECD, Recommendation of the Council on Artificial Intelligence. Paris, }
-  \T{85.15}{638.71}{12.00}{\rmfamily}{France: OECD Legal Instruments, 2019.}
-  \T{255.40}{679.71}{12.00}{\rmfamily \bfseries}{16. Anexos técnicos}
-  \T{113.50}{699.51}{12.00}{\rmfamily}{Los anexos del ERS se limitan a artefactos técnicos necesarios para verificar la }
-  \T{85.15}{715.36}{12.00}{\rmfamily}{especificación.  Las  evidencias  humanas,  consentimientos,  fotografías,  audios,  videos, }
-  \T{85.15}{731.21}{12.00}{\rmfamily}{transcripciones, actas y resultados del cuestionario no se duplican dentro del documento: }
-  \T{85.15}{747.06}{12.00}{\rmfamily}{su ubicación evaluable es 02\_Evidencias/, con separación entre zona pública anonimizada }
-\EndPage
-
-\PortraitSize
-
-% ------------------------------------------------------------------
+% PAGINA 141-142 - REFERENCIAS ACTUALIZADAS A 42 FUENTES
+\thispagestyle{empty}
+\vspace*{34pt}\hspace*{30pt}\begin{minipage}{535pt}
+{\centering\fontsize{15}{18}\selectfont\bfseries\color[HTML]{006B3C} 15. Referencias\par}
+\vspace{8pt}
+\fontsize{8.2}{10.1}\selectfont
+\fontsize{7.15}{8.45}\selectfont\setlength{\parskip}{2.2pt}\setlength{\parindent}{0pt}
+\hangindent=18pt\hangafter=1 [1] ISO/IEC/IEEE, ISO/IEC/IEEE 29148:2018 Systems and Software Engineering - Life Cycle Processes - Requirements Engineering, Geneva, Switzerland, 2018.\par
+\hangindent=18pt\hangafter=1 [2] ISO/IEC, ISO/IEC 25010:2023 Systems and Software Engineering - SQuaRE - Product Quality Model, Geneva, Switzerland, 2023.\par
+\hangindent=18pt\hangafter=1 [3] K. Pohl, Requirements Engineering: Fundamentals, Principles, and Techniques. Berlin, Germany: Springer, 2010, doi: 10.1007/978-3-642-12578-2.\par
+\hangindent=18pt\hangafter=1 [4] P. Runeson and M. Höst, “Guidelines for conducting and reporting case study research in software engineering”, Empirical Software Engineering, vol. 14, pp. 131-164, 2009, doi: 10.1007/s10664-008-9102-8.\par
+\hangindent=18pt\hangafter=1 [5] C. Wohlin, P. Runeson, M. Höst, M. C. Ohlsson, B. Regnell, and A. Wesslén, Experimentation in Software Engineering. Berlin, Germany: Springer, 2012, doi: 10.1007/978-3-642-29044-2.\par
+\hangindent=18pt\hangafter=1 [6] M. M. Hennink, B. N. Kaiser, and V. C. Marconi, “Code saturation versus meaning saturation”, Qualitative Health Research, vol. 27, no. 4, pp. 591-608, 2017, doi: 10.1177/1049732316665344.\par
+\hangindent=18pt\hangafter=1 [7] G. Guest, A. Bunce, and L. Johnson, “How many interviews are enough?”, Field Methods, vol. 18, no. 1, pp. 59-82, 2006, doi: 10.1177/1525822X05279903.\par
+\hangindent=18pt\hangafter=1 [8] L. Chazette and K. Schneider, “Explainability as a non-functional requirement: challenges and recommendations”, Requirements Engineering, vol. 25, pp. 493-514, 2020, doi: 10.1007/s00766-020-00333-1.\par
+\hangindent=18pt\hangafter=1 [9] M. T. Muñoz-Tomás et al., “Telerehabilitation as a Therapeutic Exercise Tool versus Face-to-Face Physiotherapy: A Systematic Review”, International Journal of Environmental Research and Public Health, vol. 20, no. 5, Art. no. 4358, 2023, doi: 10.3390/ijerph20054358.\par
+\hangindent=18pt\hangafter=1 [10] L. Suso-Martí, R. La Touche, A. Herranz-Gómez, S. Angulo-Díaz-Parreño, A. Paris-Alemany, and F. Cuenca-Martínez, “Effectiveness of Telerehabilitation in Physical Therapist Practice: An Umbrella and Mapping Review With Meta-Meta-Analysis”, Physical Therapy, vol. 101, no. 5, Art. no. pzab075, 2021, doi: 10.1093/ptj/pzab075.\par
+\hangindent=18pt\hangafter=1 [11] V. Gava, L. P. Ribeiro, R. P. G. Barreto, and P. R. Camargo, “Effectiveness of physical therapy given by telerehabilitation on pain and disability of individuals with shoulder pain: A systematic review”, Clinical Rehabilitation, vol. 36, no. 6, pp. 715-725, 2022, doi: 10.1177/02692155221083496.\par
+\hangindent=18pt\hangafter=1 [12] B. Debnath, M. O'Brien, M. Yamaguchi, and A. Behera, “A review of computer vision-based approaches for physical rehabilitation and assessment”, Multimedia Systems, vol. 28, pp. 209-239, 2022, doi: 10.1007/s00530-021-00815-4.\par
+\hangindent=18pt\hangafter=1 [13] Z. Cao, G. Hidalgo, T. Simon, S. E. Wei, and Y. Sheikh, “OpenPose: Realtime multi-person 2D pose estimation using part affinity fields”, IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. 43, no. 1, pp. 172-186, 2021, doi: 10.1109/TPAMI.2019.2929257.\par
+\hangindent=18pt\hangafter=1 [14] C. Lugaresi et al., MediaPipe: A framework for building perception pipelines, arXiv:1906.08172, 2019, doi: 10.48550/arXiv.1906.08172.\par
+\hangindent=18pt\hangafter=1 [15] M. T. Ribeiro, S. Singh, and C. Guestrin, “Why should I trust you? Explaining the predictions of any classifier”, in Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, pp. 1135-1144, 2016, doi: 10.1145/2939672.2939778.\par
+\hangindent=18pt\hangafter=1 [16] S. M. Lundberg and S. I. Lee, “A unified approach to interpreting model predictions”, in Advances in Neural Information Processing Systems, 2017.\par
+\hangindent=18pt\hangafter=1 [17] S. S. Shapiro and M. B. Wilk, “An analysis of variance test for normality”, Biometrika, vol. 52, no. 3--4, pp. 591-611, 1965, doi: 10.1093/biomet/52.3-4.591.\par
+\hangindent=18pt\hangafter=1 [18] Asamblea Nacional del Ecuador, Ley Orgánica de Protección de Datos Personales, Registro Oficial Suplemento 459, 2021.\par
+\hangindent=18pt\hangafter=1 [19] B. Kitchenham and S. Charters, Guidelines for Performing Systematic Literature Reviews in Software Engineering, Evidence-Based Software Engineering, 2007.\par
+\vfill\begin{center}\fontsize{8}{9}\selectfont 141\end{center}
+\end{minipage}
+\newpage
+\thispagestyle{empty}
+\vspace*{34pt}\hspace*{30pt}\begin{minipage}{535pt}
+{\centering\fontsize{15}{18}\selectfont\bfseries\color[HTML]{006B3C} 15. Referencias (continuación)\par}
+\vspace{8pt}
+\fontsize{8.2}{10.1}\selectfont
+\fontsize{7.15}{8.45}\selectfont\setlength{\parskip}{2.2pt}\setlength{\parindent}{0pt}
+\hangindent=18pt\hangafter=1 [20] L. Chung and J. C. S. do Prado Leite, “On non-functional requirements in software engineering”, in Conceptual Modeling: Foundations and Applications. Berlin, Germany: Springer, pp. 363-379, 2009, doi: 10.1007/978-3-642-02463-4\_19.\par
+\hangindent=18pt\hangafter=1 [21] N. Kano et al., “Attractive quality and must-be quality”, Journal of the Japanese Society for Quality Control, 1984.\par
+\hangindent=18pt\hangafter=1 [22] B. Wake, INVEST in good stories, and SMART tasks, XP123, 2003.\par
+\hangindent=18pt\hangafter=1 [23] I. Sommerville, Software Engineering, 10th ed. Boston, MA, USA: Pearson, 2016.\par
+\hangindent=18pt\hangafter=1 [24] Object Management Group, Unified Modeling Language Specification, Version 2.5.1, 2017.\par
+\hangindent=18pt\hangafter=1 [25] D. L. Sackett et al., “Evidence based medicine: What it is and what it is not”, BMJ, vol. 312, pp. 71-72, 1996, doi: 10.1136/bmj.312.7023.71.\par
+\hangindent=18pt\hangafter=1 [26] R. S. Pressman and B. R. Maxim, Software Engineering: A Practitioner's Approach. New York, NY, USA: McGraw-Hill, 2020.\par
+\hangindent=18pt\hangafter=1 [27] A. Holzinger et al., What do we need to build explainable AI systems for the medical domain?, arXiv:1712.09923, 2017, doi: 10.48550/arXiv.1712.09923.\par
+\hangindent=18pt\hangafter=1 [28] J. Brooke, “SUS: A quick and dirty usability scale”, in Usability Evaluation in Industry. London, U.K.: Taylor \& Francis, 1996.\par
+\hangindent=18pt\hangafter=1 [29] C. M. Bishop, Pattern Recognition and Machine Learning. New York, NY, USA: Springer, 2006.\par
+\hangindent=18pt\hangafter=1 [30] OECD, Recommendation of the Council on Artificial Intelligence, OECD Legal Instruments, Paris, France, 2019.\par
+\hangindent=18pt\hangafter=1 [31] M. A. Cottrell, O. A. Galea, S. P. O'Leary, A. J. Hill, and T. G. Russell, “Real-time telerehabilitation for the treatment of musculoskeletal conditions is effective and comparable to standard practice: a systematic review and meta-analysis”, Clinical Rehabilitation, vol. 31, no. 5, pp. 625-638, 2017, doi: 10.1177/0269215516645148.\par
+\hangindent=18pt\hangafter=1 [32] P. Seron et al., “Effectiveness of Telerehabilitation in Physical Therapy: A Rapid Overview”, Physical Therapy, vol. 101, no. 6, Art. no. pzab053, 2021, doi: 10.1093/ptj/pzab053.\par
+\hangindent=18pt\hangafter=1 [33] J. Sumner, H. W. Lim, L. S. Chong, A. Bundele, A. Mukhopadhyay, and G. Kayambu, “Artificial intelligence in physical rehabilitation: A systematic review”, Artificial Intelligence in Medicine, vol. 146, Art. no. 102693, 2023, doi: 10.1016/j.artmed.2023.102693.\par
+\hangindent=18pt\hangafter=1 [34] S. Sardari et al., “Artificial Intelligence for skeleton-based physical rehabilitation action evaluation: A systematic review”, Computers in Biology and Medicine, vol. 158, Art. no. 106835, 2023, doi: 10.1016/j.compbiomed.2023.106835.\par
+\hangindent=18pt\hangafter=1 [35] J. Amann, A. Blasimme, E. Vayena, D. Frey, and V. I. Madai, “Explainability for artificial intelligence in healthcare: a multidisciplinary perspective”, BMC Medical Informatics and Decision Making, vol. 20, no. 1, Art. no. 310, 2020, doi: 10.1186/s12911-020-01332-6.\par
+\hangindent=18pt\hangafter=1 [36] M. Ghassemi, L. Oakden-Rayner, and A. L. Beam, “The false hope of current approaches to explainable artificial intelligence in health care”, The Lancet Digital Health, vol. 3, no. 11, Art. no. e745-e750, 2021, doi: 10.1016/S2589-7500(21)00208-9.\par
+\hangindent=18pt\hangafter=1 [37] X. Liu, S. C. Rivera, D. Moher, M. J. Calvert, and A. K. Denniston, “Reporting guidelines for clinical trial reports for interventions involving artificial intelligence: the CONSORT-AI extension”, Nature Medicine, vol. 26, no. 9, pp. 1364-1374, 2020, doi: 10.1038/s41591-020-1034-x.\par
+\hangindent=18pt\hangafter=1 [38] S. C. Rivera, X. Liu, A. W. Chan, A. K. Denniston, and M. J. Calvert, “Guidelines for clinical trial protocols for interventions involving artificial intelligence: the SPIRIT-AI extension”, Nature Medicine, vol. 26, no. 9, pp. 1351-1363, 2020, doi: 10.1038/s41591-020-1037-7.\par
+\hangindent=18pt\hangafter=1 [39] N. Mehrabi, F. Morstatter, N. Saxena, K. Lerman, and A. Galstyan, “A Survey on Bias and Fairness in Machine Learning”, ACM Computing Surveys, vol. 54, no. 6, pp. 1-35, 2021, doi: 10.1145/3457607.\par
+\hangindent=18pt\hangafter=1 [40] M. Mitchell et al., “Model Cards for Model Reporting”, in Proceedings of the Conference on Fairness, Accountability, and Transparency, pp. 220-229, 2019, doi: 10.1145/3287560.3287596.\par
+\hangindent=18pt\hangafter=1 [41] T. Gebru et al., “Datasheets for Datasets”, Communications of the ACM, vol. 64, no. 12, pp. 86-92, 2021, doi: 10.1145/3458723.\par
+\hangindent=18pt\hangafter=1 [42] E. J. Topol, “High-performance medicine: the convergence of human and artificial intelligence”, Nature Medicine, vol. 25, no. 1, pp. 44-56, 2019, doi: 10.1038/s41591-018-0300-7.\par
+\vfill\begin{center}\fontsize{8}{9}\selectfont 142\end{center}
+\end{minipage}
+\newpage
 % PAGINA 143
 \BeginPage
   \Fill{72.30}{168.15}{178.55}{16.95}{D9EAF7}
