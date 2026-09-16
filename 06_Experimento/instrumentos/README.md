@@ -2,59 +2,68 @@
 
 ## Objetivo
 
-Definir el instrumento utilizado para evaluar comparativamente la calidad de
-los Requisitos Funcionales (RF) del Sistema Inteligente de Control y
-Seguimiento de Terapia Física (SICST), tanto los elicitados por el equipo
-humano como los generados por el LLM.
+Definir el instrumento empleado para evaluar comparativamente la calidad de
+los RF humanos y los RF generados por LLM.
 
-## Instrumento utilizado
+## Rúbrica
 
-### Rúbrica de evaluación de calidad de RF (escala Likert 1-5)
+Archivo:
 
-Archivo: `rubrica_evaluacion_requisitos.md`
+`rubrica_evaluacion_requisitos.md`
 
-5 dimensiones de calidad, cada una puntuada de 1 (no cumple en absoluto) a
-5 (cumple totalmente):
+Cada RF se puntúa de 1 a 5 en cinco dimensiones:
 
-- Completitud
-- Ausencia de ambigüedad
-- Verificabilidad
-- Corrección respecto a la fuente
-- Consistencia interna
+- completitud;
+- ausencia de ambigüedad;
+- verificabilidad;
+- corrección respecto a la fuente;
+- consistencia interna.
 
-### Listado de ítems a evaluar (anonimizado)
+## Ítems evaluados
 
-Archivo: `../datos_crudos/hoja_evaluacion_ciega.csv`
+Archivo:
 
-66 ítems (33 RF humanos + 33 RF del LLM), organizados en un único listado
-sin indicar el origen de cada uno, para preservar el cegado de los
-evaluadores.
+`../datos_crudos/hoja_evaluacion_ciega.csv`
 
-### Hojas de evaluación por juez
+Contiene 66 ítems anonimizados:
 
-Archivos: `../datos_crudos/evaluaciones_ciegas/Evaluacion_*.xlsx`
+- 33 RF humanos;
+- 33 RF LLM.
 
-Cada uno de los 4 evaluadores independientes (Mishell, Angel, Dayana, Sebas)
-completó su propia hoja, puntuando los 66 ítems en las 5 dimensiones.
+La hoja no revela el origen de cada ítem.
 
-## Procedimiento de aplicación
+## Evaluadores
 
-1. Se generaron los 33 RF del LLM a partir de las mismas transcripciones
-   usadas en la elicitación humana (ver `../prompts_llm/`).
-2. Se organizaron los 66 RF (humanos + LLM) en un listado único anonimizado.
-3. El listado se entregó a 4 evaluadores independientes, sin revelar el
-   origen de cada ítem.
-4. Cada evaluador puntuó los 66 ítems en las 5 dimensiones mediante escala
-   Likert 1-5.
-5. Los resultados se procesaron mediante el script en `../scripts_analisis/`,
-   que descifra el origen real de cada ítem (mediante la clave privada
-   cifrada en `02_Evidencias/00_Restringido/`) solo después de calcular el
-   acuerdo entre evaluadores, para el análisis comparativo final.
+Las hojas individuales están en:
 
-## Nota sobre un instrumento anterior descartado
+```text
+../datos_crudos/evaluaciones_ciegas/
+├── Evaluacion_Mishell.xlsx
+├── Evaluacion_Angel.xlsx
+├── Evaluacion_Dayana.xlsx
+└── Evaluacion_sebas.xlsx
+```
 
-Este instrumento reemplaza una rúbrica binaria (1=cumple/0=no cumple) usada
-en una exploración anterior del proyecto, descartada en favor de este
-diseño de evaluación ciega comparativa, que es el efectivamente
-pre-registrado en OSF y ejecutado.
+Los cuatro evaluadores puntuaron independientemente los 66 ítems.
 
+## Procedimiento
+
+1. Se prepararon los dos conjuntos de 33 RF.
+2. Se anonimizaron y mezclaron en un listado común.
+3. Los evaluadores recibieron los ítems sin conocer su origen.
+4. Cada evaluador puntuó las cinco dimensiones.
+5. Finalizada la evaluación, el análisis utiliza una clave privada de
+   desciego para recuperar el origen real de cada `item_id`.
+6. La clave se pasa al script mediante `--clave`.
+
+## Clave de desciego
+
+La clave no se publica en texto plano.
+
+La copia maestra se conserva en la zona restringida cifrada del proyecto.
+El script de análisis **no descifra el contenedor**; únicamente lee una copia
+local autorizada de `clave_privada_desciego.csv` proporcionada mediante el
+argumento `--clave`.
+
+Esto mantiene separada la evidencia pública de evaluación y la
+correspondencia privada necesaria para el análisis.
