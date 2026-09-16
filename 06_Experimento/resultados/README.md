@@ -26,7 +26,7 @@ Bootstrap: 10 000 remuestreos con semilla base 42.
 
 - `mapa_origen_items_reconstruido.csv`  
   Correspondencia post-evaluación reconstruida automáticamente entre
-  `ITEM`, origen real y RF real.
+  `ITEM`, origen real y RF real usando la matriz humana y `requisitos_llm.csv`.
 
 - `fleiss_kappa.csv`  
   Acuerdo entre los cuatro evaluadores sobre los 66 ítems.
