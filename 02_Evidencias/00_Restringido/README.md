@@ -46,3 +46,11 @@ Debe coincidir con el valor publicado en `checksum_evidencias_restringidas.sha25
 
 La contraseña del contenedor cifrado no se publica en este repositorio y se
 entrega únicamente al docente mediante el medio institucional correspondiente.
+
+## Nota sobre el inventario final
+
+La inspección del 15/09/2026 registró 45 piezas multimedia.
+El inventario de cierre contiene 67 piezas de audio y video disponibles
+en el Release `evidencias-2B`. La ficha técnica final fue regenerada
+directamente a partir de los archivos depositados mediante `ffprobe`
+y SHA-256.
