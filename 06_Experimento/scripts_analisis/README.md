@@ -18,7 +18,7 @@ El script utiliza:
 
 ## Reconstrucción del origen
 
-No se requiere `clave_privada_reconstrucción del origen.csv`.
+No se requiere una clave privada externa. La correspondencia entre los identificadores ITEM-xxx y el origen real se reconstruye después de finalizada la evaluación.
 
 Después de finalizada la evaluación, el script reconstruye
 `ITEM -> origen -> RF real` comparando la hoja ciega con dos fuentes
