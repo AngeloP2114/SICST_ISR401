@@ -1,7 +1,7 @@
-dimension,n_pares,prueba,normal_shapiro_diffs,estadistico,valor_p_crudo,media_diferencia_humano_menos_llm,ic95_diferencia_lo,ic95_diferencia_hi,valor_p_holm,significativo_holm_0.05
-completitud,11,t apareada,True,0.7138,0.4917,0.0909,-0.1364,0.3409,1.0,False
-ausencia_ambiguedad,11,t apareada,True,-0.4675,0.6501,-0.0909,-0.4773,0.25,1.0,False
-verificabilidad,11,t apareada,True,1.0,0.3409,0.1364,-0.1364,0.3864,1.0,False
-correccion_fuente,11,t apareada,True,1.5498,0.1522,0.1591,-0.0455,0.3409,0.761133933824737,False
-consistencia_interna,11,t apareada,True,0.9376,0.3705,0.0909,-0.0909,0.2727,1.0,False
-puntaje_global,11,t apareada,True,1.1926,0.2606,0.0773,-0.0455,0.1955,,
+dimension,n_pares,prueba,shapiro_p_diferencias,normal_shapiro_diffs,estadistico,valor_p_crudo,media_diferencia_humano_menos_llm,ic95_diferencia_lo,ic95_diferencia_hi,cohen_dz,ic95_cohen_dz_lo,ic95_cohen_dz_hi,bootstrap_remuestreos,bootstrap_semilla_base,valor_p_holm,significativo_holm_0.05
+completitud,11,t apareada,0.3129,True,0.7138,0.4917,0.0909,-0.1364,0.3409,0.2152,-0.4217,0.9451,10000,42,1.0,False
+ausencia_ambiguedad,11,t apareada,0.4255,True,-0.4675,0.6501,-0.0909,-0.4545,0.25,-0.141,-0.7545,0.5976,10000,42,1.0,False
+verificabilidad,11,t apareada,0.0644,True,1.0,0.3409,0.1364,-0.1142,0.3864,0.3015,-0.2891,1.3524,10000,42,1.0,False
+correccion_fuente,11,t apareada,0.1083,True,1.5498,0.1522,0.1591,-0.0455,0.3409,0.4673,-0.1238,1.6187,10000,42,0.761133933824737,False
+consistencia_interna,11,t apareada,0.3115,True,0.9376,0.3705,0.0909,-0.0909,0.2727,0.2827,-0.3015,1.291,10000,42,1.0,False
+puntaje_global,11,t apareada,0.0518,True,1.1926,0.2606,0.0773,-0.0455,0.1955,0.3596,-0.231,1.3334,10000,42,,
