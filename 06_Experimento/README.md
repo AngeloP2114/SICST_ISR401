@@ -26,19 +26,21 @@ y aquellos generados mediante un modelo de lenguaje?
 **H0:** No existen diferencias estadísticamente significativas.  
 **H1:** Existen diferencias estadísticamente significativas.
 
-## Registro previo
+## Registro OSF y cronología
 
 - **OSF ID:** `82q76`
 - **DOI:** `10.17605/OSF.IO/82Q76`
 - **Fecha UTC:** `2026-09-13T00:50:38.265668Z`
 - **Ecuador continental (UTC-5):** `2026-09-12 19:50:38`
 
-El preregistro corresponde específicamente al experimento comparativo
-humano-LLM. Las entrevistas originales ya existían previamente como parte de
-la elicitación de requisitos.
+Las entrevistas originales ya existían previamente como parte de la
+elicitación de requisitos. Por tanto, el registro OSF no se presenta como
+preregistro de la recolección de campo original.
 
-La fase comparativa utiliza esas transcripciones anonimizadas como corpus
-fuente fijo.
+El registro corresponde al experimento comparativo humano–LLM y a la fase
+posterior de generación LLM, evaluación ciega y análisis. En consecuencia,
+el contraste inferencial se reporta con alcance **exploratorio**, no como una
+prueba confirmatoria plenamente preregistrada.
 
 La evidencia verificable se conserva en:
 
@@ -143,7 +145,7 @@ evaluadores antes ni durante su calificación.
 
 ## Pares temáticos
 
-El análisis confirmatorio utiliza los **11 pares temáticos estrictos**
+El análisis principal exploratorio utiliza los **11 pares temáticos estrictos**
 identificados mediante:
 
 `tipo == "pareado"`
