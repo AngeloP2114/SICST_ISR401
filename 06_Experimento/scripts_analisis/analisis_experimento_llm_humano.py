@@ -4,7 +4,8 @@ RF humanos vs. RF generados por LLM.
 
 El origen de los ITEM se reconstruye después de la evaluación a partir de:
 - datos_crudos/hoja_evaluacion_ciega.csv
-- datos_procesados/matriz_trazabilidad_tema_RF.csv
+- datos_procesados/matriz_trazabilidad_tema_RF.csv (RF humanos)
+- datos_crudos/requisitos_llm.csv (33 RF LLM completos)
 
 No requiere una clave externa.
 """
@@ -39,6 +40,7 @@ RUTA_EXPERIMENTO = RUTA_SCRIPT.parent
 RUTA_CRUDOS = RUTA_EXPERIMENTO / "datos_crudos"
 RUTA_EVALUACIONES = RUTA_CRUDOS / "evaluaciones_ciegas"
 RUTA_HOJA_CIEGA = RUTA_CRUDOS / "hoja_evaluacion_ciega.csv"
+RUTA_REQUISITOS_LLM = RUTA_CRUDOS / "requisitos_llm.csv"
 RUTA_MATRIZ = (
     RUTA_EXPERIMENTO / "datos_procesados" / "matriz_trazabilidad_tema_RF.csv"
 )
@@ -62,7 +64,7 @@ def validar_archivos() -> None:
         if not ruta.is_file():
             faltantes.append(str(ruta))
 
-    for ruta in (RUTA_HOJA_CIEGA, RUTA_MATRIZ):
+    for ruta in (RUTA_HOJA_CIEGA, RUTA_REQUISITOS_LLM, RUTA_MATRIZ):
         if not ruta.is_file():
             faltantes.append(str(ruta))
 
@@ -133,7 +135,30 @@ def cargar_matriz() -> pd.DataFrame:
     return matriz
 
 
-def reconstruir_mapa_origen(matriz: pd.DataFrame) -> pd.DataFrame:
+
+def cargar_requisitos_llm() -> pd.DataFrame:
+    llm = pd.read_csv(RUTA_REQUISITOS_LLM)
+
+    requeridas = {"id_requisito", "descripcion"}
+    faltan = requeridas - set(llm.columns)
+
+    if faltan:
+        raise ValueError(
+            f"requisitos_llm.csv no contiene estas columnas: {sorted(faltan)}"
+        )
+
+    if len(llm) != 33:
+        raise ValueError(
+            f"Se esperaban 33 RF LLM y se encontraron {len(llm)}."
+        )
+
+    if llm["id_requisito"].duplicated().any():
+        raise ValueError("requisitos_llm.csv contiene IDs duplicados.")
+
+    return llm
+
+
+def reconstruir_mapa_origen(matriz: pd.DataFrame, llm: pd.DataFrame) -> pd.DataFrame:
     """
     Reconstruye ITEM -> origen_real -> id_real mediante coincidencia del texto
     de la hoja ciega con los textos canónicos de la matriz temática.
@@ -156,9 +181,14 @@ def reconstruir_mapa_origen(matriz: pd.DataFrame) -> pd.DataFrame:
 
         candidatos.setdefault(texto_norm, set()).add((origen, id_norm))
 
+    # RF humanos: se recuperan de la matriz de trazabilidad.
     for _, row in matriz.iterrows():
         agregar(row["rf_humano_texto"], "human", row["rf_humano_id"])
-        agregar(row["rf_llm_texto"], "llm", row["rf_llm_id"])
+
+    # RF LLM: se usan los 33 del archivo canónico completo.
+    # Esto cubre también RF LLM que no aparecen en la matriz temática.
+    for _, row in llm.iterrows():
+        agregar(row["descripcion"], "llm", row["id_requisito"])
 
     filas = []
     sin_coincidencia = []
@@ -570,7 +600,8 @@ def main() -> None:
     validar_archivos()
 
     matriz = cargar_matriz()
-    mapa = reconstruir_mapa_origen(matriz)
+    llm = cargar_requisitos_llm()
+    mapa = reconstruir_mapa_origen(matriz, llm)
     evaluaciones = cargar_evaluaciones()
 
     tabla_item = construir_tabla_por_item(evaluaciones, mapa)
