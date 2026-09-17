@@ -6,9 +6,10 @@
 
 ## Entradas
 
-El script usa automáticamente:
+El script utiliza:
 
 - `../datos_crudos/hoja_evaluacion_ciega.csv`
+- `../datos_crudos/requisitos_llm.csv`
 - `../datos_crudos/evaluaciones_ciegas/Evaluacion_Mishell.xlsx`
 - `../datos_crudos/evaluaciones_ciegas/Evaluacion_Angel.xlsx`
 - `../datos_crudos/evaluaciones_ciegas/Evaluacion_Dayana.xlsx`
@@ -17,43 +18,39 @@ El script usa automáticamente:
 
 ## Reconstrucción del origen
 
-No se usa `clave_privada_desciego.csv`.
+No se requiere `clave_privada_reconstrucción del origen.csv`.
 
-El script reconstruye `ITEM -> origen -> RF real` después de la evaluación,
-comparando el texto de la hoja ciega con los textos canónicos de la matriz.
+Después de finalizada la evaluación, el script reconstruye
+`ITEM -> origen -> RF real` comparando la hoja ciega con dos fuentes
+canónicas:
 
-La ejecución se detiene si:
+- para los RF humanos, la matriz de trazabilidad;
+- para los RF LLM, el archivo completo `requisitos_llm.csv`.
 
-- no se reconstruyen 66 ITEM;
-- no resultan exactamente 33 humanos y 33 LLM;
-- algún texto no tiene coincidencia;
-- algún texto tiene más de una coincidencia posible.
+Se usa el CSV completo del LLM porque la matriz temática solo documenta
+correspondencias y puede omitir RF que no participan en ningún pareo. Ese era
+el caso de RF-18, que corresponde a ITEM-045.
 
-El mapa derivado se guarda en:
-
-`../resultados/mapa_origen_items_reconstruido.csv`
+La ejecución se detiene si no obtiene exactamente 66 ITEM, 33 humanos,
+33 LLM, o si existe una coincidencia faltante o ambigua.
 
 ## Cálculos
 
-- κ de Fleiss por dimensión sobre los 66 ítems.
-- descriptivos por origen sobre los 66 ítems.
-- construcción de los 11 pares temáticos estrictos.
-- Shapiro-Wilk sobre las diferencias por par.
-- t apareada o Wilcoxon de rangos con signo.
-- Holm-Bonferroni sobre las cinco dimensiones.
-- diferencia media humano − LLM.
-- IC bootstrap 95 % de la diferencia media.
-- Cohen's dz.
-- IC bootstrap 95 % de Cohen's dz.
-- 10 000 remuestreos bootstrap con semilla base 42.
-- figura de comparación pareada.
+- κ de Fleiss por dimensión sobre los 66 ítems;
+- descriptivos por origen;
+- 11 pares temáticos estrictos;
+- Shapiro-Wilk;
+- t apareada o Wilcoxon;
+- Holm-Bonferroni;
+- diferencia media e IC bootstrap 95 %;
+- Cohen's dz e IC bootstrap 95 %;
+- 10 000 remuestreos con semilla base 42.
 
-## Instalación y ejecución
+## Ejecución
 
-Desde la raíz del repositorio:
+Con el entorno Python 3.12 activado:
 
 ```bash
-python -m pip install -r 06_Experimento/scripts_analisis/requirements.txt
 python 06_Experimento/scripts_analisis/analisis_experimento_llm_humano.py
 ```
 
