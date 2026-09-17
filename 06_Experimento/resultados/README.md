@@ -2,7 +2,7 @@
 
 ## Diseño del análisis
 
-El análisis confirmatorio utiliza los **11 pares temáticos estrictos**
+El análisis principal, de carácter **exploratorio**, utiliza los **11 pares temáticos estrictos**
 identificados por `tipo == "pareado"`.
 
 Esos pares contienen 22 de los 66 ítems evaluados. Los otros 44 ítems se
@@ -25,6 +25,23 @@ El procedimiento bootstrap utiliza **10 000 remuestreos** con semilla base
 
 El índice global se reporta como un resumen complementario. La corrección
 Holm-Bonferroni se aplica a las cinco dimensiones principales del estudio.
+
+## Alcance del registro OSF
+
+El experimento comparativo está registrado en OSF con DOI
+`10.17605/OSF.IO/82Q76`.
+
+La fecha de registro es `2026-09-13T00:50:38Z`
+(`2026-09-12 19:50:38` en Ecuador continental).
+
+Las entrevistas de elicitación del SICST ya habían sido recolectadas antes
+de esa fecha. Por ello, el registro OSF no se presenta como preregistro de
+la recolección de campo original. Se interpreta como registro del experimento
+comparativo humano–LLM y del análisis posterior.
+
+En consecuencia, el contraste estadístico de este paquete se reporta con
+alcance **exploratorio** y no como una prueba confirmatoria plenamente
+preregistrada.
 
 ## Archivos generados
 
@@ -82,7 +99,7 @@ Incluye, entre otros:
 ### `pares_estrictos_utilizados.csv`
 
 Contiene los **11 pares temáticos estrictos** utilizados en el análisis
-confirmatorio.
+principal exploratorio.
 
 Cada fila relaciona un requisito humano con un requisito LLM que aborda un
 tema suficientemente equivalente para permitir una comparación apareada.
@@ -126,9 +143,9 @@ En la ejecución reproducible actual se obtuvieron:
 - **33 requisitos LLM**;
 - **11 pares temáticos estrictos**.
 
-En las cinco dimensiones analizadas no se observaron diferencias
-estadísticamente significativas después de aplicar la corrección
-Holm-Bonferroni.
+En las cinco dimensiones analizadas, dentro de este análisis exploratorio,
+no se observaron diferencias estadísticamente significativas después de
+aplicar la corrección Holm-Bonferroni.
 
 La ausencia de significancia estadística no debe interpretarse como prueba de
 equivalencia entre ambos procedimientos. Los resultados deben considerarse
@@ -147,3 +164,4 @@ source .venv-sicst/bin/activate
 python -m pip install --upgrade pip
 python -m pip install -r 06_Experimento/scripts_analisis/requirements.txt
 python 06_Experimento/scripts_analisis/analisis_experimento_llm_humano.py
+```
