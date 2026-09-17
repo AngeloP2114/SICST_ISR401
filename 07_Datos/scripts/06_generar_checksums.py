@@ -32,7 +32,7 @@ def main():
     with open(CHECKSUMS, "w", encoding="utf-8") as f:
         for archivo in archivos:
             if archivo.exists():
-                ruta_relativa = archivo.relative_to(ROOT)
+                ruta_relativa = archivo.relative_to(DATA)
                 f.write(f"{sha256(archivo)}  {ruta_relativa.as_posix()}\n")
 
     print(f"OK: {CHECKSUMS.relative_to(ROOT)} ({len(archivos)} archivos)")

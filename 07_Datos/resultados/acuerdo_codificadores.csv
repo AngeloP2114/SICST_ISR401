@@ -1,0 +1,10 @@
+metrica,valor
+decisiones_comparadas,36
+acuerdos,33
+desacuerdos,3
+porcentaje_acuerdo,91.67
+cohen_kappa,0.7187
+ic95_inferior,0.3077
+ic95_superior,1.0000
+bootstrap_repeticiones,10000
+semilla,401

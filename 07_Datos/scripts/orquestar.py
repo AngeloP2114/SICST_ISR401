@@ -14,6 +14,30 @@ inmediatamente.
 import subprocess
 import sys
 from pathlib import Path
+import importlib.util
+
+
+def asegurar_dependencias():
+    if importlib.util.find_spec("matplotlib") is None:
+        requirements = Path(__file__).resolve().parents[1] / "requirements.txt"
+
+        print("Dependencia faltante: matplotlib")
+        print("Instalando dependencias de 07_Datos...")
+
+        subprocess.run(
+            [
+                sys.executable,
+                "-m",
+                "pip",
+                "install",
+                "-r",
+                str(requirements),
+            ],
+            check=True,
+        )
+
+
+
 
 CARPETA = Path(__file__).resolve().parent
 
@@ -24,12 +48,15 @@ PASOS = [
     "04_analisis_por_perfil.py",
     "05_analisis_por_pregunta.py",
     "07_analisis_cruzado.py",
+    "09_analisis_cualitativo.py",
     "08_generar_figuras.py",
+    "10_generar_manifiesto.py",
     "06_generar_checksums.py",  # checksums siempre al final, tras generar todo
 ]
 
 
 def main():
+    asegurar_dependencias()
     for paso in PASOS:
         print(f"\n=== Ejecutando {paso} ===")
         resultado = subprocess.run([sys.executable, str(CARPETA / paso)])
