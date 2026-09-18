@@ -1,0 +1,29 @@
+fecha,integrante,hora_inicio,hora_fin,commits_en_sesion,actividad_resumen
+2026-07-26,Angelo Zambrano,20:41,21:51,33,Crear carpeta dataset Zenodo; Crear carpeta de publicacion; Crear carpeta de scripts de analisis; Crear carpeta de resultados experimentales; ... (+29 commits mas en esta sesion)
+2026-07-27,Angelo Zambrano,15:21,15:23,2,Delete 02_Evidencias/Video/WhatsApp Video 2026-07-26 at 10.46.03 PM.mp4; Create WhatsApp Video 2026-07-26 at 10.46.03 PM.mp4
+2026-08-02,Angelo Zambrano,08:27,18:10,43,Add files via upload; Add files via upload; Add files via upload; Add files via upload; ... (+39 commits mas en esta sesion)
+2026-08-02,FrixonMP,15:52,16:56,19,Add files via upload; Add files via upload; Add files via upload; Delete 02_Evidencias/Fotos_Aplicacion/EV2-PAC-13_Cuestionario.jpeg; ... (+15 commits mas en esta sesion)
+2026-08-02,kcontrerasc3-cloud,18:59,19:13,7,Add files via upload; Delete 02_Evidencias/Fotos_Aplicacion/Cuestionario_Necesidades_EV2-PAC-08.jpeg; Add files via upload; Delete 02_Evidencias/Fotos_Aplicacion/Cuestionario_Necesidades_EV2-PAC-07.jpeg; ... (+3 commits mas en esta sesion)
+2026-08-02,kevin11contreraschavez-droid,20:08,20:35,4,walkthrough; videos; actualizar audio; Audio de preguntas
+2026-08-23,Angelo Zambrano,23:16,23:58,19,Actualizar README para cierre final PE5; Documentar compilación reproducible del informe PE5; Add files via upload; Delete PE5_Informe_Final/PE5_U5_PFC_Final_MORAN_CONTRERAS_VITERI_ZAMBRANO(5).pdf; ... (+15 commits mas en esta sesion)
+2026-08-24,Angelo Zambrano,00:00,12:53,54,"Integrar cambios remotos y conservar correcciones PE5; Corregir y sincronizar artefactos finales PE5; Add array, xcolor, and enumitem to README.md; Update README.md; ... (+50 commits mas en esta sesion)"
+2026-08-24,FrixonMP,12:21,12:21,1,Add files via upload
+2026-08-24,kcontrerasc3-cloud,00:58,00:58,1,Agregar aporte individual de Kevin Contreras
+2026-08-24,kevin11contreraschavez-droid,00:12,00:13,2,Merge branch 'main' of https://github.com/AngeloP2114/Sistema_Terapia_Fisica_ISR401_2A; Agregar fuentes LaTeX del ERS/SRS PE5
+2026-09-01,Angelo Zambrano,13:44,18:00,85,Delete 01_ERS/ERS_SRS_2B_v2.0.tex.tex; Update README.md; Add files via upload; Add files via upload; ... (+81 commits mas en esta sesion)
+2026-09-01,kcontrerasc3-cloud,17:52,17:58,2,Actualiza ERS/SRS 2B v2.0 en LaTeX; Agrega transcripciones anonimizadas de entrevistas y walkthrough
+2026-09-04,Angelo Zambrano,15:26,21:48,78,Actualizar README de dataset publicado en Zenodo; Actualizar CITATION de dataset con DOI de Zenodo; Actualizar README de datos con DOI de Zenodo; Registrar DOI y publicación en Zenodo; ... (+74 commits mas en esta sesion)
+2026-09-04,kcontrerasc3-cloud,19:17,21:48,17,Agrega declaración de uso responsable de IA; Documenta aporte individual de Kevin Contreras; Actualiza documentación ética del proyecto SICST; Actualiza documentación del dataset para Zenodo; ... (+13 commits mas en esta sesion)
+2026-09-05,Angelo Zambrano,10:02,11:01,21,Enhance README with compilation and publication details; Remove duplicate pdflatex command in README; Update README.md; Add files via upload; ... (+17 commits mas en esta sesion)
+2026-09-08,Angelo Zambrano,16:45,18:50,9,Delete 02_Evidencias/Transcripciones/TRANSCRIPCIÓN EVA2-PAC-10 Entrevista.txt; Delete 02_Evidencias/Transcripciones/TRANSCRIPCIONES_EVA2-PAC-13_Entrevista.txt; Add files via upload; Delete 02_Evidencias/Transcripciones/TRANSCRIPCIONES_EVA2-PAC-11_Entrevista.txt; ... (+5 commits mas en esta sesion)
+2026-09-10,Angelo Zambrano,20:38,20:54,5,Update README.md; Revise README for clarity and detail; Update README with thematic coding references; Update README with thematic and double coding info; ... (+1 commits mas en esta sesion)
+2026-09-11,Angelo Zambrano,09:06,14:08,68,Update evaluacion_experta.csv; Add bibliographic references for software engineering; Create osf_deviations.md for experimental protocol changes; Add OSF registration for SICST experiment; ... (+64 commits mas en esta sesion)
+2026-09-12,Angelo Zambrano,09:02,20:50,7,Add files via upload; Delete 06_Experimento/datos_crudos/Requisitos_sicst.csv; Update README.md; Update analisis_resultados.md; ... (+3 commits mas en esta sesion)
+2026-09-13,Angelo Zambrano,11:39,17:12,107,Add files via upload; Create README.md; Update repository code URL in CITATION.cff; Add files via upload; ... (+103 commits mas en esta sesion)
+2026-09-13,kcontrerasc3-cloud,00:42,16:19,8,Añadir imágenes de notas de campo de entrevistas; Añadir imágenes de petición de entrevistas en correspondencia; Create README.md; Create README.md; ... (+4 commits mas en esta sesion)
+2026-09-14,Contreras Chávez Kevin Germán,09:12,10:18,2,Unificar las identidades Git de Kevin mediante .mailmap.
+2026-09-14,Zambrano Moya Angelo Paul,17:26,17:26,1,Revisar y actualizar .mailmap.
+2026-09-16,Zambrano Moya Angelo Paul,07:29,22:57,64,"Actualizar ERS, experimento, resultados, documentación y evidencias del cierre."
+2026-09-16,Contreras Chávez Kevin Germán,13:33,22:52,22,"Actualizar auditoría, normalizar capturas y cargar evidencias."
+2026-09-17,Zambrano Moya Angelo Paul,00:38,17:29,29,"Completar la cadena reproducible, fichas técnicas, manuscrito y retrospectiva."
+2026-09-17,Contreras Chávez Kevin Germán,16:20,17:03,25,"Elaborar 22 notas de campo como síntesis posterior (no notas contemporáneas de sesión) a partir de las transcripciones de sesiones de campo de julio-agosto 2026, para las cuales no existía nota manuscrita tomada durante la sesión; motivo: notas originales no registradas en su momento. Agregar notas manuscritas de entrevistas y walkthroughs y renombrar la grabación."
