@@ -21,7 +21,7 @@ Los integrantes activos durante el cierre de la Entrega Final 2B son:
 
 El cambio de composición del equipo está documentado en:
 
-- `10_Autoria/declaracion_cambio_composicion_equipo (1).md`
+- `10_Autoria/declaracion_cambio_composicion_equipo.md`
 - `10_Autoria/declaracion_cambio_composicion_equipo.pdf`
 
 ## 3. Aporte individual de Zambrano Moya Angelo Paul
@@ -105,7 +105,7 @@ Las grabaciones correspondientes se encuentran en `10_Autoria/grabaciones/`.
 
 **Viteri García Jonathan Enrique** formó parte de la composición inicial del equipo, pero no registra commits propios en el historial utilizado para esta entrega de cierre.
 
-La situación completa y el cambio de composición se documentan en `10_Autoria/declaracion_cambio_composicion_equipo (1).md` y en su versión PDF firmada.
+La situación completa y el cambio de composición se documentan en `10_Autoria/declaracion_cambio_composicion_equipo.md` y en su versión PDF firmada.
 
 ## 7. Verificación de autoría
 

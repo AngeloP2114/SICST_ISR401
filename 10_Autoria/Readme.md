@@ -25,7 +25,7 @@ historial de Git por transparencia y trazabilidad.
 
 La situación se encuentra documentada en:
 
-- [`declaracion_cambio_composicion_equipo (1).md`](declaracion_cambio_composicion_equipo%20(1).md)
+- [`declaracion_cambio_composicion_equipo.md`](declaracion_cambio_composicion_equipo.md)
 - [`declaracion_cambio_composicion_equipo.pdf`](declaracion_cambio_composicion_equipo.pdf)
 
 La versión PDF contiene las firmas manuscritas de los dos integrantes activos.
@@ -41,7 +41,7 @@ participaron durante la etapa de cierre.
 |---|---|---|
 | Aportes individuales verificables | [`aporte_individual.md`](aporte_individual.md) | Disponible en Markdown y DOCX |
 | Declaración de uso de IA | [`declaracion_uso_ia.md`](declaracion_uso_ia.md) | Disponible en Markdown y DOCX |
-| Declaración de cambio de composición | [`declaracion_cambio_composicion_equipo (1).md`](declaracion_cambio_composicion_equipo%20(1).md) y PDF | Documentada y firmada |
+| Declaración de cambio de composición | [`declaracion_cambio_composicion_equipo.md`](declaracion_cambio_composicion_equipo.md) y PDF | Documentada y firmada |
 | Bitácora de actividad Git | [`bitácora_sesiones/bitacora_sesiones.csv`](bitácora_sesiones/bitacora_sesiones.csv) | Disponible |
 | Bitácora de elicitación | [`bitácora_sesiones/bitacora_elicitacion.csv`](bitácora_sesiones/bitacora_elicitacion.csv) | 30 sesiones/jornadas documentadas |
 | Capturas individuales | [`capturas/`](capturas/) | 5 de Angelo y 4 de Kevin |

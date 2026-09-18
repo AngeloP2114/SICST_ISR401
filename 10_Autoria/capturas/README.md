@@ -26,7 +26,7 @@ dos integrantes que continuaron participando activamente durante el cierre:
 
 La situación se encuentra documentada y firmada en:
 
-- `../declaracion_cambio_composicion_equipo (1).md`
+- `../declaracion_cambio_composicion_equipo.md`
 - `../declaracion_cambio_composicion_equipo.pdf`
 
 La versión PDF contiene las firmas manuscritas de Angelo Zambrano y Kevin
@@ -144,5 +144,5 @@ evidencia disponible.
 
 Para mayor detalle sobre el cambio de composición del equipo consultar:
 
-- `../declaracion_cambio_composicion_equipo (1).md`
+- `../declaracion_cambio_composicion_equipo.md`
 - `../declaracion_cambio_composicion_equipo.pdf`
