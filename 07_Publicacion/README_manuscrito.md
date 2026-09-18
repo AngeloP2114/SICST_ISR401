@@ -3,7 +3,7 @@
 ## Objetivo
 
 Este manuscrito reporta el componente empírico terminal del proyecto
-SICST: una comparación preregistrada, ciega y pareada entre la calidad de
+SICST: una comparación ciega y pareada entre la calidad de
 los Requisitos Funcionales (RF) elicitados por el equipo humano y los
 generados por un LLM (GPT-5.5-mini), a partir de las mismas 18
 transcripciones de entrevista anonimizadas.
@@ -18,7 +18,7 @@ transcripciones de entrevista anonimizadas.
 ## Archivos
 
 - `manuscrito_final.tex`: fuente LaTeX completa.
-- `manuscrito_final.pdf`: PDF compilado desde la fuente (8 páginas).
+- `manuscrito_final.pdf`: PDF compilado desde la fuente (15 páginas).
 - `manuscrito_final.bbl`: bibliografía compilada con BibTeX.
 - `references.bib`: bibliografía propia del manuscrito (33 entradas).
 - `figuras/figura_comparacion_pareada.png`: resultado principal (Figura 1
@@ -45,16 +45,15 @@ El PDF resultante es `manuscrito_final.pdf`.
 El manuscrito utiliza únicamente resultados respaldados por scripts
 reproducibles del repositorio (`06_Experimento/`):
 
-- Diseño preregistrado en OSF (DOI 10.17605/OSF.IO/82Q76), anterior a la
-  generación de los datos comparados.
+- Protocolo registrado retrospectivamente en OSF (DOI 10.17605/OSF.IO/82Q76), después de la generación del conjunto LLM y de las cuatro evaluaciones ciegas.
 - 33 RF elicitados por el equipo humano + 33 RF generados por GPT-5.5-mini
   a partir de las mismas 18 transcripciones anonimizadas (prompt completo
   documentado en `06_Experimento/prompts_llm/`).
-- 66 ítems evaluados de forma ciega por 4 jueces independientes, en 5
+- 66 ítems evaluados de forma ciega por 4 evaluadores, en 5
   dimensiones de calidad (escala Likert 1-5).
-- Acuerdo entre evaluadores: κ de Fleiss entre -0.011 y 0.167 según la
+- Acuerdo entre evaluadores: κ de Fleiss entre -0.013 y 0.167 según la
   dimensión (bajo a nulo).
-- Análisis confirmatorio pareado (n=11 pares con correspondencia temática
+- Análisis exploratorio pareado (n=11 pares con correspondencia temática
   estricta): prueba t apareada, corrección de Holm-Bonferroni. Ninguna
   dimensión significativa (todos los p ajustados > 0.05).
 - No se pudo rechazar H0: sin diferencia de calidad detectable entre RF

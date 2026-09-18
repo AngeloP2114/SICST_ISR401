@@ -25,12 +25,12 @@ abstract: >-
   El repositorio integra la especificación ERS/SRS, evidencias de trabajo
   de campo, modelado, trazabilidad, producto mínimo viable, datos
   reproducibles, documentación ética, materiales de defensa y un experimento
-  comparativo preregistrado en OSF sobre la calidad de requisitos funcionales
+  comparativo con registro retrospectivo en OSF sobre la calidad de requisitos funcionales
   elicitados por humanos frente a requisitos generados por un LLM. Las 18
   entrevistas utilizadas como corpus fuente pertenecen a una etapa previa de
-  elicitación del ERS. El preregistro corresponde específicamente al
-  experimento humano-LLM y precede a la generación documentada del conjunto LLM
-  y a las cuatro evaluaciones ciegas utilizadas en el análisis. El sistema se
+  elicitación del ERS. El registro OSF corresponde al protocolo del experimento humano-LLM. El conjunto
+  LLM y las cuatro evaluaciones ciegas utilizadas en el análisis ya existían
+  antes del registro; por ello, las comparaciones se interpretan como exploratorias. El sistema se
   plantea como herramienta de apoyo al seguimiento terapéutico y no sustituye
   la valoración, diagnóstico ni decisión del profesional de salud.
 
@@ -52,7 +52,7 @@ keywords:
 identifiers:
   - type: doi
     value: "10.17605/OSF.IO/82Q76"
-    description: "OSF preregistration of the human-vs.-LLM requirements comparison experiment"
+    description: "Retrospective OSF protocol registration for the human-vs.-LLM requirements comparison experiment"
 
 references:
   - type: dataset

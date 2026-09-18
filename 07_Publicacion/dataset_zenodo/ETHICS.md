@@ -46,15 +46,9 @@ volunteer academic collaborators. Their identities are limited to first
 names in the raw data, at their own request, and no other personal data
 about them is collected or published.
 
-## Preregistration and research integrity
+## Protocol registration and research integrity
 
-The comparative experiment's protocol, hypotheses, and analysis plan were
-preregistered on the Open Science Framework (OSF) prior to generating the
-LLM-produced requirements or collecting the blind evaluations (DOI
-10.17605/OSF.IO/82Q76, registered 2026-09-12). This preregistration
-protects against p-hacking and HARKing (hypothesizing after results are
-known); any deviation from the registered plan is documented explicitly
-in `06_Experimento/osf_deviations.pdf`.
+The comparative experiment protocol was registered on the Open Science Framework (OSF) on 2026-09-12 (DOI 10.17605/OSF.IO/82Q76). The LLM-produced requirements and the four blind-evaluation worksheets already existed before that registration. The OSF record is therefore treated as a retrospective protocol registration rather than a confirmatory preregistration. Inferential comparisons are interpreted as exploratory, and subsequent statistical operationalizations or deviations are documented in `06_Experimento/osf_deviations.pdf`.
 
 ## Data governance summary
 
