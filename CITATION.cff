@@ -16,9 +16,7 @@ authors:
     orcid: "https://orcid.org/0009-0006-0056-8482"
 
 repository-code: "https://github.com/gleiston-guerrero/SICST_ISR401"
-
 url: "https://github.com/gleiston-guerrero/SICST_ISR401"
-
 license: "MIT"
 
 abstract: >-
@@ -26,14 +24,15 @@ abstract: >-
   desarrollado como proyecto académico de Ingeniería de Requerimientos.
   El repositorio integra la especificación ERS/SRS, evidencias de trabajo
   de campo, modelado, trazabilidad, producto mínimo viable, datos
-  reproducibles, documentación ética, materiales de defensa y un estudio
-  comparativo registrado en OSF sobre la calidad de requisitos funcionales
-  elicitados por humanos frente a requisitos generados por un LLM. Las
-  entrevistas de campo fueron realizadas antes del registro OSF; por ello,
-  la comparación estadística se documenta como exploratoria respecto a esa
-  cronología. El sistema se plantea como herramienta de apoyo al seguimiento
-  terapéutico y no sustituye la valoración, diagnóstico ni decisión del
-  profesional de salud.
+  reproducibles, documentación ética, materiales de defensa y un experimento
+  comparativo preregistrado en OSF sobre la calidad de requisitos funcionales
+  elicitados por humanos frente a requisitos generados por un LLM. Las 18
+  entrevistas utilizadas como corpus fuente pertenecen a una etapa previa de
+  elicitación del ERS. El preregistro corresponde específicamente al
+  experimento humano-LLM y precede a la generación documentada del conjunto LLM
+  y a las cuatro evaluaciones ciegas utilizadas en el análisis. El sistema se
+  plantea como herramienta de apoyo al seguimiento terapéutico y no sustituye
+  la valoración, diagnóstico ni decisión del profesional de salud.
 
 keywords:
   - "Ingeniería de Requerimientos"
@@ -53,7 +52,7 @@ keywords:
 identifiers:
   - type: doi
     value: "10.17605/OSF.IO/82Q76"
-    description: "OSF registration for the exploratory human-vs.-LLM requirements comparison"
+    description: "OSF preregistration of the human-vs.-LLM requirements comparison experiment"
 
 references:
   - type: dataset
