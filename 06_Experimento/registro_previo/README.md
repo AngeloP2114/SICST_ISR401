@@ -1,4 +1,4 @@
-# Registro previo OSF — experimento SICST
+# Registro OSF — experimento SICST
 
 ## Identificación
 
@@ -14,21 +14,37 @@
   registro `82q76`.
 - `osf_registration.pdf` — exportación legible de la página del registro.
 
-## Alcance temporal
+## Alcance temporal (corregido el 18/09/2026)
 
 Las entrevistas del SICST fueron realizadas previamente como parte de la
 elicitación de requisitos.
 
-El preregistro corresponde específicamente al **experimento comparativo
-humano-LLM**. Esa fase utiliza las transcripciones anonimizadas existentes
-como corpus fuente fijo.
+El registro OSF corresponde al **experimento comparativo humano-LLM**. Esa
+fase utiliza las transcripciones anonimizadas existentes como corpus fuente
+fijo.
 
-La marca temporal del registro precede a la generación documentada del
-conjunto LLM y a la recolección de las puntuaciones de la evaluación ciega
-utilizadas en el análisis.
+**Corrección respecto de una versión anterior de este README:** la marca
+temporal del registro (2026-09-12, 19:50 hora Ecuador) es **posterior**,
+no anterior, a la generación del conjunto de requisitos LLM y a la
+recolección de las puntuaciones de la evaluación ciega.
 
-Por ello, esta documentación no afirma que el preregistro sea anterior a la
-existencia de las entrevistas originales.
+Los metadatos internos de las cuatro hojas de evaluación ciega registran su
+último guardado el 2026-09-12 entre las 13:11 y las 13:16 hora Ecuador,
+más de seis horas antes del registro. El conjunto LLM se generó ese mismo día,
+antes de la sesión de evaluación.
+
+Por lo tanto, el registro es retrospectivo respecto de las tres fases del
+estudio:
+
+- entrevistas de campo;
+- generación del conjunto LLM;
+- evaluación ciega.
+
+El análisis estadístico se reporta como **exploratorio**, no como
+confirmatorio preregistrado, en concordancia con esta cronología real.
+
+No se modifican ni retrofechan los artefactos originales para aparentar una
+cronología diferente.
 
 ## Verificación de `consulta.json`
 
