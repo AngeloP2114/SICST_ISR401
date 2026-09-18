@@ -8,7 +8,7 @@ Registro de cambios del proyecto **Sistema Inteligente de Control y Seguimiento 
 
 ### Cierre técnico y documental
 
-Versión de cierre previa a la recreación final de la etiqueta anotada:
+Versión de cierre posterior a la línea base originalmente evaluada, identificada mediante la etiqueta anotada:
 
 ```text
 v2.0-entrega4
@@ -115,7 +115,7 @@ No se crean evidencias ficticias para antiguos integrantes.
 
 ### Integridad
 
-- `checksums.sha256` contiene **151 entradas SHA-256 verificables**.
+- `checksums.sha256` contiene **503 entradas SHA-256 verificables**, correspondientes a todos los archivos versionados excepto el propio `checksums.sha256`.
 - El paquete `07_Datos/` mantiene su propio `07_Datos/checksums_datos.sha256`.
 - Los manifiestos y checksums se regeneran cuando cambia un artefacto incluido en su alcance.
 
@@ -126,7 +126,7 @@ No se crean evidencias ficticias para antiguos integrantes.
   - ruta vigente de `Matriz_Trazabilidad_Final.csv`;
   - 62 trazas documentales;
   - cronología real del registro retrospectivo OSF;
-  - 151 entradas SHA-256 verificables;
+  - 503 entradas SHA-256 verificables;
   - composición final del equipo;
   - estado actual de autoría y reproducibilidad.
 - `04_Trazabilidad/README.md` actualizado con 62 trazas y 12 RNF-IA.

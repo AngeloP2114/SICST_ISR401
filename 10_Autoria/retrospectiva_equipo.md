@@ -308,18 +308,18 @@ posteriores.
 
 ---
 
-## Acciones pendientes antes de la línea base final
+## Estado de las acciones antes de la nueva línea base final
 
-Antes de establecer la nueva etiqueta de cierre se debe:
+Estado actual antes de establecer la nueva etiqueta de cierre:
 
-1. corregir la cronología OSF en todos los archivos relacionados;
-2. actualizar las amenazas a la validez del manuscrito;
-3. ampliar las referencias realmente citadas en el manuscrito;
-4. recompilar el PDF desde la fuente LaTeX corregida;
-5. documentar la procedencia y el manejo de las evaluaciones ciegas;
-6. regenerar los manifiestos y checksums;
-7. comprobar que el repositorio no contenga afirmaciones contradictorias;
-8. crear una nueva etiqueta anotada sin modificar `v2.0-entrega4`.
+1. **Hecho:** corregida la cronología OSF en los archivos relacionados;
+2. **Hecho:** actualizadas las amenazas a la validez del manuscrito;
+3. **Hecho:** ampliadas las referencias realmente citadas en el manuscrito;
+4. **Hecho:** recompilado el PDF desde la fuente LaTeX corregida;
+5. **Hecho:** documentada la procedencia y el manejo de las evaluaciones ciegas;
+6. **Hecho:** regenerados los manifiestos y checksums de cierre;
+7. **Hecho:** comprobado que el repositorio no contiene afirmaciones contradictorias activas; las menciones históricas conservadas están identificadas explícitamente como correcciones.
+8. **Pendiente de cierre:** crear una nueva etiqueta anotada sin modificar `v2.0-entrega4`.
 
 ---
 

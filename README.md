@@ -48,9 +48,9 @@ SICST se plantea como una herramienta de apoyo y no sustituye la valoración, di
 
 ---
 
-# Línea base vigente
+# Línea base originalmente evaluada
 
-La línea base de cierre corresponde a:
+La línea base originalmente evaluada corresponde a:
 
 **Entrega Final 2B — versión 2.0**
 
@@ -60,7 +60,7 @@ y se identifica mediante la etiqueta anotada:
 v2.0-entrega4
 ```
 
-La etiqueta final debe apuntar al último commit que integre todas las correcciones del examen suspenso.
+La etiqueta `v2.0-entrega4` se conserva inmutable y continúa asociada al commit originalmente evaluado `f901513`. No debe moverse. Las correcciones posteriores se identificarán mediante una nueva etiqueta anotada sobre el commit final corregido.
 
 La carpeta `PE5_Informe_Final/` se conserva únicamente como **antecedente histórico** correspondiente a la Práctica Experimental 5. Los documentos, simulaciones, métricas y materiales almacenados en PE5 no sustituyen los artefactos finales requeridos para la Entrega Final 2B.
 
@@ -453,7 +453,7 @@ Si los comandos no muestran errores y vuelven al prompt, la verificación de int
 
 # 16. Integridad del repositorio
 
-Los hashes generales disponibles en `checksums.sha256` contienen actualmente **151 entradas SHA-256 verificables** correspondientes a los artefactos incluidos por el mecanismo de verificación del repositorio.
+El archivo `checksums.sha256` cubre **503 de los 504 archivos versionados** del repositorio. El único archivo excluido es `checksums.sha256` porque un manifiesto no puede contener de forma estable su propio hash.
 
 El paquete `07_Datos/` mantiene además su propio archivo:
 
@@ -489,13 +489,13 @@ La licencia del código no implica autorización automática para redistribuir e
 
 Las modificaciones relevantes del proyecto se documentan en `CHANGELOG.md`.
 
-La línea base de la Entrega Final 2B se identifica con la etiqueta anotada:
+La línea base originalmente evaluada de la Entrega Final 2B se identifica con la etiqueta anotada:
 
 ```text
 v2.0-entrega4
 ```
 
-Para la entrega final, la etiqueta debe resolver al último commit de cierre del examen suspenso.
+La etiqueta `v2.0-entrega4` permanece asociada al commit originalmente evaluado y no debe moverse. El cierre corregido utilizará una nueva etiqueta anotada.
 
 ---
 
