@@ -1,10 +1,14 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{20}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{#1}}
 \providecommand{\urlprefix}{URL }
 \providecommand{\doi}[1]{\url{https://doi.org/#1}}
 \providecommand{\eprint}[2][]{\url{#2}}
  \bibcommenthead
+
+\bibitem[{{Asamblea Nacional del Ecuador}(2021)}]{ecuador2021lopdp}
+{Asamblea Nacional del Ecuador} (2021) Ley org\'anica de protecci\'on de datos
+  personales. Registro Oficial Suplemento 459
 
 \bibitem[{Chazette and Schneider(2020)}]{chazette2020explainability}
 Chazette L, Schneider K (2020) Explainability as a non-functional requirement:
@@ -21,21 +25,58 @@ Cheng H, Husen JH, Lu Y, et~al (2026) Generative {AI} for requirements
 Cohen J (1960) A coefficient of agreement for nominal scales. Educational and
   Psychological Measurement 20(1):37--46
 
+\bibitem[{Debnath et~al(2022)Debnath, O'Brien, Yamaguchi, and
+  Behera}]{debnath2022rehabilitation}
+Debnath B, O'Brien M, Yamaguchi M, et~al (2022) A review of computer
+  vision-based approaches for physical rehabilitation and assessment.
+  Multimedia Systems 28:209--239. \doi{10.1007/s00530-021-00815-4}
+
 \bibitem[{Fleiss(1971)}]{fleiss1971measuring}
 Fleiss JL (1971) Measuring nominal scale agreement among many raters.
   Psychological Bulletin 76(5):378--382
 
-\bibitem[{{ISO/IEC}(2023)}]{iso25010_2023}
-{ISO/IEC} (2023) {ISO/IEC 25010:2023 Systems and Software Engineering -- SQuaRE
-  -- Product Quality Model}
+\bibitem[{Gava et~al(2022)}]{gava2022shoulder}
+Gava L, et~al (2022) Effectiveness of physical therapy given by
+  telerehabilitation on shoulder pain. Clinical Rehabilitation
+  \doi{10.1177/02692155221083496}
+
+\bibitem[{Gro{\ss}er et~al(2024)Gro{\ss}er, Ahmadian, Rukavitsyna
+  et~al}]{grosser2024templates}
+Gro{\ss}er K, Ahmadian A, Rukavitsyna M, et~al (2024) Benchmarking requirement
+  template systems: comparing appropriateness, usability, and expressiveness.
+  Requirements Engineering 29:481--522. \doi{10.1007/s00766-024-00427-0}
+
+\bibitem[{Guest et~al(2006)Guest, Bunce, and Johnson}]{guest2006interviews}
+Guest G, Bunce A, Johnson L (2006) How many interviews are enough? Field
+  Methods 18(1):59--82. \doi{10.1177/1525822X05279903}
+
+\bibitem[{Hennink et~al(2017)Hennink, Kaiser, and
+  Marconi}]{hennink2017codesaturation}
+Hennink MM, Kaiser BN, Marconi VC (2017) Code saturation versus meaning
+  saturation. Qualitative Health Research 27(4):591--608.
+  \doi{10.1177/1049732316665344}
 
 \bibitem[{{ISO/IEC/IEEE}(2018)}]{iso29148_2018}
 {ISO/IEC/IEEE} (2018) {ISO/IEC/IEEE 29148:2018 Systems and Software Engineering
   -- Life Cycle Processes -- Requirements Engineering}
 
+\bibitem[{Knauss et~al(2018)Knauss, Yussuf, Blincoe, Damian, and
+  Knauss}]{knauss2018clarification}
+Knauss E, Yussuf A, Blincoe K, et~al (2018) Continuous clarification and
+  emergent requirements flows in open-commercial software ecosystems.
+  Requirements Engineering 23:97--117. \doi{10.1007/s00766-016-0259-1}
+
+\bibitem[{{OECD}(2019)}]{oecd2019ai}
+{OECD} (2019) Recommendation of the council on artificial intelligence. OECD
+  Legal Instruments
+
 \bibitem[{Pohl(2010)}]{pohl2010requirements}
 Pohl K (2010) Requirements Engineering: Fundamentals, Principles, and
   Techniques. Springer, Berlin, Germany, \doi{10.1007/978-3-642-12578-2}
+
+\bibitem[{Pressman and Maxim(2020)}]{pressman2020software}
+Pressman RS, Maxim BR (2020) Software Engineering: A Practitioner's Approach.
+  McGraw-Hill, New York, NY, USA
 
 \bibitem[{Runeson and H\"ost(2009)}]{runeson2009guidelines}
 Runeson P, H\"ost M (2009) Guidelines for conducting and reporting case study
@@ -44,6 +85,17 @@ Runeson P, H\"ost M (2009) Guidelines for conducting and reporting case study
 
 \bibitem[{Sommerville(2016)}]{sommerville2016software}
 Sommerville I (2016) Software Engineering, 10th edn. Pearson, Boston, MA, USA
+
+\bibitem[{Suso-Mart\'i et~al(2021)}]{susomarti2021effectiveness}
+Suso-Mart\'i L, et~al (2021) Effectiveness of telerehabilitation in physical
+  therapist practice: An umbrella and mapping review. Physical Therapy 101(5).
+  \doi{10.1093/ptj/pzab075}
+
+\bibitem[{Mu\~noz Tom\'as et~al(2023)}]{munoztomas2023telerehabilitation}
+Mu\~noz Tom\'as MT, et~al (2023) Telerehabilitation as a therapeutic exercise
+  tool versus face-to-face physiotherapy: A systematic review. International
+  Journal of Environmental Research and Public Health 20(5):4358.
+  \doi{10.3390/ijerph20054358}
 
 \bibitem[{Wohlin et~al(2012)Wohlin, Runeson, H\"ost, Ohlsson, Regnell, and
   Wessl\'en}]{wohlin2012experimentation}
