@@ -1,6 +1,6 @@
 # Retrospectiva del equipo — Cierre del proyecto SICST
 
-**Fecha:** 2026-09-17  
+**Fecha:** 2026-09-18  
 **Proyecto:** Sistema Inteligente de Control y Seguimiento de Terapia Física (SICST)  
 **Asignatura:** Ingeniería de Requisitos — ISR-401
 
@@ -26,18 +26,6 @@ Se incorporaron al manuscrito los resultados cuantitativos y cualitativos reprod
 
 Finalmente, el PDF del manuscrito fue recompilado desde el archivo LaTeX actualizado para evitar diferencias entre la fuente versionada y el documento entregable.
 
-## Distribución de aportes en el cierre
-
-Durante la etapa final del proyecto, las responsabilidades documentadas se distribuyeron de la siguiente manera:
-
-- **Angelo Paul Zambrano Moya:** estuvo a cargo del registro y documentación del experimento comparativo en OSF, la generación del conjunto de requisitos mediante LLM, la coordinación de la evaluación ciega y el análisis estadístico de los resultados.
-
-- **Kevin Germán Contreras Chávez:** participó como coentrevistador en sesiones de recolección de información de campo realizadas de forma remota, contribuyendo a la obtención de evidencia utilizada posteriormente en la elicitación y análisis de requisitos.
-
-- **Trabajo conjunto:** ambos integrantes revisaron el manuscrito final y participaron en la comprobación de que los resultados, evidencias y afirmaciones incluidas en la entrega correspondieran a información real y trazable dentro del repositorio.
-
-Los aportes históricos de integrantes que dejaron de formar parte del equipo se mantienen en el historial de Git y en los artefactos correspondientes, sin reasignar ni atribuir esas contribuciones a los integrantes finales.
-
 ## Dificultades encontradas
 
 Una de las principales dificultades fue consolidar evidencia producida en distintos momentos del semestre y verificar que cada archivo tuviera una ubicación, identificación y relación clara con el proceso de Ingeniería de Requisitos.
@@ -45,6 +33,11 @@ Una de las principales dificultades fue consolidar evidencia producida en distin
 También fue necesario corregir referencias y documentación después del cambio de nombre del repositorio. Esto mostró la importancia de realizar una revisión global de URLs, rutas y archivos de verificación antes de establecer una línea base final.
 
 El manejo de archivos multimedia de gran tamaño requirió separar la evidencia restringida del contenido normal del repositorio y utilizar mecanismos de distribución y verificación mediante checksum.
+
+La transferencia de la propiedad del repositorio a la cuenta del docente
+obligó a revisar de forma global las URL públicas. Se mantuvo intacta la
+autoría histórica: cambiar el propietario del repositorio no cambia quién
+realizó cada commit.
 
 ## Lecciones aprendidas
 
