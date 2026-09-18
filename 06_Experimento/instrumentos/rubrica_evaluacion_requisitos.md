@@ -62,4 +62,4 @@ privada de desciego almacenada de forma cifrada en
 
 ## Evaluadores participantes
 
-4 evaluadores independientes: Mishell, Angel, Dayana y Sebas.
+4 evaluadores: Mishell, Angel, Dayana y Sebas.

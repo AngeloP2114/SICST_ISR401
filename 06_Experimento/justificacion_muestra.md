@@ -15,7 +15,7 @@ generales.
 
 ## Evaluadores
 
-Cuatro evaluadores independientes (Mishell, Angel, Dayana y Sebas) puntuaron
+Cuatro evaluadores (Mishell, Angel, Dayana y Sebas) puntuaron
 los 66 ítems en una escala Likert de 1 a 5 sobre cinco dimensiones:
 
 - completitud;
@@ -24,16 +24,16 @@ los 66 ítems en una escala Likert de 1 a 5 sobre cinco dimensiones:
 - corrección respecto a la fuente;
 - consistencia interna.
 
-## Unidad del análisis confirmatorio
+## Unidad del análisis exploratorio
 
-El análisis confirmatorio no trata los 33 RF humanos y los 33 RF LLM como
+El análisis exploratorio no trata los 33 RF humanos y los 33 RF LLM como
 dos muestras independientes.
 
 La matriz de trazabilidad temática identifica **11 pares estrictos**
 (`tipo == "pareado"`). Cada par contiene un RF humano y un RF LLM que
 abordan el mismo tema y constituye una unidad de comparación.
 
-Por tanto, el tamaño efectivo del contraste confirmatorio es **n = 11 pares**.
+Por tanto, el tamaño efectivo del contraste exploratorio es **n = 11 pares**.
 
 Los demás ítems se conservan para trazabilidad y descriptivos, pero no se
 fuerzan artificialmente a una correspondencia 1 a 1.

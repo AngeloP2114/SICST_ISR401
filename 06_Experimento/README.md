@@ -58,7 +58,7 @@ El experimento considera:
 - 66 RF evaluados en total;
 - 33 RF humanos;
 - 33 RF generados por LLM;
-- 4 evaluadores independientes;
+- 4 evaluadores;
 - evaluación ciega;
 - 5 dimensiones de calidad evaluadas mediante escala Likert de 1 a 5.
 
@@ -100,11 +100,20 @@ Las columnas correspondientes a:
 - corrección respecto a la fuente;
 - consistencia interna;
 
-se entregaron vacías para que cada evaluador registrara independientemente
-una puntuación de 1 a 5.
+se entregaron vacías para que cada evaluador registrara su propia
+puntuación de 1 a 5.
 
 De esta forma, los evaluadores realizaron su calificación sin disponer de la
 información correspondiente al origen real de cada requisito.
+
+Las cuatro evaluaciones se realizaron durante una misma sesión de trabajo y de
+forma secuencial utilizando el mismo computador. Cada participante completó su
+propia hoja. Antes de pasar al siguiente evaluador se verificó únicamente que
+la hoja estuviera completa y se guardó el archivo correspondiente. De acuerdo
+con el procedimiento documentado, las puntuaciones de los evaluadores anteriores
+no se mostraron al siguiente participante. El uso de una misma sesión y un mismo
+equipo constituye una limitación del procedimiento y no se presenta como evidencia
+de independencia experimental entre evaluadores.
 
 ## Reconstrucción post-evaluación del origen
 
