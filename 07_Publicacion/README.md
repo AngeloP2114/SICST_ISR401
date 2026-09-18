@@ -2,9 +2,8 @@
 
 Esta carpeta reúne los artefactos de publicación académica del proyecto
 **Sistema Inteligente de Control y Seguimiento de Terapia Física (SICST)**,
-correspondientes al Enfoque 1: comparación empírica de calidad de
-Requisitos Funcionales (RF) elicitados por humanos vs. generados por un
-LLM.
+correspondientes al experimento comparativo preregistrado entre Requisitos
+Funcionales (RF) elicitados por humanos y RF generados por un LLM.
 
 ## Autores actuales
 
@@ -13,54 +12,97 @@ LLM.
 
 ## Manuscrito científico
 
-El manuscrito final del proyecto se encuentra en:
+El manuscrito vigente del proyecto se encuentra en:
 
-- `manuscrito_final.pdf` (8 páginas, compilado)
-- `manuscrito_final.tex` (fuente LaTeX completa)
-- `manuscrito_final.bbl` (bibliografía compilada)
-- `references.bib` (33 entradas, en progreso hacia el mínimo de 40)
+- `manuscrito_final.pdf`
+- `manuscrito_final.tex`
+- `manuscrito_final.bbl`
+- `references.bib`
 
 **Título:** *An Empirical Comparison of Human-Elicited and LLM-Generated
 Functional Requirements in a Physical Therapy Follow-Up System: A
 Paired-Analyst Study in Ecuador*
 
-**Revista objetivo:** Requirements Engineering (Springer Nature). El
-análisis completo de revistas objetivo se encuentra en `analisis_revistas.md`.
+**Revista objetivo:** Requirements Engineering (Springer Nature).
 
-## Diseño del estudio reportado
+El análisis de revistas objetivo se encuentra en `analisis_revistas.md`.
 
-- **Pregunta de investigación:** ¿Difieren en calidad los RF elicitados
-  por un proceso humano de los generados por un LLM, cuando ambos parten
-  de las mismas transcripciones anonimizadas?
-- **Registro previo:** OSF, DOI [10.17605/OSF.IO/82Q76](https://doi.org/10.17605/OSF.IO/82Q76)
-  (2026-09-12, antes de generar los datos).
-- **Diseño:** comparativo no experimental, ciego, 66 ítems (33 humanos +
-  33 LLM) evaluados por 4 jueces independientes en 5 dimensiones (escala
-  Likert 1-5).
-- **Análisis confirmatorio:** 11 pares con correspondencia temática
-  estricta, prueba t apareada / Wilcoxon con corrección de
-  Holm-Bonferroni.
-- **Hallazgo principal:** acuerdo inter-evaluador bajo (κ de Fleiss entre
-  -0.011 y 0.167); ninguna dimensión mostró diferencia estadísticamente
-  significativa (todos los p ajustados > 0.05).
+## Preregistro OSF y cronología
+
+El experimento comparativo humano–LLM fue preregistrado en OSF:
+
+- **DOI:** `10.17605/OSF.IO/82Q76`
+- **Fecha de registro:** 12/09/2026 en hora de Ecuador continental
+- **Copia verificable:** `../06_Experimento/registro_previo/osf_registration.pdf`
+
+Las 18 entrevistas utilizadas como corpus fuente pertenecen a una etapa
+anterior del proyecto, destinada a la elicitación y construcción del ERS.
+
+El preregistro **no corresponde a la recolección de esas entrevistas**.
+Corresponde específicamente al experimento comparativo humano–LLM.
+
+La marca temporal del preregistro precede a:
+
+- la generación documentada del conjunto de requisitos del LLM;
+- la preparación y uso de la evaluación ciega;
+- la recolección de las cuatro evaluaciones ciegas utilizadas en el análisis.
+
+Las decisiones u operacionalizaciones estadísticas posteriores al registro se
+documentan de forma transparente en:
+
+`../06_Experimento/osf_deviations.pdf`
+
+## Diseño del estudio
+
+La pregunta de investigación es:
+
+> ¿Difieren en calidad los requisitos funcionales elicitados por un proceso
+> humano de los generados por un LLM cuando ambos parten de las mismas
+> transcripciones anonimizadas?
+
+El estudio utiliza:
+
+- 18 transcripciones anonimizadas como corpus fuente común;
+- 33 RF elicitados por el equipo humano;
+- 33 RF generados por GPT-5.5-mini;
+- 66 ítems evaluados de forma ciega;
+- 4 jueces independientes;
+- 5 dimensiones de calidad en escala Likert de 1 a 5;
+- 11 pares temáticos estrictos para el análisis pareado.
+
+El análisis reproduce:
+
+- κ de Fleiss por dimensión;
+- análisis descriptivos por origen;
+- comparación pareada;
+- corrección de Holm-Bonferroni;
+- intervalos de confianza y tamaños del efecto documentados por el script.
+
+## Resultados reportados
+
+El manuscrito informa que:
+
+- el acuerdo interevaluador fue bajo a nulo según la dimensión;
+- κ de Fleiss se ubicó aproximadamente entre `-0.011` y `0.167`;
+- ninguna de las cinco dimensiones mostró diferencia estadísticamente
+  significativa después de la corrección por comparaciones múltiples;
+- la ausencia de significancia no se interpreta como prueba de equivalencia.
 
 ## Figuras
 
 Las figuras utilizadas por el manuscrito se encuentran en `figuras/`:
 
-- `figura_comparacion_pareada.png` — comparación pareada por tema (Figura 1
-  del manuscrito, resultado principal).
-- `figura_perfiles.png`, `figura_saturacion.png`, `figura_subtemas.png` —
-  evidencia descriptiva del corpus cualitativo de 18 entrevistas que
-  alimentó tanto la elicitación humana como la generación por LLM (no son
-  el resultado principal, sirven de contexto del dominio).
+- `figura_comparacion_pareada.png`
+- `figura_perfiles.png`
+- `figura_saturacion.png`
+- `figura_subtemas.png`
 
-Las rutas relativas de las figuras deben mantenerse sin cambios para
-permitir la compilación correcta del manuscrito.
+La figura comparativa corresponde al resultado experimental principal. Las
+demás aportan contexto descriptivo del corpus cualitativo.
 
-## Compilación del manuscrito LaTeX
+## Compilación del manuscrito
 
-Desde esta carpeta ejecutar:
+Desde `07_Publicacion/` ejecutar:
 
 ```bash
 pdflatex manuscrito_final.tex
@@ -69,48 +111,30 @@ pdflatex manuscrito_final.tex
 pdflatex manuscrito_final.tex
 ```
 
-El PDF resultante es `manuscrito_final.pdf`.
+El archivo resultante es `manuscrito_final.pdf`.
 
-### Paquetes requeridos
+## Fuentes reproducibles del experimento
 
-`graphicx`, `booktabs`, `array`, `tabularx`, `longtable`, `enumitem`,
-`natbib`, `hyperref`, `url`, `caption`, `float`, `setspace`, `xcolor`,
-`amsmath`, `amssymb`, `titlesec`, `microtype` (con `expansion=false` si el
-motor LaTeX no tiene fuentes escalables disponibles).
+Los artefactos principales se encuentran en `../06_Experimento/`:
 
-### Archivos mínimos necesarios para compilar
+- `prompts_llm/prompt_generacion_RF_llm.md`
+- `datos_crudos/`
+- `datos_procesados/`
+- `datos_procesados/matriz_trazabilidad_tema_RF.csv`
+- `scripts_analisis/analisis_experimento_llm_humano.py`
+- `resultados/`
+- `registro_previo/`
+- `osf_deviations.pdf`
 
-```text
-07_Publicacion/
-├── manuscrito_final.tex
-├── references.bib
-└── figuras/
-    ├── figura_comparacion_pareada.png
-    ├── figura_perfiles.png
-    ├── figura_saturacion.png
-    └── figura_subtemas.png
+La reproducción del experimento se ejecuta desde la raíz con:
+
+```bash
+python 06_Experimento/scripts_analisis/analisis_experimento_llm_humano.py
 ```
 
-## Evidencia utilizada por el manuscrito
+## Reproducibilidad de los datos generales
 
-Todos los datos, tablas y figuras citados en el manuscrito provienen de
-scripts versionados y reproducibles en `06_Experimento/`:
-
-- Prompt exacto del LLM y confirmación del modelo:
-  `06_Experimento/prompts_llm/prompt_generacion_RF_llm.md`
-- Datos crudos (RF del LLM, hoja de evaluación ciega, 4 evaluaciones):
-  `06_Experimento/datos_crudos/`
-- Matriz de pareo temático: `06_Experimento/datos_procesados/matriz_trazabilidad_tema_RF.csv`
-- Script de análisis reproducible: `06_Experimento/scripts_analisis/analisis_experimento_llm_humano.py`
-- Resultados (Tablas 1-2 y Figura 1 del manuscrito): `06_Experimento/resultados/`
-
-Ejecutar el script reproduce exactamente las cifras citadas en el
-manuscrito, a partir de los datos crudos.
-
-## Reproducibilidad de los datos generales del proyecto
-
-La fuente reproducible del cuestionario general del proyecto (no del
-experimento comparativo) se encuentra en `../07_Datos/`:
+La cadena reproducible del cuestionario general se ejecuta desde la raíz con:
 
 ```bash
 python 07_Datos/scripts/orquestar.py
@@ -118,44 +142,30 @@ python 07_Datos/scripts/orquestar.py
 
 ## Dataset publicado
 
-El paquete reproducible del proyecto SICST está publicado en Zenodo.
-
 - **DOI:** `10.5281/zenodo.22315298`
-- **URL DOI:** `https://doi.org/10.5281/zenodo.22315298`
-- **Versión:** 1.0
+- **Versión publicada:** 1.0
+- **Fecha de publicación:** 05/09/2026
 - **Acceso:** Público / Open
 
-Los metadatos y el contenido del depósito se encuentran en `dataset_zenodo/`.
+## Bibliografía
 
-## Alcance del manuscrito
+La bibliografía utilizada por el manuscrito se mantiene en `references.bib`.
 
-El manuscrito reporta un estudio empírico de pequeña muestra (n=11 pares),
-preregistrado, ciego, sobre calidad de requisitos funcionales. No afirma
-que los LLM igualen a los analistas humanos en general, ni en otros
-dominios, idiomas o modelos — las conclusiones se restringen explícitamente
-al alcance de este estudio.
+No se establece en este README un número mínimo artificial de referencias; las
+entradas deben corresponder a fuentes reales y utilizadas.
 
-## Privacidad y protección de datos
+## Privacidad
 
-El paquete público de publicación no contiene identificadores directos,
-consentimientos firmados, firmas, rostros, audios o videos identificables
-de participantes. La clave que revela el origen real (humano/LLM) de cada
-ítem evaluado se mantiene cifrada en `02_Evidencias/00_Restringido/`.
+El paquete público no incluye identificadores directos, consentimientos
+firmados, firmas, rostros, audios ni videos identificables de participantes.
 
-## Relación con el repositorio
-
-- ERS/SRS: `../01_ERS/`
-- Evidencias: `../02_Evidencias/`
-- Trazabilidad: `../04_Trazabilidad/`
-- MVP: `../05_MVP/`
-- Experimento (Enfoque 1): `../06_Experimento/`
-- Datos reproducibles generales: `../07_Datos/`
+La evidencia sensible se mantiene separada en
+`../02_Evidencias/00_Restringido/`.
 
 ## Estado de publicación
 
-El manuscrito corresponde a la línea base vigente de la Entrega Final 2B.
-Se encuentra preparado como artefacto académico de publicación; el
-repositorio no declara aceptación editorial ni publicación en una revista
-científica. El dataset reproducible cuenta con publicación independiente
-en Zenodo (DOI persistente) y el protocolo con registro previo en OSF
-(DOI persistente).
+El manuscrito corresponde a la línea base de la Entrega Final 2B. El repositorio
+no declara aceptación editorial ni publicación en revista científica.
+
+El dataset cuenta con publicación independiente en Zenodo y el experimento
+comparativo cuenta con preregistro en OSF.
