@@ -19,6 +19,8 @@ de Terapia Física (SICST)**.
 
 `2026-09-13_Sesion_Trabajo_01_Revision_Documento_Final.mp4`
 
+**Duración:** `00:14:02`
+
 **Actividad realizada:**
 
 Revisión conjunta del documento final del proyecto, incluyendo:
@@ -41,6 +43,8 @@ Zambrano y Kevin Contreras.
 **Archivo:**
 
 `2026-09-18_Sesion_Trabajo_02_Verificacion_Final_Repositorio.mp4`
+
+**Duración:** `00:14:36`
 
 **Actividad realizada:**
 
@@ -67,8 +71,23 @@ de Angelo Zambrano y Kevin Contreras.
 
 ---
 
+## Verificación de duración
+
+Las dos grabaciones cumplen con el rango establecido de **10 a 15 minutos por
+sesión**:
+
+| Sesión | Duración |
+|---|---:|
+| Sesión 01 | 00:14:02 |
+| Sesión 02 | 00:14:36 |
+
+---
+
 ## Criterio de conservación
 
 Las grabaciones documentan sesiones reales de trabajo del equipo y se
 conservan sin modificar su contenido con el propósito de mantener evidencia
 del proceso seguido durante el cierre del proyecto.
+
+Las duraciones indicadas corresponden a las propiedades de los archivos MP4
+conservados en la carpeta.
