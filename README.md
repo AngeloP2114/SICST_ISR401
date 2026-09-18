@@ -226,8 +226,11 @@ Las entrevistas originales fueron realizadas antes del registro OSF. Por ello, l
 ```text
 06_Experimento/
 ├── protocolo.pdf
-├── osf_registration.pdf
 ├── osf_deviations.pdf
+├── registro_previo/
+│   ├── README.md
+│   ├── consulta.json
+│   └── osf_registration.pdf
 ├── instrumentos/
 ├── prompts_llm/
 ├── datos_crudos/
