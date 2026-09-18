@@ -14,7 +14,7 @@ jobs:
       - name: Generar checksums reales
         run: |
           echo "# SHA-256 de evidencia publica del proyecto SICST" > checksums.sha256
-          echo "# Se excluye 02_Evidencias/00_Restringido porque el contenedor esta gestionado mediante Git LFS." >> checksums.sha256
+          echo "# Se excluye 02_Evidencias/00_Restringido porque el contenedor cifrado se distribuye como asset del Release evidencias-2B." >> checksums.sha256
           find 02_Evidencias -type f \
             ! -path "02_Evidencias/00_Restringido/*" \
             -print0 | sort -z | xargs -0 sha256sum >> checksums.sha256

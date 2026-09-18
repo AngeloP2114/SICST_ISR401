@@ -23,7 +23,7 @@ Repositorio de la **Entrega Final 2B** del Proyecto Integrador de la asignatura 
 |---|---|
 | Registro previo del experimento (OSF) | [10.17605/OSF.IO/82Q76](https://doi.org/10.17605/OSF.IO/82Q76) |
 | Dataset reproducible (Zenodo, v1.0) | [10.5281/zenodo.22315298](https://doi.org/10.5281/zenodo.22315298) |
-| Repositorio (GitHub) | https://github.com/AngeloP2114/Sistema_Terapia_Fisica_ISR401_2B |
+| Repositorio (GitHub) | https://github.com/gleiston-guerrero/SICST_ISR401 |
 
 ---
 
@@ -61,7 +61,7 @@ La carpeta `PE5_Informe_Final/` se conserva únicamente como **antecedente hist�
 # Estructura principal
 
 ```
-Sistema_Terapia_Fisica_ISR401_2B/
+SICST_ISR401/
 │
 ├── 01_ERS/
 ├── 02_Evidencias/
@@ -104,11 +104,11 @@ La especificación vigente del proyecto se encuentra en:
 
 ## Compilación del ERS/SRS
 
-El documento debe compilarse utilizando **XeLaTeX**. Desde la carpeta `01_ERS/` ejecutar:
+El documento debe compilarse utilizando **pdfLaTeX**. Desde la carpeta `01_ERS/` ejecutar:
 
 ```bash
-xelatex -interaction=nonstopmode -halt-on-error ERS_SRS_2B_v2.0.tex
-xelatex -interaction=nonstopmode -halt-on-error ERS_SRS_2B_v2.0.tex
+pdflatex -interaction=nonstopmode -halt-on-error ERS_SRS_2B_v2.0.tex
+pdflatex -interaction=nonstopmode -halt-on-error ERS_SRS_2B_v2.0.tex
 ```
 
 La segunda compilación permite estabilizar referencias y elementos internos del documento.
@@ -146,7 +146,7 @@ El inventario técnico de la evidencia multimedia se encuentra en `02_Evidencias
 
 # 3. Evidencia restringida
 
-Los materiales originales que pueden contener información identificable se mantienen separados de la evidencia pública, en `02_Evidencias/00_Restringido/` (contenedor cifrado, gestionado con Git LFS). La contraseña de acceso no se publica en el repositorio.
+Los materiales originales que pueden contener información identificable se mantienen separados de la evidencia pública. El contenedor cifrado se distribuye como asset del Release `evidencias-2B`; la carpeta `02_Evidencias/00_Restringido/` conserva la documentación y el checksum de verificación. La contraseña de acceso no se publica en el repositorio.
 
 ---
 
@@ -301,8 +301,8 @@ La documentación de autoría y proceso de trabajo se encuentra en `10_Autoria/`
 
 ```bash
 cd 01_ERS
-xelatex -interaction=nonstopmode -halt-on-error ERS_SRS_2B_v2.0.tex
-xelatex -interaction=nonstopmode -halt-on-error ERS_SRS_2B_v2.0.tex
+pdflatex -interaction=nonstopmode -halt-on-error ERS_SRS_2B_v2.0.tex
+pdflatex -interaction=nonstopmode -halt-on-error ERS_SRS_2B_v2.0.tex
 ```
 
 ## Reproducción del cuestionario general
@@ -380,4 +380,4 @@ Los artefactos pendientes de aprobación institucional o de ejecución real se i
 
 # Repositorio oficial
 
-https://github.com/AngeloP2114/Sistema_Terapia_Fisica_ISR401_2B
+https://github.com/gleiston-guerrero/SICST_ISR401

@@ -56,7 +56,7 @@ experimento comparativo del Enfoque 1 (RF humano vs. LLM).
 La versión vigente de todos los datos y scripts se encuentra en el
 repositorio del proyecto:
 
-`https://github.com/AngeloP2114/Sistema_Terapia_Fisica_ISR401_2B`
+`https://github.com/gleiston-guerrero/SICST_ISR401`
 
 - Cuestionario general: `07_Datos/`
 - Experimento Enfoque 1: `06_Experimento/`
@@ -92,4 +92,4 @@ Consultar `CITATION.cff`.
 
 ## Repositorio fuente
 
-`https://github.com/AngeloP2114/Sistema_Terapia_Fisica_ISR401_2B`
+`https://github.com/gleiston-guerrero/SICST_ISR401`

@@ -14,11 +14,11 @@ El contenedor está publicado como asset del Release:
 
 URL directa del archivo cifrado:
 
-https://github.com/AngeloP2114/Sistema_Terapia_Fisica_ISR401_2B/releases/download/evidencias-2B/evidencias_restringidas.7z
+https://github.com/gleiston-guerrero/SICST_ISR401/releases/download/evidencias-2B/evidencias_restringidas.7z
 
 Checksum del contenedor:
 
-https://github.com/AngeloP2114/Sistema_Terapia_Fisica_ISR401_2B/releases/download/evidencias-2B/checksum_evidencias_restringidas.sha256
+https://github.com/gleiston-guerrero/SICST_ISR401/releases/download/evidencias-2B/checksum_evidencias_restringidas.sha256
 
 ## Qué hay dentro
 
