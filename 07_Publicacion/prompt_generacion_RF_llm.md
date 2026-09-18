@@ -13,7 +13,7 @@
 |---|---|
 | Modelo | GPT-5.5-mini |
 | Proveedor / interfaz | ChatGPT (chat.openai.com) |
-| Fecha y hora de la consulta | 2026-09-13, madrugada (posterior al registro OSF de las 19:50 del 2026-09-12) |
+| Fecha y hora de la consulta | 2026-09-12, en el transcurso del día, antes de las 13:11 hora Ecuador (hora exacta no registrada; se acota por los metadatos de las hojas de evaluación ciega, guardadas entre 13:11-13:16 ese mismo día, lo que requiere que el conjunto LLM ya existiera para ese momento). **Corrección del 18/09/2026: una versión anterior de esta ficha indicaba erróneamente "2026-09-13, madrugada, posterior al registro OSF"; esa fecha era incorrecta.** |
 | Temperatura (si se conoce/configuró) | No aplica / no configurado (interfaz web de ChatGPT sin ajustes de API) |
 | Top-p (si se conoce) | No aplica / no configurado (interfaz web) |
 | Semilla (si aplica) | No aplica (interfaz de chat) |
