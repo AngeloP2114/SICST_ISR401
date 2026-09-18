@@ -1,6 +1,6 @@
 # Retrospectiva del equipo — Cierre del proyecto SICST
 
-**Fecha:** 2026-09-18  
+**Fecha:** 2026-09-17  
 **Proyecto:** Sistema Inteligente de Control y Seguimiento de Terapia Física (SICST)  
 **Asignatura:** Ingeniería de Requisitos — ISR-401
 
@@ -25,6 +25,18 @@ También se revisó la coherencia numérica del manuscrito. El análisis princip
 Se incorporaron al manuscrito los resultados cuantitativos y cualitativos reproducibles, incluyendo información de perfiles, aceptación del uso de cámara, visualización del avance, acuerdo entre codificadores y saturación temática.
 
 Finalmente, el PDF del manuscrito fue recompilado desde el archivo LaTeX actualizado para evitar diferencias entre la fuente versionada y el documento entregable.
+
+## Distribución de aportes en el cierre
+
+Durante la etapa final del proyecto, las responsabilidades documentadas se distribuyeron de la siguiente manera:
+
+- **Angelo Paul Zambrano Moya:** estuvo a cargo del registro y documentación del experimento comparativo en OSF, la generación del conjunto de requisitos mediante LLM, la coordinación de la evaluación ciega y el análisis estadístico de los resultados.
+
+- **Kevin Germán Contreras Chávez:** participó como coentrevistador en sesiones de recolección de información de campo realizadas de forma remota, contribuyendo a la obtención de evidencia utilizada posteriormente en la elicitación y análisis de requisitos.
+
+- **Trabajo conjunto:** ambos integrantes revisaron el manuscrito final y participaron en la comprobación de que los resultados, evidencias y afirmaciones incluidas en la entrega correspondieran a información real y trazable dentro del repositorio.
+
+Los aportes históricos de integrantes que dejaron de formar parte del equipo se mantienen en el historial de Git y en los artefactos correspondientes, sin reasignar ni atribuir esas contribuciones a los integrantes finales.
 
 ## Dificultades encontradas
 
