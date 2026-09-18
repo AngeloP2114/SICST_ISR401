@@ -21,7 +21,7 @@ Repositorio de la **Entrega Final 2B** del Proyecto Integrador de la asignatura 
 
 | Recurso | Identificador |
 |---|---|
-| Preregistro del experimento comparativo (OSF) | [10.17605/OSF.IO/82Q76](https://doi.org/10.17605/OSF.IO/82Q76) |
+| Registro retrospectivo del protocolo experimental (OSF) | [10.17605/OSF.IO/82Q76](https://doi.org/10.17605/OSF.IO/82Q76) |
 | Dataset reproducible (Zenodo, v1.0) | [10.5281/zenodo.22315298](https://doi.org/10.5281/zenodo.22315298) |
 | Repositorio (GitHub) | https://github.com/gleiston-guerrero/SICST_ISR401 |
 
@@ -39,7 +39,7 @@ El proyecto integra actividades de:
 - modelado UML;
 - trazabilidad;
 - producto mínimo viable;
-- experimentación empírica preregistrada en OSF (Enfoque 1: RF humano vs. LLM);
+- experimentación empírica con registro retrospectivo en OSF (Enfoque 1: RF humano vs. LLM);
 - preparación de publicación académica;
 - privacidad y gestión ética;
 - defensa final.
@@ -220,19 +220,31 @@ El material experimental se encuentra en `06_Experimento/`.
 
 Las **18 entrevistas** utilizadas como corpus fuente pertenecen a una etapa previa de elicitación y construcción del ERS.
 
-Posteriormente se realizó el **preregistro del experimento comparativo humano–LLM en OSF**:
+La evidencia del repositorio permite reconstruir la siguiente cronología:
+
+1. realización de las entrevistas y elicitación de requisitos;
+2. generación del conjunto de requisitos mediante GPT-5.5-mini;
+3. realización de las cuatro evaluaciones ciegas;
+4. registro del protocolo experimental en OSF;
+5. análisis estadístico y documentación posterior.
+
+El protocolo experimental fue registrado en OSF con los siguientes datos:
 
 - DOI: `10.17605/OSF.IO/82Q76`
 - Fecha UTC: `2026-09-13T00:50:38.265668Z`
 - Ecuador continental (UTC-5): `2026-09-12 19:50:38`
 
-El preregistro corresponde específicamente al experimento comparativo y **precede a la generación documentada del conjunto LLM y a la recolección de las cuatro evaluaciones ciegas utilizadas en el análisis**.
+Cuando se realizó el registro OSF ya existían el conjunto de requisitos generado mediante el LLM y las cuatro hojas de evaluación ciega utilizadas posteriormente en el análisis.
 
-Por tanto:
+Por tanto, el registro se documenta como un **registro retrospectivo del protocolo** y no como una prerregistración confirmatoria previa a la generación de los datos experimentales.
 
-- las entrevistas del ERS no se presentan como preregistradas;
-- el experimento comparativo humano–LLM sí se documenta como preregistrado;
-- las desviaciones u operacionalizaciones posteriores al registro se documentan en `06_Experimento/osf_deviations.pdf`.
+En consecuencia:
+
+- las entrevistas del ERS no se presentan como prerregistradas;
+- la generación del conjunto LLM ocurrió antes del registro OSF;
+- las cuatro evaluaciones ciegas ocurrieron antes del registro OSF;
+- las comparaciones inferenciales se interpretan como exploratorias y no confirmatorias;
+- las desviaciones u operacionalizaciones estadísticas posteriores al registro se documentan en `06_Experimento/osf_deviations.pdf`.
 
 ## Diseño y resultado
 
@@ -242,7 +254,7 @@ El estudio compara:
 - 33 RF generados por GPT-5.5-mini;
 - las mismas 18 transcripciones anonimizadas como corpus fuente;
 - 66 ítems evaluados;
-- 4 jueces independientes;
+- 4 evaluadores ciegos al origen de los requisitos;
 - evaluación ciega;
 - 5 dimensiones de calidad en escala Likert de 1 a 5;
 - 11 pares temáticos estrictos para la comparación pareada.
@@ -460,7 +472,7 @@ La información de citación del proyecto se encuentra en `CITATION.cff`, versi�
 Identificadores persistentes incorporados:
 
 - DOI de Zenodo: `10.5281/zenodo.22315298`
-- DOI del preregistro OSF: `10.17605/OSF.IO/82Q76`
+- DOI del registro OSF: `10.17605/OSF.IO/82Q76`
 - SWHID (Software Heritage): pendiente de archivado futuro.
 
 ---

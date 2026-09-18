@@ -21,14 +21,14 @@ La composición final del equipo corresponde a:
 
 La salida de Morán Pilaguano Frixon Fernando y Viteri García Jonathan Enrique se documenta en `10_Autoria/declaracion_cambio_composicion_equipo.md` y en su versión PDF firmada. Los aportes históricos existentes se conservan bajo su autoría original.
 
-### Preregistro OSF y experimento
+### Registro OSF y experimento
 
-- El experimento comparativo humano–LLM fue preregistrado en OSF:
+- El protocolo del experimento comparativo humano–LLM fue registrado en OSF:
   `10.17605/OSF.IO/82Q76`.
-- El registro se realizó el **12/09/2026** en hora de Ecuador continental.
-- Las 18 entrevistas utilizadas como corpus fuente pertenecen a la etapa previa de elicitación del ERS y ya existían antes del preregistro.
-- El preregistro corresponde específicamente a la comparación humano–LLM.
-- La marca temporal del preregistro precede a la generación documentada del conjunto LLM y a la recolección de las **cuatro evaluaciones ciegas** utilizadas en el análisis.
+- El registro se realizó el **12/09/2026 a las 19:50:38** en hora de Ecuador continental.
+- Las 18 entrevistas utilizadas como corpus fuente pertenecen a la etapa previa de elicitación del ERS y ya existían antes del registro OSF.
+- El registro OSF corresponde al protocolo del experimento comparativo humano–LLM.
+- El conjunto LLM y las **cuatro evaluaciones ciegas** ya existían antes del registro OSF; por ello, el registro se considera retrospectivo y las comparaciones inferenciales se interpretan como exploratorias.
 - El estudio compara 33 RF humanos con 33 RF generados por GPT-5.5-mini a partir de las mismas 18 transcripciones anonimizadas.
 - El análisis utiliza 11 pares temáticos estrictos y corrección de Holm-Bonferroni.
 - Ninguna de las cinco dimensiones principales mostró diferencia estadísticamente significativa después del ajuste.
@@ -125,24 +125,20 @@ No se crean evidencias ficticias para antiguos integrantes.
   - ruta vigente de `Fichas tecnicas`;
   - ruta vigente de `Matriz_Trazabilidad_Final.csv`;
   - 62 trazas documentales;
-  - cronología correcta del preregistro OSF;
+  - cronología real del registro retrospectivo OSF;
   - 151 entradas SHA-256 verificables;
   - composición final del equipo;
   - estado actual de autoría y reproducibilidad.
 - `04_Trazabilidad/README.md` actualizado con 62 trazas y 12 RNF-IA.
 - `07_Datos/README_datos.md` actualizado a la cadena real de 10 pasos y 17 artefactos generados.
 - `07_Datos/manifiesto_datos.csv` regenerado después de actualizar la documentación reproducible.
-- `CITATION.cff` actualizado con la descripción correcta del preregistro del experimento comparativo.
+- `CITATION.cff` actualizado con la descripción del registro retrospectivo del protocolo experimental.
 
 ### Línea base
 
-La etiqueta prevista para la línea base final es:
+La etiqueta anotada `v2.0-entrega4` corresponde a la línea base evaluada originalmente y se conserva sin modificar.
 
-```text
-v2.0-entrega4
-```
-
-Debe ser anotada y apuntar al último commit que integre todas las correcciones del cierre.
+Las correcciones posteriores a la evaluación se integrarán en una nueva etiqueta anotada, manteniendo intacta la trazabilidad de `v2.0-entrega4`.
 
 ---
 
@@ -154,7 +150,7 @@ Esta sección conserva el estado histórico alcanzado el 13/09/2026. Varias care
 
 ### Agregado
 
-- Preregistro del experimento comparativo en OSF, DOI `10.17605/OSF.IO/82Q76`.
+- Registro del protocolo experimental en OSF, DOI `10.17605/OSF.IO/82Q76`.
 - Experimento comparativo: 33 RF elicitados por el equipo humano frente a 33 RF generados por GPT-5.5-mini a partir de las mismas 18 transcripciones anonimizadas.
 - Prompt del LLM, datos crudos, evaluaciones ciegas y matriz de pareo temático.
 - Script reproducible de análisis del experimento.
@@ -169,9 +165,9 @@ Esta sección conserva el estado histórico alcanzado el 13/09/2026. Varias care
 
 Las entrevistas utilizadas como corpus pertenecían a una etapa previa de elicitación del ERS.
 
-El preregistro corresponde al **experimento comparativo humano–LLM** y precede a la generación documentada del conjunto LLM y a las cuatro evaluaciones ciegas utilizadas en el análisis.
+En la documentación de esta versión se afirmó erróneamente que el registro OSF precedía a la generación del conjunto LLM y a las cuatro evaluaciones ciegas. La revisión posterior de la evidencia del repositorio estableció que el conjunto LLM y las cuatro evaluaciones ciegas ya existían antes del registro OSF.
 
-Por tanto, el repositorio no presenta las entrevistas originales como preregistradas, pero sí documenta el experimento comparativo como preregistrado.
+Por tanto, el registro OSF se considera **retrospectivo respecto del experimento**, y las comparaciones inferenciales se interpretan como exploratorias y no confirmatorias.
 
 ### Corregido
 
