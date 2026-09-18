@@ -1,151 +1,272 @@
 # CHANGELOG — SICST
 
-Registro de los cambios correspondientes a la línea base vigente del proyecto
-**Sistema Inteligente de Control y Seguimiento de Terapia Física (SICST)**.
+Registro de cambios del proyecto **Sistema Inteligente de Control y Seguimiento
+de Terapia Física (SICST)** para la Entrega Final 2B de Ingeniería de
+Requerimientos — ISR-401.
 
-## [2B-v2.1] - 2026-09-13
+---
+
+## [2B-v2.2] - 2026-09-18
+
+### Cierre técnico y documental
+
+Versión de cierre previa a la recreación de la etiqueta anotada
+`v2.0-entrega4`.
+
+La composición final del equipo corresponde a:
+
+- Contreras Chávez Kevin Germán.
+- Zambrano Moya Angelo Paul.
+
+La salida de Morán Pilaguano Frixon Fernando y Viteri García Jonathan Enrique
+se documenta en `10_Autoria/declaracion_cambio_composicion_equipo.md` y en su
+versión PDF firmada. Los aportes históricos existentes se conservan bajo su
+autoría original.
+
+### Reproducibilidad de `07_Datos`
+
+- Se actualizó el pipeline reproducible a **10 pasos numerados más el
+  orquestador**.
+- La ejecución completa se realiza desde la raíz con:
+
+  ```bash
+  python 07_Datos/scripts/orquestar.py
+  ```
+
+- La cadena final valida **79 respuestas codificadas**:
+  - 62 pacientes o ex pacientes;
+  - 14 familiares o cuidadores;
+  - 3 fisioterapeutas.
+- `diccionario_datos.csv` documenta **51 columnas**.
+- `resultados/` contiene **17 artefactos generados** más su `README.md`.
+- Se incorporó análisis cualitativo reproducible:
+  - 36 decisiones comparadas;
+  - 33 acuerdos;
+  - 3 desacuerdos;
+  - acuerdo observado de 91.67 %;
+  - Cohen κ = `0.7187`;
+  - IC bootstrap 95 % = `[0.3077, 1.0000]`;
+  - 10 000 remuestreos;
+  - semilla `401`.
+- `saturacion_tematica.csv` documenta 18 sesiones canónicas y 17 temas
+  acumulados.
+- `manifiesto_datos.csv` documenta **37 archivos**.
+- `checksums_datos.sha256` se regenera al final de la cadena.
+
+### Registro OSF y experimento
+
+- Registro del protocolo en OSF:
+  `10.17605/OSF.IO/82Q76`.
+- El registro se realizó el **12/09/2026** en hora de Ecuador continental.
+- Las entrevistas originales anteceden al registro OSF; por ello, el
+  repositorio no presenta el registro como previo a la recolección de las
+  entrevistas.
+- La comparación humano vs. LLM se documenta como **exploratoria** respecto a
+  esa cronología.
+- El estudio compara 33 RF humanos con 33 RF generados por GPT-5.5-mini a
+  partir de las mismas 18 transcripciones anonimizadas.
+- El análisis pareado utiliza 11 pares temáticos estrictos con corrección de
+  Holm-Bonferroni.
+- Ninguna de las dimensiones evaluadas mostró diferencia estadísticamente
+  significativa después del ajuste.
+- El registro verificable se conserva en:
+
+  `06_Experimento/registro_previo/osf_registration.pdf`
+
+### Autoría y evidencia de proceso
+
+`10_Autoria/` quedó actualizado con evidencia verificable de los dos
+integrantes activos:
+
+- **5 capturas** de Angelo Zambrano.
+- **4 capturas** de Kevin Contreras.
+- **2 grabaciones** reales de sesiones de trabajo.
+- **30 notas de campo o síntesis** asociadas a jornadas diferenciadas.
+- `bitacora_elicitacion.csv` con **30 sesiones/jornadas documentadas**.
+- aporte individual disponible en `.md` y `.docx`.
+- declaración de uso de IA disponible en `.md` y `.docx`.
+- declaración firmada del cambio de composición del equipo.
+- retrospectiva final del proyecto.
+- fuentes editables e inventarios de integridad.
+
+No se crean evidencias ficticias para antiguos integrantes.
+
+### Trazabilidad e IA
+
+- La matriz vigente es:
+
+  `04_Trazabilidad/Matriz_Trazabilidad_Final.csv`
+
+- La matriz contiene **62 trazas documentales**:
+  - 33 requisitos funcionales;
+  - 15 requisitos no funcionales generales;
+  - 12 requisitos no funcionales específicos de IA;
+  - 2 restricciones trazadas.
+- Los 12 RNF-IA están documentados en:
+
+  `01_ERS/componentes_IA/requisitos_no_funcionales_ia.csv`
+
+- Los RNF-IA incluyen métricas, umbrales, verificación, responsables,
+  frecuencia, equidad, supervisión humana, monitoreo y nivel de riesgo.
+
+### Evidencia multimedia
+
+- El inventario técnico vigente se encuentra en:
+
+  `02_Evidencias/Fichas tecnicas/fichas_tecnicas.csv`
+
+- El inventario final documenta **67 piezas multimedia**.
+- El contenedor cifrado se distribuye mediante el Release
+  `evidencias-2B`.
+- La contraseña no se publica en el repositorio.
+
+### Integridad
+
+- `checksums.sha256` contiene **151 entradas SHA-256 verificables**.
+- El paquete `07_Datos/` mantiene su propio
+  `07_Datos/checksums_datos.sha256`.
+- Los manifiestos y checksums se regeneran cuando cambia un artefacto incluido
+  en su alcance.
+
+### Documentación corregida
+
+- `README.md` raíz actualizado con:
+  - ruta vigente de `Fichas tecnicas`;
+  - ruta vigente de `Matriz_Trazabilidad_Final.csv`;
+  - 62 trazas documentales;
+  - ubicación correcta del registro OSF;
+  - 151 entradas SHA-256 verificables;
+  - composición final del equipo;
+  - estado actual de autoría y reproducibilidad.
+- `07_Datos/README_datos.md` actualizado a la cadena real de 10 pasos y 17
+  artefactos generados.
+- `07_Datos/manifiesto_datos.csv` regenerado después de actualizar la
+  documentación reproducible.
 
 ### Línea base
 
-Cierre de los criterios de piso de la Entrega Final 2B: registro previo
-externo del experimento (OSF), ejecución del experimento comparativo real
-(Enfoque 1), reescritura del manuscrito, expansión del paquete de datos, y
-completitud de la carpeta de autoría.
+La etiqueta prevista para la línea base final sigue siendo:
+
+```text
+v2.0-entrega4
+```
+
+Debe recrearse al final del cierre para que sea **anotada** y apunte al último
+commit que integra todas las correcciones.
+
+---
+
+## [2B-v2.1] - 2026-09-13
+
+### Estado de esa versión
+
+Esta sección conserva el estado histórico alcanzado el 13/09/2026. Varias
+carencias que existían en ese momento fueron resueltas posteriormente en
+`2B-v2.2`.
 
 ### Agregado
 
-- Registro previo del protocolo experimental en OSF, DOI
-  `10.17605/OSF.IO/82Q76` (2026-09-12), anterior a la generación de datos.
-- Experimento comparativo real (Enfoque 1): 33 RF elicitados por el equipo
-  humano vs. 33 RF generados por LLM (GPT-5.5-mini), a partir de las mismas
-  18 transcripciones anonimizadas.
-  - `06_Experimento/prompts_llm/prompt_generacion_RF_llm.md`: prompt exacto,
-    modelo, fecha, confirmación de no uso de información externa.
-  - `06_Experimento/datos_crudos/`: RF del LLM, hoja de evaluación ciega,
-    evaluaciones de 4 jueces independientes.
-  - `06_Experimento/datos_procesados/matriz_trazabilidad_tema_RF.csv`: pareo
-    temático humano-LLM (11 pares estrictos).
-  - `06_Experimento/scripts_analisis/analisis_experimento_llm_humano.py`:
-    análisis reproducible (κ de Fleiss, prueba t apareada, corrección
-    Holm-Bonferroni).
-  - `06_Experimento/protocolo.pdf`, `osf_registration.pdf`,
-    `osf_deviations.pdf`.
-- Manuscrito reescrito por completo (`07_Publicacion/manuscrito_final.tex`
-  y `.pdf`, 8 páginas), alineado con la pregunta de investigación real
-  (Enfoque 1) y con los resultados del experimento comparativo.
-- Paquete `07_Publicacion/dataset_zenodo/` completado: `ANONYMIZATION.md`,
-  `ETHICS.md`, prompts del LLM, script de análisis, matriz de pareo
-  temático, transcripciones anonimizadas de las 18 entrevistas.
-- Pipeline de `07_Datos/` expandido de 1 a 8 scripts numerados
-  (`01_extraer_crudos.py` a `08_generar_figuras.py`) con un orquestador de
-  una sola orden; de 1 a 13 archivos de resultados (tablas y figuras).
-- `10_Autoria/`: agregada bitácora de sesiones (`bitacora_sesiones/`,
-  derivada del historial real de Git), inventario EXIF/hash de 48 archivos
-  multimedia (`inventario_exif/`), verificación previa
-  (`verificacion_previa/`), correspondencia con la organización (6
-  fotografías reales), y notas de campo (8 fotografías reales).
-- `fair_assessment.pdf` en la raíz: autoevaluación FAIR con F-UJI sobre el
-  dataset de Zenodo, puntaje agregado 88% (Findable: advanced, Accessible:
-  advanced, Interoperable: moderate, Reusable: moderate).
-- Etiqueta anotada de línea base: `v2.0-entrega4`.
+- Registro del protocolo experimental en OSF, DOI
+  `10.17605/OSF.IO/82Q76`.
+- Experimento comparativo: 33 RF elicitados por el equipo humano frente a
+  33 RF generados por GPT-5.5-mini, a partir de las mismas 18 transcripciones
+  anonimizadas.
+- Prompt del LLM, datos crudos, evaluaciones ciegas y matriz de pareo temático.
+- Script reproducible de análisis del experimento.
+- Manuscrito final reescrito y alineado con la comparación humano vs. LLM.
+- Paquete de publicación y materiales anonimizados.
+- Expansión inicial del pipeline de `07_Datos/`.
+- Ampliación de la documentación de autoría.
+- `fair_assessment.pdf` incorporado en la raíz.
+- `.mailmap` ampliado para normalizar identidades Git.
+
+### Aclaración cronológica
+
+Las entrevistas de campo fueron realizadas antes del registro OSF. Por ello,
+el cierre posterior documenta la comparación como exploratoria respecto a esa
+cronología y no presenta el registro como previo a la recolección original de
+las entrevistas.
 
 ### Corregido
 
-- Referencias bibliográficas: de 30 a 33 entradas (`references.bib`),
-  agregadas las citas de Fleiss (1971), Cohen (1960) y Cheng et al. (2026)
-  usadas en el manuscrito reescrito.
-- URLs desactualizadas (`_2A`) corregidas a `_2B` en `README.md`,
-  `CITATION.cff` (raíz y `dataset_zenodo/`), y archivos relacionados.
-- Renombrado `9_Defensa/` a `09_Defensa/` para coincidir exactamente con el
-  árbol de la Sección 9.1 de la guía.
-- Renombradas carpetas de `10_Autoria/` para consistencia de nomenclatura
-  (minúsculas, sin espacios).
-- `.mailmap` actualizado con la identidad de `FrixonMP`, colaborador que
-  dejó de formar parte del equipo el 06/09/2026; su aporte histórico se
-  conserva en el historial de Git por transparencia.
+- URLs desactualizadas del repositorio.
+- Estructura de carpetas de defensa y autoría.
+- Normalización de identidades Git.
+- Referencias bibliográficas utilizadas por el manuscrito.
 
 ### Eliminado
 
-- Enfoque de explicabilidad con datos sintéticos (protocolo, script y
-  resultados de una exploración descartada en favor del Enfoque 1),
-  eliminado de `06_Experimento/` con commits documentados individualmente.
-- `manuscrito_final_springer.tex`: fuente no compilable (requería
-  `sn-jnl.cls`, no redistribuible por Springer Nature), huérfano.
-- `07_Publicacion/07_Datos/`: subcarpeta duplicada con transcripciones que
-  ya residían correctamente en `02_Evidencias/`.
-- Archivos `.docx` duplicados y desactualizados en `07_Datos/` y
-  `07_Publicacion/dataset_zenodo/`.
+- Enfoque de explicabilidad basado en datos sintéticos que había sido
+  descartado.
+- Fuente Springer no compilable y artefactos duplicados u obsoletos.
+- Copias redundantes de documentos y datos ya preservados en su ubicación
+  canónica.
 
-### Pendiente para el cierre
+### Pendientes identificados en esa fecha
 
-- Referencias: completar de 33 a 40 entradas mínimas.
-- SWHID: archivar el repositorio en Software Heritage y agregar el
-  identificador a `CITATION.cff`.
-- Publicar la versión 2.0 del depósito de Zenodo incluyendo el material del
-  experimento comparativo.
-- Completar en `10_Autoria/`: capturas por integrante, fuentes editables de
-  diagramas, grabación de sesión de trabajo, fotos del equipo.
+Al 13/09/2026 todavía faltaban varias evidencias de autoría y ampliaciones del
+pipeline. Estas tareas se resolvieron posteriormente y se documentan en
+`2B-v2.2`.
+
+Permanecen como mejoras externas no indispensables para describir el estado
+actual del repositorio:
+
+- posible archivado futuro en Software Heritage;
+- posible nueva versión del depósito Zenodo con materiales complementarios
+  posteriores.
 
 ---
 
 ## [2B-v2.0] - 2026-09-05
 
-### Línea base
+### Línea base intermedia
 
-La versión vigente del repositorio corresponde a:
+Versión intermedia de la Entrega Final 2B.
 
-**Entrega Final 2B — versión 2.0**
+Autores activos:
 
-Autores actuales de la entrega:
-
-- Contreras Chávez Kevin Germán
-- Zambrano Moya Angelo Paul
-
----
+- Contreras Chávez Kevin Germán.
+- Zambrano Moya Angelo Paul.
 
 ### Agregado
 
-- Estructura reproducible definitiva en `07_Datos/`.
-- Datos crudos utilizados para la reproducción del análisis.
-- Datos procesados generados a partir de los datos crudos.
-- Resultados derivados reproducibles.
-- Diccionario de datos actualizado.
-- Archivo de checksums SHA-256 para verificación de integridad.
-- Archivo `desviaciones.md` para documentar transformaciones y limitaciones.
-- Archivo `registro_deposito.md` para registrar el depósito persistente.
-- Condiciones específicas de uso en `07_Datos/LICENSE-DATA.txt`.
-- Script reproducible: `07_Datos/scripts/orquestar.py`.
-- Evidencia de doble codificación en `10_Autoria/doble_codificacion/`.
-- Cálculo del porcentaje de acuerdo entre codificadores, Cohen κ, e
-  intervalo de confianza mediante bootstrap.
-- Declaración de uso de inteligencia artificial en
-  `10_Autoria/declaracion_uso_ia.md`.
-- Archivo `.mailmap` en la raíz para normalizar identidades Git de los
-  autores actuales.
+- Estructura reproducible inicial en `07_Datos/`.
+- Datos crudos y procesados.
+- Resultados derivados.
+- Diccionario de datos.
+- Checksums SHA-256.
+- `desviaciones.md`.
+- `registro_deposito.md`.
+- `LICENSE-DATA.txt`.
+- `07_Datos/scripts/orquestar.py`.
+- Evidencia de doble codificación.
+- Declaración de uso de inteligencia artificial.
+- `.mailmap` para normalización de identidades Git.
 
 ### Dataset reproducible
 
-El conjunto reproducible vigente contenía **79 respuestas codificadas**:
-62 pacientes o ex pacientes, 14 familiares o cuidadores, 3 fisioterapeutas.
+El conjunto reproducible contenía **79 respuestas codificadas**:
+
+- 62 pacientes o ex pacientes;
+- 14 familiares o cuidadores;
+- 3 fisioterapeutas.
 
 ### Publicación en Zenodo
 
-- **DOI:** `10.5281/zenodo.22315298`
-- **Versión:** 1.0
-- **Fecha de publicación:** 2026-09-05
+- DOI: `10.5281/zenodo.22315298`
+- Versión: 1.0
+- Fecha de publicación: 2026-09-05
+- Acceso: público / Open
 
 ### Corregido
 
-- Se eliminó la indicación antigua de que todavía no existía un depósito
-  en Zenodo ni un DOI.
-- Se corrigieron referencias a un conjunto anterior de únicamente 31
-  respuestas, actualizadas a 79.
-- Se eliminaron archivos y figuras generados con la versión anterior del
-  conjunto de datos.
-- Se sincronizaron README, citación, licencia, resultados y registro de
-  depósito con la publicación real.
+- Se retiraron referencias a un conjunto anterior de 31 respuestas.
+- Se sincronizaron resultados y documentación con el conjunto de 79
+  respuestas.
+- Se eliminó documentación que indicaba erróneamente que todavía no existía
+  un depósito persistente.
 
-### Estado de la versión
+### Estado
 
-La versión `2B-v2.0` constituyó la línea base intermedia previa al cierre
-de los criterios de piso de la Entrega Final 2B (ver `2B-v2.1` arriba).
+`2B-v2.0` fue una línea base intermedia. El estado final del cierre se
+documenta en `2B-v2.2`.
