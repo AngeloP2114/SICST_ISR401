@@ -1,68 +1,52 @@
 # Verificación previa a la recolección de datos — SICST
 
-> Este documento certifica que, antes de cada ronda de recolección de
-> datos, el equipo revisó que las condiciones éticas y técnicas estaban
-> listas. Se firma con nombre completo y la fecha debe ser anterior a la
-> primera sesión de esa ronda.
+**Revisión documental de cierre:** 18/09/2026.
 
-## Ronda 1 — Entrevistas iniciales (fisioterapeutas, familiares, pacientes)
+Este documento diferencia entre evidencia contemporánea verificable y datos
+que no quedaron registrados antes de una ronda. No se incorporan fechas ni
+firmas retroactivas.
 
-**Fecha de esta verificación:** _______________ (completar: debe ser
-anterior al 2026-06-17, fecha de la primera nota de campo registrada)
+## Ronda 1 — entrevistas iniciales
 
-| Condición verificada | Cumple (Sí/No) | Responsable |
+Primera nota de campo conservada: **17/06/2026**.
+
+| Condición | Estado documental | Evidencia |
 |---|---|---|
-| Consentimientos informados listos para firma | | |
-| Guion de entrevista en su versión final | | |
-| Espacio de almacenamiento preparado para las grabaciones/transcripciones | | |
-| Participantes contactados y confirmados (ver `10_Autoria/correspondencia/`) | | |
+| Consentimientos informados | Verificable | `02_Evidencias/Consentimientos/` |
+| Guiones de entrevista | Verificable | Materiales y transcripciones versionados |
+| Grabaciones y transcripciones | Verificable | `02_Evidencias/00_Restringido/` y `02_Evidencias/Transcripciones/` |
+| Contacto con participantes | Parcialmente verificable | `10_Autoria/correspondencia/` |
+| Acta previa firmada antes de la ronda | No consta | No se crea retroactivamente |
 
-**Firmas del equipo:**
-- Nombre completo: ______________________  Fecha: __________
-- Nombre completo: ______________________  Fecha: __________
+## Ronda 2 — cuestionario general
 
----
-
-## Ronda 2 — Aplicación de cuestionario (79 respuestas)
-
-**Fecha de esta verificación:** _______________ (completar: debe ser
-anterior a la primera respuesta registrada en
-`07_Datos/datos_crudos/respuestas_cuestionario_2B.csv`)
-
-| Condición verificada | Cumple (Sí/No) | Responsable |
+| Condición | Estado documental | Evidencia |
 |---|---|---|
-| Instrumento de cuestionario en su versión final | | |
-| Consentimiento de participación incluido en el propio formulario | | |
-| Canal de aplicación probado (formulario/link funcionando) | | |
+| Instrumento y respuestas | Verificable | `07_Datos/datos_crudos/` |
+| Consentimiento incluido en el instrumento | Revisar contra el formulario original | No se afirma sin respaldo directo |
+| Canal de aplicación operativo | Inferible por las 79 respuestas conservadas | Datos crudos y resultados procesados |
+| Acta previa firmada antes de la ronda | No consta | No se crea retroactivamente |
 
-**Firmas del equipo:**
-- Nombre completo: ______________________  Fecha: __________
-- Nombre completo: ______________________  Fecha: __________
+## Ronda 3 — experimento comparativo humano vs. LLM
 
----
+**Fecha de verificación registrada:** 12/09/2026, antes de generar los datos
+comparativos del experimento. Esta fecha no se presenta como anterior a las
+entrevistas de campo.
 
-## Ronda 3 — Experimento comparativo LLM vs. humano
+| Condición | Estado | Responsable | Evidencia |
+|---|---|---|---|
+| Registro OSF del protocolo | Sí | Angelo Zambrano | DOI `10.17605/OSF.IO/82Q76` |
+| Transcripciones anonimizadas listas | Sí | Angelo Zambrano | `06_Experimento/` y paquete reproducible |
+| Hoja de evaluación ciega preparada | Sí | Angelo Zambrano | datos crudos del experimento |
+| Clave de desciego separada | Sí | Angelo Zambrano | documentación del protocolo |
 
-**Fecha de esta verificación:** 2026-09-12 (anterior al registro OSF de
-las 19:50 del mismo día)
+## Declaración de revisión de cierre
 
-| Condición verificada | Cumple (Sí/No) | Responsable |
+Los integrantes confirman que esta revisión describe el estado documental
+real y que los campos no respaldados se identifican como ausentes en lugar de
+completarse por aproximación.
+
+| Integrante | Firma | Fecha |
 |---|---|---|
-| Registro OSF del protocolo completado antes de generar datos | Sí | Zambrano Moya Angelo Paul |
-| Transcripciones anonimizadas listas para el prompt del LLM | Sí | Zambrano Moya Angelo Paul |
-| Hoja de evaluación ciega preparada (sin indicar origen) | Sí | Zambrano Moya Angelo Paul |
-| Clave de desciego lista para almacenarse cifrada | Sí | Zambrano Moya Angelo Paul |
-
-**Firmas del equipo:**
-- Nombre completo: ______________________  Fecha: __________
-- Nombre completo: ______________________  Fecha: __________
-
----
-
-*Nota: las filas con datos ya confirmados (Ronda 3) reflejan lo que
-efectivamente ocurrió, verificable contra el registro OSF
-(https://doi.org/10.17605/OSF.IO/82Q76) y el historial de commits. Las
-Rondas 1 y 2 requieren que el equipo complete la fecha real y firme —
-no se completan con fechas aproximadas si no se recuerda la fecha exacta;
-en ese caso, usar la fecha del primer commit o evidencia relacionada como
-referencia mínima verificable.*
+| Contreras Chávez Kevin Germán | ______________________________ | ____/____/2026 |
+| Zambrano Moya Angelo Paul | ______________________________ | ____/____/2026 |
