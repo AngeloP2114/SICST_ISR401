@@ -3,7 +3,7 @@
 ## Contexto
 
 El informe de evaluación del 18/09/2026 señala que las 4 hojas de evaluación ciega
-(atribuidas a los evaluadores independientes Angel, Dayana, Mishell y sebas) registran
+(atribuidas a los evaluadores Angel, Dayana, Mishell y sebas) registran
 el mismo último editor en sus metadatos internos ("Angelo Zambrano") y se guardaron
 en un intervalo de 5 minutos (12/09, entre las 18:11 y las 18:16 UTC). Esta nota
 explica esa observación con el detalle real de cómo se recolectaron las 4 evaluaciones.
@@ -29,17 +29,18 @@ análisis. Esto explica por qué los 4 archivos registran su cuenta como último
 en los metadatos: él fue quien guardó cada hoja después de que su evaluador
 correspondiente terminara.
 
-## Sobre la independencia de las calificaciones
+## Sobre el procedimiento de calificación
 
 Ningún evaluador vio las calificaciones de otro evaluador antes de emitir las
-propias. El orden secuencial (uno completa y se guarda antes de que el siguiente
-comience) preserva la independencia de las 4 evaluaciones, aunque la recolección
-logística haya ocurrido en una sola sesión y no en sesiones separadas por evaluador.
+propias. El orden secuencial permitió que cada participante completara su propia
+hoja sin visualizar las puntuaciones registradas previamente. Sin embargo, las
+cuatro evaluaciones se realizaron en una misma sesión y utilizando el mismo
+computador, por lo que este procedimiento no se presenta como evidencia de
+independencia experimental entre evaluadores.
 
 ## Por qué se hizo así
 
-La sesión conjunta fue una decisión práctica: era el único momento en que los 4
-evaluadores coincidían disponibles. No hubo intención de simplificar o acelerar el
-proceso a costa de la independencia de las respuestas; el protocolo secuencial
-descrito arriba se siguió precisamente para preservarla dentro de esa restricción
-logística.
+La sesión conjunta fue una decisión práctica debido a la disponibilidad de los
+cuatro evaluadores. El protocolo secuencial se utilizó para evitar que un evaluador
+visualizara las puntuaciones anteriores. Aun así, la sesión compartida y el uso del
+mismo equipo se reconocen como una limitación metodológica del procedimiento.

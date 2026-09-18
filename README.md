@@ -453,7 +453,7 @@ Si los comandos no muestran errores y vuelven al prompt, la verificación de int
 
 # 16. Integridad del repositorio
 
-El archivo `checksums.sha256` cubre **503 de los 504 archivos versionados** del repositorio. El único archivo excluido es `checksums.sha256` porque un manifiesto no puede contener de forma estable su propio hash.
+El archivo `checksums.sha256` cubre **505 de los 506 archivos versionados** del repositorio. El único archivo excluido es `checksums.sha256` porque un manifiesto no puede contener de forma estable su propio hash.
 
 El paquete `07_Datos/` mantiene además su propio archivo:
 
