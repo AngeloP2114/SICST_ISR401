@@ -417,7 +417,7 @@ Si los comandos no muestran errores y vuelven al prompt, la verificación de int
 
 # 16. Integridad del repositorio
 
-Los hashes generales disponibles en `checksums.sha256` contienen actualmente **153 entradas verificables** correspondientes a los artefactos incluidos por el mecanismo de verificación del repositorio.
+Los hashes generales disponibles en `checksums.sha256` contienen actualmente **151 entradas SHA-256 verificables** correspondientes a los artefactos incluidos por el mecanismo de verificación del repositorio.
 
 El paquete `07_Datos/` mantiene además su propio archivo:
 
