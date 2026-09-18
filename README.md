@@ -13,7 +13,7 @@ Repositorio de la **Entrega Final 2B** del Proyecto Integrador de la asignatura 
 - Contreras Chávez Kevin Germán
 - Zambrano Moya Angelo Paul (ORCID: [0009-0006-0056-8482](https://orcid.org/0009-0006-0056-8482))
 
-**Nota sobre integración del equipo:** la composición final de la Entrega Final 2B corresponde a Kevin Germán Contreras Chávez y Angelo Paul Zambrano Moya. El repositorio conserva aportes históricos de **Morán Pilaguano Frixon Fernando** (usuario `FrixonMP`) cuando existen en el historial de Git; **Viteri García Jonathan Enrique** también dejó de formar parte del equipo antes del cierre. La situación se documenta de forma expresa en `10_Autoria/declaracion_cambio_composicion_equipo.md` y en su versión PDF firmada. Los aportes históricos se mantienen bajo su autoría original y no se reasignan.
+**Nota sobre integración del equipo:** la composición final de la Entrega Final 2B corresponde a Kevin Germán Contreras Chávez y Angelo Paul Zambrano Moya. El repositorio conserva aportes históricos de **Morán Pilaguano Frixon Fernando** (usuario `FrixonMP`) cuando existen en el historial de Git; **Viteri García Jonathan Enrique** también dejó de formar parte del equipo antes del cierre. La situación se documenta en `10_Autoria/declaracion_cambio_composicion_equipo.md` y en su versión PDF firmada. Los aportes históricos se mantienen bajo su autoría original y no se reasignan.
 
 ---
 
@@ -21,7 +21,7 @@ Repositorio de la **Entrega Final 2B** del Proyecto Integrador de la asignatura 
 
 | Recurso | Identificador |
 |---|---|
-| Registro previo del experimento (OSF) | [10.17605/OSF.IO/82Q76](https://doi.org/10.17605/OSF.IO/82Q76) |
+| Preregistro del experimento comparativo (OSF) | [10.17605/OSF.IO/82Q76](https://doi.org/10.17605/OSF.IO/82Q76) |
 | Dataset reproducible (Zenodo, v1.0) | [10.5281/zenodo.22315298](https://doi.org/10.5281/zenodo.22315298) |
 | Repositorio (GitHub) | https://github.com/gleiston-guerrero/SICST_ISR401 |
 
@@ -39,7 +39,7 @@ El proyecto integra actividades de:
 - modelado UML;
 - trazabilidad;
 - producto mínimo viable;
-- experimentación empírica registrada en OSF (Enfoque 1: RF humano vs. LLM);
+- experimentación empírica preregistrada en OSF (Enfoque 1: RF humano vs. LLM);
 - preparación de publicación académica;
 - privacidad y gestión ética;
 - defensa final.
@@ -50,17 +50,17 @@ SICST se plantea como una herramienta de apoyo y no sustituye la valoración, di
 
 # Línea base vigente
 
-La línea base vigente del repositorio corresponde a:
+La línea base de cierre corresponde a:
 
 **Entrega Final 2B — versión 2.0**
 
-y queda identificada mediante la etiqueta anotada:
+y se identifica mediante la etiqueta anotada:
 
 ```text
 v2.0-entrega4
 ```
 
-La etiqueta debe apuntar al último commit que integra todas las correcciones del examen suspenso.
+La etiqueta final debe apuntar al último commit que integre todas las correcciones del examen suspenso.
 
 La carpeta `PE5_Informe_Final/` se conserva únicamente como **antecedente histórico** correspondiente a la Práctica Experimental 5. Los documentos, simulaciones, métricas y materiales almacenados en PE5 no sustituyen los artefactos finales requeridos para la Entrega Final 2B.
 
@@ -192,7 +192,11 @@ La matriz vigente contiene **62 trazas documentales**:
 - 12 requisitos no funcionales específicos de IA;
 - 2 restricciones trazadas.
 
-También se conserva la priorización MoSCoW/Kano en `04_Trazabilidad/priorizacion_moscow_kano.csv`.
+También se conserva la priorización MoSCoW/Kano en:
+
+```text
+04_Trazabilidad/priorizacion_moscow_kano.csv
+```
 
 ---
 
@@ -208,20 +212,46 @@ El prototipo del sistema se encuentra en `05_MVP/`, con aplicaciones diferenciad
 
 ---
 
-# 8. Experimento — Enfoque 1: RF humano vs. LLM (Entrega Final 2B)
+# 8. Experimento — Enfoque 1: RF humano vs. LLM
 
 El material experimental se encuentra en `06_Experimento/`.
 
+## Cronología correcta
+
+Las **18 entrevistas** utilizadas como corpus fuente pertenecen a una etapa previa de elicitación y construcción del ERS.
+
+Posteriormente se realizó el **preregistro del experimento comparativo humano–LLM en OSF**:
+
+- DOI: `10.17605/OSF.IO/82Q76`
+- Fecha UTC: `2026-09-13T00:50:38.265668Z`
+- Ecuador continental (UTC-5): `2026-09-12 19:50:38`
+
+El preregistro corresponde específicamente al experimento comparativo y **precede a la generación documentada del conjunto LLM y a la recolección de las cuatro evaluaciones ciegas utilizadas en el análisis**.
+
+Por tanto:
+
+- las entrevistas del ERS no se presentan como preregistradas;
+- el experimento comparativo humano–LLM sí se documenta como preregistrado;
+- las desviaciones u operacionalizaciones posteriores al registro se documentan en `06_Experimento/osf_deviations.pdf`.
+
 ## Diseño y resultado
 
-Estudio comparativo, ciego y **registrado en OSF** (DOI [10.17605/OSF.IO/82Q76](https://doi.org/10.17605/OSF.IO/82Q76), registrado el 12/09/2026 en hora de Ecuador continental), sobre la calidad de Requisitos Funcionales (RF) elicitados por el equipo humano frente a requisitos generados por un LLM (GPT-5.5-mini), a partir de las mismas 18 transcripciones anonimizadas.
+El estudio compara:
 
-Las entrevistas originales fueron realizadas antes del registro OSF. Por ello, la documentación del proyecto no presenta el registro como previo a la recolección de las entrevistas y la comparación estadística se interpreta como **exploratoria** respecto a esa cronología.
+- 33 RF elicitados por el equipo humano;
+- 33 RF generados por GPT-5.5-mini;
+- las mismas 18 transcripciones anonimizadas como corpus fuente;
+- 66 ítems evaluados;
+- 4 jueces independientes;
+- evaluación ciega;
+- 5 dimensiones de calidad en escala Likert de 1 a 5;
+- 11 pares temáticos estrictos para la comparación pareada.
 
-- 66 RF (33 humanos + 33 LLM) evaluados de forma ciega por 4 jueces independientes, en 5 dimensiones de calidad (escala Likert 1–5).
-- Acuerdo entre evaluadores: κ de Fleiss bajo a nulo (entre -0.011 y 0.167 según dimensión).
-- Análisis pareado exploratorio sobre **11 pares temáticos estrictos**, con corrección de Holm-Bonferroni.
-- **Ninguna dimensión mostró diferencia estadísticamente significativa** (todos los valores p ajustados > 0.05).
+La evaluación ciega se realizó sin revelar a los jueces si cada requisito era humano o generado por LLM.
+
+El análisis incluye κ de Fleiss, estadística descriptiva, comparación pareada y corrección Holm-Bonferroni.
+
+En la ejecución reproducible actual, ninguna de las cinco dimensiones principales mostró diferencia estadísticamente significativa después de la corrección por comparaciones múltiples. La ausencia de significancia no se interpreta como prueba de equivalencia.
 
 ```text
 06_Experimento/
@@ -251,7 +281,7 @@ Los ejercicios sintéticos realizados durante PE5 se conservan únicamente como 
 
 # 9. Antecedente histórico PE5
 
-La carpeta `PE5_Informe_Final/` contiene el cierre correspondiente a la Práctica Experimental 5 (informe, fuente LaTeX, bibliografía, figuras, métricas de simulaciones controladas y presentación de esa etapa). Se conserva para mantener trazabilidad histórica del desarrollo del proyecto; no constituye por sí solo la Entrega Final 2B, y sus simulaciones sintéticas no deben interpretarse como evidencia empírica humana.
+La carpeta `PE5_Informe_Final/` contiene el cierre correspondiente a la Práctica Experimental 5. Se conserva para mantener trazabilidad histórica del desarrollo del proyecto; no constituye por sí sola la Entrega Final 2B y sus simulaciones sintéticas no deben interpretarse como evidencia empírica humana.
 
 ---
 
@@ -275,23 +305,18 @@ La preparación para publicación académica se encuentra en `07_Publicacion/`:
 
 **Título del manuscrito:** *An Empirical Comparison of Human-Elicited and LLM-Generated Functional Requirements in a Physical Therapy Follow-Up System: A Paired-Analyst Study in Ecuador*
 
-**Revista objetivo:** Requirements Engineering (Springer Nature). Ver análisis completo en `07_Publicacion/analisis_revistas.md`.
+**Revista objetivo:** Requirements Engineering (Springer Nature).
 
 ## Dataset publicado en Zenodo
 
 `07_Publicacion/dataset_zenodo/` contiene la documentación y materiales del conjunto de datos reproducible publicado en Zenodo.
 
 - **DOI:** `10.5281/zenodo.22315298`
-- **Versión publicada:** 1.0 (2026-09-05)
+- **Versión publicada:** 1.0
+- **Fecha de publicación:** 2026-09-05
 - **Acceso:** Público / Open
 
 El material complementario más reciente del experimento y del cierre 2B permanece versionado en este repositorio.
-
-La reproducción de los datos generales del proyecto se realiza desde la raíz mediante:
-
-```bash
-python 07_Datos/scripts/orquestar.py
-```
 
 ---
 
@@ -313,33 +338,29 @@ Los materiales se encuentran en `09_Defensa/`: presentación en PDF y editable, 
 
 SICST contempla componentes inteligentes orientados al apoyo del seguimiento terapéutico, incluyendo análisis de movimiento por visión por computadora y priorización de alertas.
 
-Los requisitos asociados consideran:
-
-- rendimiento;
-- equidad;
-- explicabilidad;
-- supervisión humana;
-- monitoreo;
-- manejo de fallos;
-- clasificación interna de riesgo.
-
 Los requisitos verificables del componente inteligente se documentan en:
 
 ```text
 01_ERS/componentes_IA/requisitos_no_funcionales_ia.csv
 ```
 
-El archivo contiene **12 RNF-IA** con métrica, unidad, umbral, método de verificación, responsable, frecuencia, equidad, supervisión humana, monitoreo y nivel de riesgo. Sus identificadores se encuentran trazados en el ERS y en `04_Trazabilidad/Matriz_Trazabilidad_Final.csv`.
+El archivo contiene **12 RNF-IA** con métrica, unidad, umbral, método de verificación, responsable, frecuencia, equidad, supervisión humana, monitoreo y nivel de riesgo.
+
+Sus identificadores se encuentran trazados en:
+
+```text
+04_Trazabilidad/Matriz_Trazabilidad_Final.csv
+```
 
 Las salidas del sistema no se presentan como diagnóstico médico ni sustituyen la evaluación del fisioterapeuta.
 
-Adicionalmente, un LLM (GPT-5.5-mini) fue usado como **objeto de estudio** en el experimento comparativo documentado en `06_Experimento/prompts_llm/`. El uso de asistentes de IA como apoyo al desarrollo y documentación se declara en `10_Autoria/declaracion_uso_ia.md`.
+GPT-5.5-mini fue utilizado como **objeto de estudio** en el experimento comparativo. El uso de asistentes de IA como apoyo al desarrollo y documentación se declara en `10_Autoria/declaracion_uso_ia.md`.
 
 ---
 
 # 14. Autoría y evidencia de proceso
 
-La documentación de autoría y proceso de trabajo se encuentra en `10_Autoria/`:
+La documentación de autoría se encuentra en `10_Autoria/`:
 
 ```text
 10_Autoria/
@@ -367,7 +388,7 @@ La carpeta contiene:
 - 5 capturas de Angelo Zambrano;
 - 4 capturas de Kevin Contreras;
 - 2 grabaciones reales de sesiones de trabajo;
-- 30 notas de campo/síntesis asociadas a jornadas diferenciadas;
+- 30 notas de campo o síntesis asociadas a jornadas diferenciadas;
 - bitácora de elicitación;
 - formatos abiertos de aporte individual y declaración de uso de IA;
 - retrospectiva final;
@@ -414,7 +435,7 @@ cd 07_Datos
 sha256sum -c checksums_datos.sha256 --quiet
 ```
 
-Si los comandos no muestran errores y vuelven al prompt, la verificación de integridad finaliza correctamente.
+Si los comandos no muestran errores y vuelven al prompt, la verificación de integridad ha finalizado correctamente.
 
 ---
 
@@ -438,17 +459,17 @@ La información de citación del proyecto se encuentra en `CITATION.cff`, versi�
 
 Identificadores persistentes incorporados:
 
-- DOI de Zenodo (dataset): `10.5281/zenodo.22315298`
-- DOI de OSF (registro del experimento): `10.17605/OSF.IO/82Q76`
-- SWHID (Software Heritage): **pendiente** — se incorporará una vez archivado el repositorio en Software Heritage.
+- DOI de Zenodo: `10.5281/zenodo.22315298`
+- DOI del preregistro OSF: `10.17605/OSF.IO/82Q76`
+- SWHID (Software Heritage): pendiente de archivado futuro.
 
 ---
 
 # 18. Licencia
 
-La licencia general del repositorio se encuentra en `LICENSE` (MIT). La licencia aplicada al código fuente no implica autorización automática para redistribuir evidencia sensible o identificable.
+La licencia general del repositorio se encuentra en `LICENSE` (MIT).
 
-Los datasets y materiales específicos pueden incluir condiciones adicionales dentro de sus respectivas carpetas (ver `07_Datos/LICENSE-DATA.txt`). El material restringido no debe redistribuirse públicamente.
+La licencia del código no implica autorización automática para redistribuir evidencia sensible o identificable. Los datasets y materiales específicos pueden incluir condiciones adicionales dentro de sus respectivas carpetas.
 
 ---
 
@@ -456,13 +477,13 @@ Los datasets y materiales específicos pueden incluir condiciones adicionales de
 
 Las modificaciones relevantes del proyecto se documentan en `CHANGELOG.md`.
 
-La línea base de la Entrega Final 2B está identificada con la etiqueta anotada:
+La línea base de la Entrega Final 2B se identifica con la etiqueta anotada:
 
 ```text
 v2.0-entrega4
 ```
 
-Para la entrega final, esta etiqueta debe resolver al último commit de cierre del examen suspenso.
+Para la entrega final, la etiqueta debe resolver al último commit de cierre del examen suspenso.
 
 ---
 
