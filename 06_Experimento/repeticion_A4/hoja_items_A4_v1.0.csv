@@ -1,0 +1,67 @@
+orden,id_ciego,requisito_funcional_normalizado
+1,A4-001,"Registrar alertas relacionadas con dolor, fatiga o dificultades durante la realización de ejercicios"
+2,A4-002,Mostrar la rutina activa de ejercicios asignada al paciente
+3,A4-003,Registrar las limitaciones funcionales del paciente antes de la terapia
+4,A4-004,Mostrar retroalimentación automática cuando detecte un error postural o repetición incorrecta
+5,A4-005,Mostrar las repeticiones indicadas para cada ejercicio de la rutina
+6,A4-006,Documentar observaciones sobre progreso dificultades o recomendaciones por sesión
+7,A4-007,Registrar tratamientos previos lesiones anteriores y tiempo de evolución del dolor o lesión
+8,A4-008,Registrar los ejercicios indicados para realizar durante la terapia física
+9,A4-009,Registrar el nivel de dolor del paciente mediante escala EVA u otra escala definida
+10,A4-010,Registrar observaciones del fisioterapeuta sobre las sesiones del paciente
+11,A4-011,Registrar el tiempo empleado por el paciente al realizar una rutina
+12,A4-012,Evitar que movimientos mal ejecutados se registren como repeticiones válidas
+13,A4-013,Enviar avisos a familiares autorizados cuando el paciente requiera apoyo
+14,A4-014,Registrar mediciones de movilidad articular del paciente
+15,A4-015,Clasificar al paciente según condición traumatológica neurológica geriátrica u otra definida por el fisioterapeuta
+16,A4-016,Consultar información compartida del progreso del paciente según autorización
+17,A4-017,Crear un plan terapéutico según diagnóstico condición clínica gravedad y evolución del paciente
+18,A4-018,Registrar las repeticiones realizadas por el paciente durante una rutina
+19,A4-019,Registrar el nivel de fatiga o esfuerzo percibido por el paciente después de una rutina
+20,A4-020,Registrar el nivel de dolor del paciente después de realizar una rutina
+21,A4-021,Asignar ejercicios con series repeticiones duración frecuencia e instrucciones al paciente
+22,A4-022,Habilitar al familiar autorizado para consultar el cumplimiento de la rutina del paciente
+23,A4-023,Guardar fecha hora rutina ejercicio realizado repeticiones y evidencia de cumplimiento
+24,A4-024,Generar informes fisioterapéuticos con información del tratamiento realizado
+25,A4-025,Documentar la razón principal por la cual el paciente inicia terapia física
+26,A4-026,Registrar los antecedentes clínicos del paciente durante el seguimiento terapéutico
+27,A4-027,Habilitar al fisioterapeuta para gestionar el estado de cada alerta terapéutica como Pendiente Revisada o Atendida
+28,A4-028,Registrar dificultades u observaciones reportadas por el paciente durante los ejercicios
+29,A4-029,Registrar el nivel de dolor del paciente mediante una escala de valoración
+30,A4-030,Mostrar videos explicativos de los ejercicios asignados al paciente
+31,A4-031,"Comparar registros de dolor, movilidad o progreso del paciente durante diferentes periodos"
+32,A4-032,Registrar signos vitales antes de una sesión terapéutica
+33,A4-033,Identificar errores de postura o movimientos compensatorios durante la ejecución
+34,A4-034,Habilitar al paciente para consultar instrucciones imágenes o videos guía para ejecutar ejercicios
+35,A4-035,Habilitar al paciente para iniciar y ejecutar rutinas asignadas desde casa
+36,A4-036,Mostrar indicaciones sobre la ejecución correcta de los ejercicios
+37,A4-037,Registrar la actividad física del paciente durante la evaluación inicial
+38,A4-038,Consultar la evolución del paciente mediante registros históricos
+39,A4-039,Mostrar el tiempo de descanso indicado entre ejercicios
+40,A4-040,Registrar editar consultar o desactivar ejercicios isométricos aeróbicos de movilidad resistencia y fortalecimiento
+41,A4-041,Registrar el diagnóstico del paciente antes de iniciar una terapia física
+42,A4-042,Contabilizar únicamente repeticiones realizadas correctamente
+43,A4-043,Generar reportes con indicadores cumplimiento observaciones y alertas
+44,A4-044,Enviar recordatorios automáticos al paciente sobre rutinas pendientes
+45,A4-045,Analizar mediante IA los ejercicios del catálogo compatibles con análisis automático y patrón de movimiento configurado
+46,A4-046,Registrar la edad del paciente para considerar la planificación del tratamiento
+47,A4-047,Habilitar al administrador para crear modificar activar desactivar usuarios y asignar permisos según rol
+48,A4-048,Registrar la evaluación del paciente durante el tratamiento terapéutico
+49,A4-049,Generar recomendaciones basadas en desempeño sujetas a validación profesional
+50,A4-050,Habilitar el inicio de sesión de fisioterapeutas pacientes administradores y familiares autorizados mediante credenciales válidas
+51,A4-051,Habilitar la posibilidad de que un familiar o cuidador autorizado consulte el avance general del paciente
+52,A4-052,Enviar recordatorios al paciente sobre ejercicios pendientes
+53,A4-053,Registrar los ejercicios completados por el paciente durante una rutina
+54,A4-054,Registrar resultados de pruebas ortopédicas o funcionales aplicadas en la evaluación inicial
+55,A4-055,Registrar la capacidad del paciente para realizar actividades diarias
+56,A4-056,Activar la cámara para capturar la ejecución del ejercicio
+57,A4-057,Registrar mediciones de progreso del paciente como rango de movimiento
+58,A4-058,Registrar nombres edad sexo contacto identificación y antecedentes relevantes del paciente
+59,A4-059,Generar alertas terapéuticas ante incumplimientos niveles elevados de dolor fatiga o errores configurados
+60,A4-060,Registrar el nivel de fatiga mediante escala Borg u otra escala definida
+61,A4-061,Registrar el plan terapéutico asignado al paciente
+62,A4-062,Registrar el nivel de gravedad del caso según criterio profesional
+63,A4-063,"Registrar evidencia de progreso del paciente mediante fotos, videos o reportes"
+64,A4-064,Registrar los resultados de evaluaciones realizadas durante el seguimiento
+65,A4-065,Consultar las observaciones de sesiones anteriores del paciente
+66,A4-066,Visualizar evolución de dolor fatiga movilidad cumplimiento y desempeño
